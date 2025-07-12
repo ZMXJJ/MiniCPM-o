@@ -6,9 +6,12 @@
 MiniCPM Cookbook
 ==============================
 
-Add your content using ``reStructuredText`` syntax. See the
-`reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
-documentation for details.
+.. figure:: https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/logo_qwen3.png
+  :width: 60%
+  :align: center
+  :alt: Qwen3
+  :class: no-scaled-link
+
 
 
 .. toctree::
