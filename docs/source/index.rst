@@ -6,10 +6,10 @@
 MiniCPM Cookbook
 ==============================
 
-.. figure:: https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/logo_qwen3.png
-  :width: 60%
+.. figure:: assets/MiniCPM-Logo.svg
+  :width: 80%
   :align: center
-  :alt: Qwen3
+  :alt: MiniCPM
   :class: no-scaled-link
 
 
