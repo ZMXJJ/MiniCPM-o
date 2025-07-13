@@ -11,20 +11,25 @@ import logging
 
 
 
-project = 'MiniCPM Cookbook'
+project = 'MiniCPM-V Cookbook'
 copyright = '2025, OpenBMB'
 author = 'OpenBMB'
 release = 'V4.0'
 
 # -- General configuration ---------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = []
+extensions = [
+    "sphinx.ext.napoleon",
+    "sphinx.ext.viewcode",
+    "sphinx.ext.intersphinx",
+    "sphinx.ext.autodoc",
+    "sphinx.ext.autosummary",
+    "myst_parser",
+    "sphinx_design",
+    # "sphinx_copybutton",
+]
 
-templates_path = ['_templates']
-exclude_patterns = []
-
-
+myst_enable_extensions = ["colon_fence", "attrs_block", "attrs_inline", "fieldlist"]
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
@@ -34,6 +39,47 @@ html_theme = 'furo'
 html_static_path = ['_static']
 
 
+
+# Add any paths that contain templates here, relative to this directory.
+templates_path = ["_templates"]
+
+# List of patterns, relative to source directory, that match files and
+# directories to ignore when looking for source files.
+# This pattern also affects html_static_path and html_extra_path.
+exclude_patterns = []
+
+# Exclude the prompt "$" when copying code
+copybutton_prompt_text = r"\$ "
+copybutton_prompt_is_regexp = True
+
+# -- Options for HTML output -------------------------------------------------
+
+# The theme to use for HTML and HTML Help pages.  See the documentation for
+# a list of builtin themes.
+#
+html_title = project
+html_theme = "furo"
+# html_logo = 'assets/logo/qwen.png'
+# html_theme_options = {
+#     'path_to_docs': 'docs/source',
+#     'repository_url': 'https://github.com/QwenLM/Qwen2',
+#     # 'use_repository_button': True,
+# }
+html_sidebars = {
+    "**": [
+        "sidebar/scroll-start.html",
+        "sidebar/brand.html",
+        "sidebar/navigation.html",
+        "sidebar/ethical-ads.html",
+        "sidebar/scroll-end.html",
+    ]
+}
+
+# multi-language docs
+language = "en"
+locale_dirs = ["../locales/"]  # path is example but recommended.
+gettext_compact = False  # optional.
+gettext_uuid = True  # optional.
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,

@@ -2468,8 +2468,9 @@ else:
 </details>
 
 ### Inference on Multiple GPUs
-You can run MiniCPM-Llama3-V 2.5 on multiple low VRAM GPUs (12 GB or 16 GB) by distributing the model's layers across multiple GPUs. Please refer to this [tutorial](https://github.com/OpenBMB/MiniCPM-V/blob/main/docs/inference_on_multiple_gpus.md) for detailed instructions on how to load the model and inference using multiple low VRAM GPUs.
+You can run the MiniCPM-o series models by distributing the model layers across multiple low VRAM GPUs (12 GB or 16 GB). Please check the tutorial below to learn in detail how to load the model and perform inference using multiple low VRAM GPUs.
 
+Reference Docs: [MiniCPM-o 2.6](docs/inference_on_multiple_gpus_o2.6.md) / [MiniCPM-Llama3-V 2.5](docs/inference_on_multiple_gpus_v2.5.md)
 
 ### Inference on Mac
 <details>
