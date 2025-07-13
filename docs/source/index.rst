@@ -5,7 +5,7 @@
 
 Welcome to MiniCPM-V Cookbook
 ==============================
-.. figure:: assets/MiniCPM-logo.svg
+.. figure:: assets/MiniCPM-Logo.svg
   :width: 70%
   :align: center
   :alt: MiniCPM
