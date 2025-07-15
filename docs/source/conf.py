@@ -59,10 +59,10 @@ copybutton_prompt_is_regexp = True
 #
 html_title = project
 html_theme = "furo"
-# html_logo = 'assets/logo/qwen.png'
+# html_logo = 'assets/logo/minicpm.png'
 # html_theme_options = {
 #     'path_to_docs': 'docs/source',
-#     'repository_url': 'https://github.com/QwenLM/Qwen2',
+#     'repository_url': 'https://github.com/OpenBMB/MiniCPM',
 #     # 'use_repository_button': True,
 # }
 html_sidebars = {

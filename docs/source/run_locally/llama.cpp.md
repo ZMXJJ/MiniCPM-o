@@ -4,15 +4,17 @@
 Currently, this readme only supports minicpm-omni's image capabilities, and we will update the full-mode support as soon as possible.
 :::
 
+
 ## 1. Build llama.cpp
 
-Clone the llama.cpp repository:
+Clone the llama.cpp repository:  
+[https://github.com/ggml-org/llama.cpp.git](https://github.com/ggml-org/llama.cpp.git)
 ```bash
 git clone https://github.com/ggml-org/llama.cpp.git
 cd llama.cpp
 ```
 
-Build llama.cpp using `CMake`: https://github.com/ggerganov/llama.cpp/blob/master/docs/build.md
+Build llama.cpp using [CMake](https://github.com/ggerganov/llama.cpp/blob/master/docs/build.md):
 
 **CPU/Metal:**
 ```bash
@@ -29,15 +31,15 @@ cmake --build build --config Release
 
 ### Option 1: Download official GGUF files
 
-Download converted language model file (e.g., `Model-7.6B-Q4_K_M.gguf`) and vision model file (`mmproj-model-f16.gguf`) from:
-*   HuggingFace: https://huggingface.co/openbmb/MiniCPM-o-2_6-gguf
-*   ModelScope: https://modelscope.cn/models/OpenBMB/MiniCPM-o-2_6-gguf
+Download converted language model file (e.g., `Model-7.6B-Q4_K_M.gguf`) and vision model file (`mmproj-model-f16.gguf`) from:  
+[HuggingFace](https://huggingface.co/openbmb/MiniCPM-o-2_6-gguf)  
+[ModelScope](https://modelscope.cn/models/OpenBMB/MiniCPM-o-2_6-gguf)
 
 ### Option 2: Convert from PyTorch model
 
-Download the MiniCPM-o-2_6 PyTorch model to "MiniCPM-o-2_6" folder:
-*   HuggingFace: https://huggingface.co/openbmb/MiniCPM-o-2_6
-*   ModelScope: https://modelscope.cn/models/OpenBMB/MiniCPM-o-2_6
+Download the MiniCPM-o-2_6 PyTorch model to "MiniCPM-o-2_6" folder:  
+[HuggingFace](https://huggingface.co/openbmb/MiniCPM-o-2_6)  
+[ModelScope](https://modelscope.cn/models/OpenBMB/MiniCPM-o-2_6)
 
 Convert the PyTorch model to GGUF:
 
@@ -88,7 +90,8 @@ cd build/bin/
 ./llama-server -m ../MiniCPM-o-2_6/model/ggml-model-Q4_K_M.gguf --mmproj ../MiniCPM-o-2_6/mmproj-model-f16.gguf -ngl 10000
 ```
 
-More API usage for `llama-server`: https://github.com/ggml-org/llama.cpp/blob/master/tools/server/README.md
+More API usage for `llama-server`:  
+[https://github.com/ggml-org/llama.cpp/blob/master/tools/server/README.md](https://github.com/ggml-org/llama.cpp/blob/master/tools/server/README.md)
 
 Deploy the frontend WebUI:
 
