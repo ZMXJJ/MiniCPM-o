@@ -3,9 +3,9 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to MiniCPM-V Cookbook
+Welcome to MiniCPM-o Cookbook
 ==============================
-.. figure:: assets/MiniCPM-logo.svg
+.. figure:: assets/minicpm-logo.svg
   :width: 70%
   :align: center
   :alt: MiniCPM
@@ -16,14 +16,30 @@ Welcome to MiniCPM-V Cookbook
    <br>
 
 
-MiniCPM-V is a lightweight, high-performance edge-side large multimodal model jointly developed by ModelBest, the OpenBMB, and the Tsinghua NLP Lab. Both multimodal models are pretrained on large-scale multilingual and multimodal datasets, and subsequently fine-tuned on high-quality data to align with human preferences.
+**MiniCPM-V / MiniCPM-o** is a lightweight, high-performance edge-side large multimodal model jointly developed by ModelBest, the OpenBMB, and the Tsinghua NLP Lab. Both multimodal models are pretrained on large-scale multilingual and multimodal datasets, and subsequently fine-tuned on high-quality data to align with human preferences.
 MiniCPM can perform natural language understanding, text generation, visual comprehension, tool utilization, role-playing, and function as an AI agent, among other capabilities.
 
 The latest version, MiniCPM-V 4.0,  includes the following key features:
 
-- **Multimodal Capabilities**: MiniCPM-V supports both text and image inputs, enabling it to understand and generate content that includes visual elements.
-- **High Performance**: The model is designed to be lightweight and efficient, making it suitable for deployment in resource-constrained environments.
-- **Light Weight**: MiniCPM-V is optimized for performance, ensuring fast inference times while maintaining high accuracy.
+.. rubric:: 🎯 **GPT-4V Level Performance**
+
+- Surpasses GPT-4V in single-image, multi-image, and video understanding
+- Advanced multimodal reasoning capabilities
+- Real-time video understanding on iPad
+
+.. rubric:: 📱 **Edge-Friendly & Efficient**
+
+- Only 4B parameters of pure AI magic
+- Smooth and fast inference on iPad
+- Efficient memory usage (~3GB RAM)
+- **Nature Published** – Research in prestigious `Nature Communications <https://www.nature.com/articles/s41467-025-61040-5>`__!
+
+.. rubric:: 🌍 **Multilingual & Creative**
+
+- 30+ languages supported
+- Cross-language understanding
+- Advanced OCR capabilities
+- Multimodal reasoning & analysis
 
 For more information, please visit our:
 
@@ -40,6 +56,7 @@ Welcome to join our community by joining our `Discord <https://discord.gg/rM6sC9
    :hidden:
 
    getting_started/quickstart
+   getting_started/model_download
 
 .. toctree::
    :maxdepth: 1
@@ -72,13 +89,14 @@ Welcome to join our community by joining our `Discord <https://discord.gg/rM6sC9
    quantization/awq
    quantization/bnb
    quantization/gguf
-   quantization/gptq
+   
 
 .. toctree::
    :maxdepth: 1
    :caption: Training
    :hidden:
 
+   training/fintune
    training/llamafactory
    
 .. toctree::
@@ -87,4 +105,5 @@ Welcome to join our community by joining our `Discord <https://discord.gg/rM6sC9
    :hidden:
 
    applications/webdemo
+   applications/openwebui
    applications/ocr

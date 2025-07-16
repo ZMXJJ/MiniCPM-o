@@ -1,0 +1,164 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, OpenBMB
+# This file is distributed under the same license as the MiniCPM-o Cookbook
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MiniCPM-o Cookbook \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-15 18:38+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/index.rst:53
+msgid "Getting Started"
+msgstr "快速开始"
+
+#: ../../source/index.rst:61
+msgid "Inference"
+msgstr "推理"
+
+#: ../../source/index.rst:68
+msgid "Deployment"
+msgstr "部署"
+
+#: ../../source/index.rst:75
+msgid "Run Locally"
+msgstr "端侧运行"
+
+#: ../../source/index.rst:84
+msgid "Quantization"
+msgstr "量化"
+
+#: ../../source/index.rst:94
+msgid "Training"
+msgstr "训练"
+
+#: ../../source/index.rst:102
+msgid "Applications"
+msgstr "应用"
+
+#: ../../source/index.rst:7 e2501d6b3c52465880cdc76abfb0b3b2
+msgid "Welcome to MiniCPM-o Cookbook"
+msgstr "欢迎来到MiniCPM-o Cookbook"
+
+#: ../../source/index.rst:8 1a7b4c423fc04f4881bd3d304a90e7ee
+msgid "MiniCPM"
+msgstr "MiniCPM"
+
+#: ../../source/index.rst:19 840bf1efe33d4ef5b97e03359b1746d4
+msgid ""
+"**MiniCPM-V / MiniCPM-o** is a lightweight, high-performance edge-side "
+"large multimodal model jointly developed by ModelBest, the OpenBMB, and "
+"the Tsinghua NLP Lab. Both multimodal models are pretrained on large-"
+"scale multilingual and multimodal datasets, and subsequently fine-tuned "
+"on high-quality data to align with human preferences. MiniCPM can perform"
+" natural language understanding, text generation, visual comprehension, "
+"tool utilization, role-playing, and function as an AI agent, among other "
+"capabilities."
+msgstr ""
+"**MiniCPM-V / MiniCPM-o** 是由 面壁智能、OpenBMB 和清华大学自然语言处理实验室联合开发的轻量级高性能端侧大规模多模态模型。"
+"这两个多模态模型均在大规模多语言和多模态数据集上进行了预训练，并在高质量数据上进行了微调以对齐人类偏好。"
+"MiniCPM系列模型能够执行自然语言理解、文本生成、视觉理解、工具使用、角色扮演以及作为 AI 智能体等多种能力。"
+
+#: ../../source/index.rst:22 8de03fd01dc54875a8b7fdeadb58a0ff
+msgid "The latest version, MiniCPM-V 4.0,  includes the following key features:"
+msgstr "最新版本 MiniCPM-V 4.0 包含以下主要特性："
+
+#: ../../source/index.rst:25 0c9c8128933949f88b369f3bab4a6451
+msgid "🎯 **GPT-4V Level Performance**"
+msgstr "🎯 **GPT-4V 级别性能**"
+
+#: ../../source/index.rst:26 0497ddf3bfd6440389131f5a6463eb0e
+msgid "Surpasses GPT-4V in single-image, multi-image, and video understanding"
+msgstr "在单图、多图和视频理解方面超越 GPT-4V"
+
+#: ../../source/index.rst:27 fec57245a2ea40c384a2f4f9becebc8b
+msgid "Advanced multimodal reasoning capabilities"
+msgstr "先进的多模态推理能力"
+
+#: ../../source/index.rst:28 b6215c6f37c64e18bbf2f2217f70c9e6
+msgid "Real-time video understanding on iPad"
+msgstr "iPad 上实时视频理解"
+
+#: ../../source/index.rst:31 82bebf0a0f8e414b85da2b228bf9ba51
+msgid "📱 **Edge-Friendly & Efficient**"
+msgstr "📱 **端侧友好且高效**"
+
+#: ../../source/index.rst:32 25f4a981a4f54b01b475fc4ec3956697
+msgid "Only 4B parameters of pure AI magic"
+msgstr "仅 40 亿参数，端侧友好"
+
+#: ../../source/index.rst:33 a27323ffba424e76b2f0cbdf3fec5e30
+msgid "Smooth and fast inference on iPad"
+msgstr "iPad 上流畅快速推理"
+
+#: ../../source/index.rst:34 930ed56a41134154b179e18ca36cf4b1
+msgid "Efficient memory usage (~3GB RAM)"
+msgstr "高效内存占用（约 3GB 内存）"
+
+#: ../../source/index.rst:35 c9b26ddbf8784de285a339465254ffb1
+msgid ""
+"**Nature Published** – Research in prestigious `Nature Communications "
+"<https://www.nature.com/articles/s41467-025-61040-5>`__!"
+msgstr ""
+"**发表于 Nature** —— 研究成果已发表在权威期刊 `Nature Communications "
+"<https://www.nature.com/articles/s41467-025-61040-5>`__！"
+
+#: ../../source/index.rst:38 d61b22d959e547208006f34bd0229a69
+msgid "🌍 **Multilingual & Creative**"
+msgstr "🌍 **多语言与创造力**"
+
+#: ../../source/index.rst:39 a2c13411cf5d4828b02a3ed201f85136
+msgid "30+ languages supported"
+msgstr "支持 30+ 种语言"
+
+#: ../../source/index.rst:40 b72d6b0d6ab54c52a6e687cc69cfe7c4
+msgid "Cross-language understanding"
+msgstr "跨语言理解"
+
+#: ../../source/index.rst:41 3ddf248f4d194d8d9748503c3786a6c8
+msgid "Advanced OCR capabilities"
+msgstr "先进的 OCR 能力"
+
+#: ../../source/index.rst:42 f87306e3d44c4a8eb0e0a6de6758452d
+msgid "Multimodal reasoning & analysis"
+msgstr "多模态推理与分析"
+
+#: ../../source/index.rst:44 e64753640c9b49d592252293632e17b3
+msgid "For more information, please visit our:"
+msgstr "更多信息请访问："
+
+#: ../../source/index.rst:46 6ccd0a2b55ae4541aaa498a35d6fdc5b
+msgid "`GitHub <https://github.com/OpenBMB>`__"
+msgstr "`GitHub <https://github.com/OpenBMB>`__"
+
+#: ../../source/index.rst:47 5bbbdf68df66473480d9d64a800e2400
+msgid "`Hugging Face <https://huggingface.co/OpenBMB>`__"
+msgstr "`Hugging Face <https://huggingface.co/OpenBMB>`__"
+
+#: ../../source/index.rst:48 a8cd1911bb5e4e148ef11e7d85efcaf4
+msgid "`Modelscope <https://modelscope.cn/organization/OpenBMB>`__"
+msgstr "`Modelscope <https://modelscope.cn/organization/OpenBMB>`__"
+
+#: ../../source/index.rst:50 dc149cdfeff74f0aa731319390f31a6e
+msgid ""
+"Welcome to join our community by joining our `Discord "
+"<https://discord.gg/rM6sC9G2MA>`__ and `WeChat "
+"<https://github.com/OpenBMB/MiniCPM-o/blob/main/assets/wechat-QR.jpeg>`__"
+" group. We are looking forward to seeing you there!"
+msgstr ""
+"欢迎加入我们的社区，可通过 `Discord "
+"<https://discord.gg/rM6sC9G2MA>`__ 和 `微信群 "
+"<https://github.com/OpenBMB/MiniCPM-o/blob/main/assets/wechat-QR.jpeg>`__"
+" 加入我们。期待您的参与！"

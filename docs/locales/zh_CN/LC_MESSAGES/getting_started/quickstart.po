@@ -1,0 +1,37 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, OpenBMB
+# This file is distributed under the same license as the MiniCPM-o Cookbook
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MiniCPM-o Cookbook \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-15 18:38+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/getting_started/quickstart.md:1
+#: 69b1b66570a9453e88a246e6cd830c2f
+msgid "Quickstart"
+msgstr "快速开始"
+
+#: ../../source/getting_started/quickstart.md:3
+#: 2411387e344d4960ba25a4e863d7ad46
+msgid "1. Installation"
+msgstr "环境配置"
+
+#: ../../source/getting_started/quickstart.md:8
+#: 2e359a89122643d0a1ab179dac0be5f7
+msgid "2. Basic Usage"
+msgstr "基础用法"
+

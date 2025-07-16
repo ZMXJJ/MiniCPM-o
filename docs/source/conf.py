@@ -11,7 +11,7 @@ import logging
 
 
 
-project = 'MiniCPM-V Cookbook'
+project = 'MiniCPM-o Cookbook'
 copyright = '2025, OpenBMB'
 author = 'OpenBMB'
 release = 'V4.0'

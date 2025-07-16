@@ -31,9 +31,9 @@ cmake --build build --config Release
 
 ### Option 1: Download official GGUF files
 
-Download converted language model file (e.g., `Model-7.6B-Q4_K_M.gguf`) and vision model file (`mmproj-model-f16.gguf`) from:  
-[HuggingFace](https://huggingface.co/openbmb/MiniCPM-o-2_6-gguf)  
-[ModelScope](https://modelscope.cn/models/OpenBMB/MiniCPM-o-2_6-gguf)
+Download converted language model file (e.g., `Model-3.6B-Q4_K_M.gguf`) and vision model file (`mmproj-model-f16.gguf`) from:  
+[HuggingFace](https://huggingface.co/openbmb/openbmb/MiniCPM-V-4-gguf)  
+[ModelScope](https://modelscope.cn/models/OpenBMB/OpenBMB/MiniCPM-V-4-gguf)
 
 ### Option 2: Convert from PyTorch model
 
