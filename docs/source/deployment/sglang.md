@@ -1,4 +1,4 @@
-# MiniCPM-V 4.0 - SGLang Documentation
+# SGLang
 
 ## 1. Installing SGLang
 ### Install SGLang from Source Code
