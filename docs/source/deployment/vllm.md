@@ -1,4 +1,4 @@
-# vLLM# MiniCPM-V4 vLLM Deployment Guide
+# vLLM
 
 [vLLM](https://github.com/vllm-project/vllm) is a fast and easy-to-use library for LLM inference and serving.
 To learn more about vLLM, please refer to the [documentation](https://docs.vllm.ai/en/latest/).
