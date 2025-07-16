@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MiniCPM-o Cookbook \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-15 18:38+0800\n"
+"POT-Creation-Date: 2025-07-16 18:21+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_CN\n"
@@ -20,146 +20,162 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.17.0\n"
 
-#: ../../source/run_locally/llama.cpp.md:1 48492a48e48d4929a62b330596b5edfa
+#: ../../source/run_locally/llama.cpp.md:1 8881d7d23b7549a48b79ca9190d477a1
 msgid "llama.cpp"
 msgstr "llama.cpp"
 
-#: ../../source/run_locally/llama.cpp.md:4 e21f155e46554a3485e0fe60004147f8
+#: ../../source/run_locally/llama.cpp.md:4 4dc2edc83c6f43ff8b319dbe1213535a
+#, fuzzy
 msgid ""
-"Currently, this readme only supports model's image capabilities, "
+"Currently, this readme only supports minicpm-omni's image capabilities, "
 "and we will update the full-mode support as soon as possible."
 msgstr "目前，llama.cpp仅支持模型的图像能力，我们会尽快更新对模态推理的支持。"
 
-#: ../../source/run_locally/llama.cpp.md:8 1eb3f40a948045308bca05fe6818dd87
+#: ../../source/run_locally/llama.cpp.md:8 5dc34272d6f84cae9574cd5664e5bd05
 msgid "1. Build llama.cpp"
 msgstr "编译安装 llama.cpp"
 
-#: ../../source/run_locally/llama.cpp.md:10 b7fc9ad81de84ef2b0d9624d464e4969
+#: ../../source/run_locally/llama.cpp.md:10 ade512341c5f4ff7af3b918cfeb16638
 msgid ""
 "Clone the llama.cpp repository:   [https://github.com/ggml-"
 "org/llama.cpp.git](https://github.com/ggml-org/llama.cpp.git)"
-msgstr "克隆 llama.cpp 仓库：[https://github.com/ggml-org/llama.cpp.git](https://github.com/ggml-org/llama.cpp.git)"
+msgstr ""
+"克隆 llama.cpp 仓库：[https://github.com/ggml-"
+"org/llama.cpp.git](https://github.com/ggml-org/llama.cpp.git)"
 
-#: ../../source/run_locally/llama.cpp.md:17 9607b83ac2454d83bae9ad70009b89e5
+#: ../../source/run_locally/llama.cpp.md:17 dbf14da186014c0c855ac6823e62c425
 msgid ""
 "Build llama.cpp using "
 "[CMake](https://github.com/ggerganov/llama.cpp/blob/master/docs/build.md):"
-msgstr "使用 [CMake](https://github.com/ggerganov/llama.cpp/blob/master/docs/build.md) 构建 llama.cpp："
+msgstr ""
+"使用 "
+"[CMake](https://github.com/ggerganov/llama.cpp/blob/master/docs/build.md)"
+" 构建 llama.cpp："
 
-#: ../../source/run_locally/llama.cpp.md:19 7c37f9c9365747ce83aecbaba5d411ac
+#: ../../source/run_locally/llama.cpp.md:19 733d5b7a1ff5430b88d318b596484ddc
 msgid "**CPU/Metal:**"
 msgstr "**CPU/Metal：**"
 
-#: ../../source/run_locally/llama.cpp.md:25 d192e706fedc45b5bc6e8d93a0b0a4df
+#: ../../source/run_locally/llama.cpp.md:25 08bb6732fb9245d78582cde345fbbed3
 msgid "**CUDA:**"
 msgstr "**CUDA：**"
 
-#: ../../source/run_locally/llama.cpp.md:30 1f26eecc4bd341009560a80f1c845818
+#: ../../source/run_locally/llama.cpp.md:30 4821dc758c1f4f03a1ddea51e48e2ae9
 msgid "2. GGUF files"
 msgstr "2. GGUF 文件"
 
-#: ../../source/run_locally/llama.cpp.md:32 a52fc665a68045b2b36cf5403db8f2d8
+#: ../../source/run_locally/llama.cpp.md:32 4ae29a710576489cb621d23b5b6cfdbe
 msgid "Option 1: Download official GGUF files"
 msgstr "选项 1：下载官方 GGUF 文件"
 
-#: ../../source/run_locally/llama.cpp.md:34 09c36a86bca443f2ab5b27d1eb895957
+#: ../../source/run_locally/llama.cpp.md:34 7b8dbc181f734daa9cc6dcc58270f15e
 msgid ""
 "Download converted language model file (e.g., `Model-3.6B-Q4_K_M.gguf`) "
 "and vision model file (`mmproj-model-f16.gguf`) from:   "
 "[HuggingFace](https://huggingface.co/openbmb/openbmb/MiniCPM-V-4-gguf)   "
 "[ModelScope](https://modelscope.cn/models/OpenBMB/OpenBMB/MiniCPM-V-4-gguf)"
-msgstr "从以下地址下载转换后的语言模型文件（如 `Model-3.6B-Q4_K_M.gguf`）和视觉模型文件（`mmproj-model-f16.gguf`）：[HuggingFace](https://huggingface.co/openbmb/openbmb/MiniCPM-V-4-gguf) [魔搭社区](https://modelscope.cn/models/OpenBMB/OpenBMB/MiniCPM-V-4-gguf)"
+msgstr ""
+"从以下地址下载转换后的语言模型文件（如 `Model-3.6B-Q4_K_M.gguf`）和视觉模型文件（`mmproj-"
+"model-f16.gguf`）：[HuggingFace](https://huggingface.co/openbmb/openbmb/MiniCPM-V-4-gguf)"
+" [魔搭社区](https://modelscope.cn/models/OpenBMB/OpenBMB/MiniCPM-V-4-gguf)"
 
-#: ../../source/run_locally/llama.cpp.md:38 52c29b5a0692492c9cf841c2976d7650
+#: ../../source/run_locally/llama.cpp.md:38 0b5e5c6f1ecb4f4b861d563a33e447d6
 msgid "Option 2: Convert from PyTorch model"
 msgstr "选项 2：从 PyTorch 模型转换"
 
-#: ../../source/run_locally/llama.cpp.md:40 0b58697587a34011959da8cf596dd08f
+#: ../../source/run_locally/llama.cpp.md:40 8f13b8a18fc247eba11f64643807cd4f
 msgid ""
 "Download the MiniCPM-o-2_6 PyTorch model to \"MiniCPM-o-2_6\" folder:   "
 "[HuggingFace](https://huggingface.co/openbmb/MiniCPM-o-2_6)   "
 "[ModelScope](https://modelscope.cn/models/OpenBMB/MiniCPM-o-2_6)"
-msgstr "将 MiniCPM-o-2_6 PyTorch 模型下载到 \"MiniCPM-o-2_6\" 文件夹：[HuggingFace](https://huggingface.co/openbmb/MiniCPM-o-2_6) [魔搭社区](https://modelscope.cn/models/OpenBMB/MiniCPM-o-2_6)"
+msgstr ""
+"将 MiniCPM-o-2_6 PyTorch 模型下载到 \"MiniCPM-o-2_6\" "
+"文件夹：[HuggingFace](https://huggingface.co/openbmb/MiniCPM-o-2_6) "
+"[魔搭社区](https://modelscope.cn/models/OpenBMB/MiniCPM-o-2_6)"
 
-#: ../../source/run_locally/llama.cpp.md:44 adcf6e75f9a94b60b4a0c564dc611c2c
+#: ../../source/run_locally/llama.cpp.md:44 e784dea2e8544adb8a6e81850551da0c
 msgid "Convert the PyTorch model to GGUF:"
 msgstr "将 PyTorch 模型转换为 GGUF："
 
-#: ../../source/run_locally/llama.cpp.md:57 8b053e4a2b0b4e00afe034bacfc23acb
+#: ../../source/run_locally/llama.cpp.md:57 9ba37cc6681942a3b8374048c6a49b57
 msgid "3. Model Inference"
 msgstr "3. 模型推理"
 
-#: ../../source/run_locally/llama.cpp.md:59 4a8ff0008a294870b083ab5816a9e1f0
+#: ../../source/run_locally/llama.cpp.md:59 1053f16165314a9892f9220aaadbe79a
 msgid "3.1 Command-Line Inference"
 msgstr "3.1 命令行推理"
 
-#: ../../source/run_locally/llama.cpp.md:74 772ab1fc5b57477b9bb77cae2d678556
+#: ../../source/run_locally/llama.cpp.md:74 a47ea9da2c524fd1beec2da2e4933681
 msgid "**Argument Reference:**"
 msgstr "**参数说明：**"
 
-#: ../../source/run_locally/llama.cpp.md:3 ce8e472e31524ba6b842ea499f71f390
+#: ../../source/run_locally/llama.cpp.md:3 b6e200d8c62b4b82a3804071553802af
 msgid "Argument"
 msgstr "参数"
 
-#: ../../source/run_locally/llama.cpp.md:3 f2696ad24c0d4b4eafdf3f79d630abc3
+#: ../../source/run_locally/llama.cpp.md:3 b5715925be94422e84db3cbe55299140
 msgid "`-m, --model`"
 msgstr "`-m, --model`"
 
-#: ../../source/run_locally/llama.cpp.md:3 d50fd7691044420eac8cbc50c13ad992
+#: ../../source/run_locally/llama.cpp.md:3 901338fbbaa6494bbb8754adc19110fd
 msgid "`--mmproj`"
 msgstr "`--mmproj`"
 
-#: ../../source/run_locally/llama.cpp.md:3 90e3de5c92d34caf9e88d64cdaecc722
+#: ../../source/run_locally/llama.cpp.md:3 bdc1522aa5dc4468b9f594697af2f71f
 msgid "`--image`"
 msgstr "`--image`"
 
-#: ../../source/run_locally/llama.cpp.md:3 00802e2880b849fb93eda3edcc5a8080
+#: ../../source/run_locally/llama.cpp.md:3 bb85ef12773f446ab84105063fffb3e6
 msgid "`-p, --prompt`"
 msgstr "`-p, --prompt`"
 
-#: ../../source/run_locally/llama.cpp.md:3 b5bd7195afa7483794ffd7c5febd7abb
+#: ../../source/run_locally/llama.cpp.md:3 fd2e7785fd074cb0861daec5473d535c
 msgid "`-c, --ctx-size`"
 msgstr "`-c, --ctx-size`"
 
-#: ../../source/run_locally/llama.cpp.md:3 7d19aa2e3beb4bdeb4413a13096d71d8
+#: ../../source/run_locally/llama.cpp.md:3 7f36d387aa5a4c8b9bdb4713bdcb82a5
 msgid "Description"
 msgstr "说明"
 
-#: ../../source/run_locally/llama.cpp.md:3 dce8614a36e749edaffb502fe46be413
+#: ../../source/run_locally/llama.cpp.md:3 5efd087e16fe4d1b8ceaa147c8e1af43
 msgid "Path to the language model"
 msgstr "语言模型路径"
 
-#: ../../source/run_locally/llama.cpp.md:3 a18d868a78aa49889d3d4e6da164919e
+#: ../../source/run_locally/llama.cpp.md:3 1fa71f4bd6c248ef93990dc83bd245e0
 msgid "Path to the vision model"
 msgstr "视觉模型路径"
 
-#: ../../source/run_locally/llama.cpp.md:3 ffda0b5c1906482ab8c0b2aeae51f399
+#: ../../source/run_locally/llama.cpp.md:3 0de39e64d8b94e3ca5fdf10962fb69b1
 msgid "Path to the input image"
 msgstr "输入图片路径"
 
-#: ../../source/run_locally/llama.cpp.md:3 60557efa0e8848a8ab0dffbc8ee36774
+#: ../../source/run_locally/llama.cpp.md:3 81031742678e48e797a100f46d031a06
 msgid "The prompt"
 msgstr "输入提示"
 
-#: ../../source/run_locally/llama.cpp.md:3 314ff901f4bf488282a5b422827d07ed
+#: ../../source/run_locally/llama.cpp.md:3 374b6964454c490b98293ddeb6071647
 msgid "Maximum context size"
 msgstr "最大上下文长度"
 
-#: ../../source/run_locally/llama.cpp.md:80 af69304887834199953ab80caf41a9fa
+#: ../../source/run_locally/llama.cpp.md:80 331879c7200d4a00b4985ed45cfc3154
 msgid "3.2 WebUI Deployment"
 msgstr "3.2 WebUI 部署"
 
-#: ../../source/run_locally/llama.cpp.md:82 a72491a4871846fe88c836ca0e3c9b16
+#: ../../source/run_locally/llama.cpp.md:82 22e4f377bc14408b94606162903d5ff3
 msgid "Run `llama-server`:"
 msgstr "运行 `llama-server`："
 
-#: ../../source/run_locally/llama.cpp.md:93 1d13539405f241d5a8a8403289603d70
+#: ../../source/run_locally/llama.cpp.md:93 a6a0ee468e88467f8433a128c0e4b3d6
 msgid ""
 "More API usage for `llama-server`:   [https://github.com/ggml-"
 "org/llama.cpp/blob/master/tools/server/README.md](https://github.com"
 "/ggml-org/llama.cpp/blob/master/tools/server/README.md)"
-msgstr "`llama-server` 更多 API 用法请参考：[https://github.com/ggml-org/llama.cpp/blob/master/tools/server/README.md](https://github.com/ggml-org/llama.cpp/blob/master/tools/server/README.md)"
+msgstr ""
+"`llama-server` 更多 API 用法请参考：[https://github.com/ggml-"
+"org/llama.cpp/blob/master/tools/server/README.md](https://github.com"
+"/ggml-org/llama.cpp/blob/master/tools/server/README.md)"
 
-#: ../../source/run_locally/llama.cpp.md:96 935cdbb64b5b439cb0b023a6918be315
+#: ../../source/run_locally/llama.cpp.md:96 f10d0038d0a340cf82b28188764c5c50
 msgid "Deploy the frontend WebUI:"
 msgstr "部署前端 WebUI："
+

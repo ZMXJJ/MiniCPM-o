@@ -1,44 +1,38 @@
 # Ollama
 
-## Requirements
-- **Non-quantized version:** Requires over 9GB of RAM.
-- **Quantized version:** Requires over 3GB of RAM.
+[Ollama](https://ollama.com/) helps you run LLMs locally with only a few commands. It is available at macOS, Linux, and Windows. Now, MiniCPM-V 4.0 is officially on Ollama, and you can run it with one command:
 
-## 1. Install Ollama
-
-### macOS
-
-[Download](https://ollama.com/download/Ollama.dmg)
-
-### Windows
-
-[Download](https://ollama.com/download/OllamaSetup.exe)
-
-### Linux
-
-```shell
-curl -fsSL https://ollama.com/install.sh | sh
-```
-
-[Manual install instructions](https://github.com/ollama/ollama/blob/main/docs/linux.md)
-
-### Docker
-
-The official [Ollama Docker image](https://hub.docker.com/r/ollama/ollama) `ollama/ollama` is available on Docker Hub.
-
-## 2. Quick Start
-
-The MiniCPM-V 4 model can be used directly:
-
-```shell
+```bash
 ollama run openbmb/minicpm-v4.0
 ```
+
+Next, we introduce more detailed usages of Ollama for running MiniCPM-V 4.0.
+
+## Install Ollama
+
+*   **macOS**: Download from [https://ollama.com/download/Ollama.dmg](https://ollama.com/download/Ollama.dmg).
+
+*   **Windows**: Download from [https://ollama.com/download/OllamaSetup.exe](https://ollama.com/download/OllamaSetup.exe).
+
+*   **Linux**: `curl -fsSL https://ollama.com/install.sh | sh`, or refer to the guide from [ollama](https://github.com/ollama/ollama/blob/main/docs/linux.md).
+
+*   **Docker**: The official [Ollama Docker image](https://hub.docker.com/r/ollama/ollama) `ollama/ollama` is available on Docker Hub.
+
+## Quickstart
+
+Visit the official website [Ollama](https://ollama.com/) and click download to install Ollama on your device. You can also search models on the website, where you can find the Qwen2.5 models. Except for the default one, you can choose to run MiniCPM-V/o series models by:
+
+*   `ollama run openbmb/minicpm-v4.0`
+*   `ollama run openbmb/minicpm-o2.6`
+*   `ollama run openbmb/minicpm-v2.6`
+*   `ollama run openbmb/minicpm-v2.5`
 
 ### Command Line
 Separate the input prompt and the image path with space.
 ```bash
 What is in the picture? xx.jpg
 ```
+
 ### API
 ```python
 with open(image_path, 'rb') as image_file:
@@ -58,60 +52,12 @@ with open(image_path, 'rb') as image_file:
     return response
 ```
 
-## 3. Customize model
+## Run Ollama with Your GGUF Files
 
-**If the method above fails, please refer to the following guide.**
+Sometimes you don't want to pull models and you just want to use Ollama with your own GGUF files. Suppose you have a GGUF file of Qwen2.5, `qwen2.5-7b-instruct-q5_0.gguf`. For the first step, you need to create a file called `Modelfile`. The content of the file is shown below:
 
-### Environment requirements
-
-- cmake version 3.24 or above
-- go version 1.22 or above
-- gcc version 11.4.0 or above
-
-### Download GGUF Model
-
-[HuggingFace](https://huggingface.co/openbmb/openbmb/MiniCPM-V-4-gguf)  
-[ModelScope](https://modelscope.cn/models/OpenBMB/OpenBMB/MiniCPM-V-4-gguf)
-
-### Clone Official OpenBMB Ollama Fork
-
-```sh
-git clone https://github.com/OpenBMB/ollama.git
-cd ollama
-```
-
-### Install Dependencies
-
-```sh
-go generate ./...
-```
-
-### Build Ollama
-
-```sh
-go build .
-```
-
-### Start Ollama Service
-
-Once the build is successful, start the Ollama service from its root directory:
-
-```sh
-./ollama serve
-```
-
-### Create a ModelFile
-
-Create and edit a ModelFile:
-
-```sh
-vim minicpmv4.Modelfile
-```
-
-The content of the Modelfile should be as follows:
-
-```
-FROM ./MiniCPM-V-4/model/ggml-model-Q4_K_M.gguf
+```dockerfile
+FROM ./MiniCPM-V-4/model/Model-3.6B-Q4_K_M.gguf
 FROM ./MiniCPM-V-4/mmproj-model-f16.gguf
 
 TEMPLATE """{{ if .System }}<|im_start|>system
@@ -130,25 +76,62 @@ PARAMETER stop "<|endoftext|>"
 PARAMETER stop "<|im_end|>"
 PARAMETER num_ctx 8192
 ```
+
 Parameter Descriptions:
 
 | first from | second from | num_ctx |
 |-----|-----|-----|
 | Your language GGUF model path | Your vision GGUF model path | Max Model length |
 
-### Create Ollama Model
+Create Ollama Model:
 ```bash
 ollama create minicpm-v4.0 -f minicpmv4.Modelfile
 ```
 
-### Run
+Run your Ollama model:
 In a new terminal window, run the model instance:
 ```bash
 ollama run minicpm-v4.0
 ```
 
-### Input Prompt
 Enter the prompt and the image path, separated by a space.
-```bash
+```
 What is in the picture? xx.jpg
+```
+
+## Deployment
+
+```{attention}
+If the method above fails, please refer to the following guide, or refer to the guide from [ollama](https://github.com/ollama/ollama/blob/main/docs/development.md).
+```
+
+Environment requirements:
+
+- [go](https://go.dev/doc/install) version 1.22 or above
+- cmake version 3.24 or above
+- C/C++ Compiler e.g. Clang on macOS, [TDM-GCC](https://github.com/jmeubank/tdm-gcc/releases) (Windows amd64) or [llvm-mingw](https://github.com/mstorsjo/llvm-mingw) (Windows arm64), GCC/Clang on Linux.
+
+Download GGUF Model:
+
+*   HuggingFace: https://huggingface.co/openbmb/MiniCPM-V-4-gguf
+*   ModelScope: https://modelscope.cn/models/OpenBMB/MiniCPM-V-4-gguf
+
+Clone OpenBMB Ollama Fork:
+
+```sh
+git clone https://github.com/OpenBMB/ollama.git
+cd ollama
+```
+
+Configure and build the project:
+
+```sh
+cmake -B build
+cmake --build build
+```
+
+Then build and run Ollama from the root directory of the repository:
+
+```sh
+go run . serve
 ```

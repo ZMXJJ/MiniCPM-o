@@ -71,6 +71,7 @@ Welcome to join our community by joining our `Discord <https://discord.gg/rM6sC9
    :hidden:
 
    deployment/vllm
+   deployment/sglang
 
 .. toctree::
    :maxdepth: 1
@@ -93,17 +94,17 @@ Welcome to join our community by joining our `Discord <https://discord.gg/rM6sC9
 
 .. toctree::
    :maxdepth: 1
-   :caption: Training
+   :caption: finetune
    :hidden:
 
-   training/fintune
-   training/llamafactory
+   finetune/fintune
+   finetune/llamafactory
    
 .. toctree::
    :maxdepth: 1
-   :caption: Applications
+   :caption: Demo
    :hidden:
 
-   applications/webdemo
-   applications/openwebui
-   applications/ocr
+   demo/webdemo
+   demo/openwebui
+   demo/iosdemo

@@ -21,6 +21,6 @@ msgstr ""
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../source/applications/ocr.md:1 d263d0d683804a41aec3f2ea41c7d259
-msgid "OCR"
-msgstr "OCR"
+msgid "iOS Demo"
+msgstr "iOS Demo"
 
