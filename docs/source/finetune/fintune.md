@@ -1,9 +1,9 @@
 # Finetune
 
 :::{note}
-We provide official scripts for easily fine-tuning the pretrained models **MiniCPM-V-4**, **MiniCPM-o-2_6**, **MiniCPM-V-2_6**, **MiniCPM-Llama3-V 2.5**, and **MiniCPM-V 2.0** on downstream tasks. The fine-tuning scripts use `transformers Trainer` and `DeepSpeed` by default.
+We provide official scripts for easily fine-tuning the pretrained models **MiniCPM-V-4**, **MiniCPM-o-2_6**, **MiniCPM-V-2_6**, **MiniCPM-Llama3-V-2_5**, and **MiniCPM-V-2** on downstream tasks. The fine-tuning scripts use `transformers Trainer` and `DeepSpeed` by default.
 
-This section takes **MiniCPM-o2.6** as an example.
+This section takes **MiniCPM-o 2.6** as an example.
 :::
 
 
@@ -161,11 +161,11 @@ The following table presents the memory usage of the model when fine-tuning usin
 
 ### Finetuning FAQs
 
-<details>
-<summary>Q:When you encounter Out of Memory (OOM) issues during training large models, you can try the following methods to resolve or mitigate the issue:</summary>
+**Q:** When you encounter Out of Memory (OOM) issues during training large models, you can try the following methods to resolve or mitigate the issue:</summary>
 
-A：When you face Out of Memory (OOM) issues during training large models, the following strategies may help resolve or mitigate the problem:
-#### Adjust Model Hyperparameters
+**A:** When you face Out of Memory (OOM) issues during training large models, the following strategies may help resolve or mitigate the problem:
+
+**Adjust Model Hyperparameters**
 - **Reduce `max_model_length`**: Decreasing the maximum sequence length the model processes can significantly reduce the memory required for each operation. For example, reducing the maximum length from 2048 to 1200 or another value suitable for your dataset.
 ```
 --model_max_length 1200
@@ -180,14 +180,14 @@ A：When you face Out of Memory (OOM) issues during training large models, the f
 --max_slice_nums 9 
 ```
 
-#### Reduce Training Model Parameters
+**Reduce Training Model Parameters**
 - **Do not train VPM (Visual Processing Module)**: You can adjust hyperparameters in the finetune script to opt out of training the visual processing module to save memory.
 ```
 --tune_vision false
 ```
 - **Use LoRA finetuning**: Refer to the LoRA finetuning section.
 
-#### Optimize with DeepSpeed
+**Optimize with DeepSpeed**
 - **Configure DeepSpeed Zero Stage 2**: Use the following configuration to offload optimizer parameters to the CPU, reducing memory pressure on the GPU:
   ```json
   "zero_optimization": {
@@ -212,11 +212,10 @@ A：When you face Out of Memory (OOM) issues during training large models, the f
 }
 ```
 You can visit [huggingface deepspeed](https://huggingface.co/docs/transformers/deepspeed) to find out more about how to use DeepSpeed.
-</details>
-<details>
-<summary>Q: Encounter an error while using the AutoPeftModelForCausalLM to load a checkpoint that has undergone lora fine-tuning</summary>
 
-A: The error as described in [issues 168](https://github.com/OpenBMB/MiniCPM-V/issues/168) occurs because the model lacks `get_input_embeddings` and `set_input_embeddings` methods. Follow these steps to resolve this issue: 
+**Q:** Encounter an error while using the AutoPeftModelForCausalLM to load a checkpoint that has undergone lora fine-tuning</summary>
+
+**A:** The error as described in [issues 168](https://github.com/OpenBMB/MiniCPM-V/issues/168) occurs because the model lacks `get_input_embeddings` and `set_input_embeddings` methods. Follow these steps to resolve this issue: 
 
 1.**Reload the Fine-Tuned Model:** Make sure you correctly load the checkpoint that has been fine-tuned using lora techniques. Use the following code example to guide you:
    ```python
@@ -237,44 +236,32 @@ model = AutoPeftModel.from_pretrained(
    - **Direct File Copy:** For a quick resolution, directly download and copy the latest `model_minicpmv.py` file into your project. This file is available from the following sources:
      - [MiniCPM-Llama3-V-2_5 on Hugging Face](https://huggingface.co/openbmb/MiniCPM-Llama3-V-2_5/tree/main)
      - [MiniCPM-V-2 on Hugging Face](https://huggingface.co/openbmb/MiniCPM-V-2)
-</details>
 
-<details>
-<summary>Q: How do I use the `flash_attention_2` implementation when loading a pretrained model?</summary>
+**Q:** How do I use the `flash_attention_2` implementation when loading a pretrained model?</summary>
 
-A: If your environment supports `flash_attn2`, you can add an argument `_attn_implementation="flash_attention_2"` when using the `AutoModel.from_pretrained` method to load a model. For example:
+**A:** If your environment supports `flash_attn2`, you can add an argument `_attn_implementation="flash_attention_2"` when using the `AutoModel.from_pretrained` method to load a model. For example:
 
 ```python
 model = AutoModel.from_pretrained('model_name', _attn_implementation="flash_attention_2")
 ```
-</details>
 
-<details>
-<summary>Q: What if our data is resized to 512? Can we use the original image size instead?</summary>
+**Q:** What if our data is resized to 512? Can we use the original image size instead?</summary>
 
-A: Our model supports up to 1344x1344 lossless encoding. If you are currently resizing your images to 512, you might want to try using the original image sizes instead. Our system automatically includes a high-definition image encoding scheme by default.
+**A:** Our model supports up to 1344x1344 lossless encoding. If you are currently resizing your images to 512, you might want to try using the original image sizes instead. Our system automatically includes a high-definition image encoding scheme by default.
 
-</details>
+**Q:** What should we do if we encounter out-of-memory (OOM) errors?</summary>
 
-<details>
-<summary>Q: What should we do if we encounter out-of-memory (OOM) errors?</summary>
+**A:** If you experience OOM issues, consider reducing the batch size (`bs`). To maintain an equivalent total batch size, you can adjust the `gradient_accumulation_steps` setting. This approach allows you to manage memory usage effectively while still processing the desired amount of data per training step.
 
-A: If you experience OOM issues, consider reducing the batch size (`bs`). To maintain an equivalent total batch size, you can adjust the `gradient_accumulation_steps` setting. This approach allows you to manage memory usage effectively while still processing the desired amount of data per training step.
-</details>
+**Q:** How can we determine the maximum length for our training data, and what if we do not want to train the vision encoder?</summary>
 
-<details>
-<summary>Q: How can we determine the maximum length for our training data, and what if we do not want to train the vision encoder?</summary>
-
-A: I recommend using this function [here](https://github.com/OpenBMB/MiniCPM-V/blob/main/finetune/dataset.py#L220) to sample the length of your training data. Note that the `input_ids` length includes the image portion. Once you determine the maximum length, you can specify it in the startup command using `--model_max_length xxx`.
+**A:** I recommend using this function [here](https://github.com/OpenBMB/MiniCPM-V/blob/main/finetune/dataset.py#L220) to sample the length of your training data. Note that the `input_ids` length includes the image portion. Once you determine the maximum length, you can specify it in the startup command using `--model_max_length xxx`.
 
 Additionally, if you prefer not to train the vision encoder, you can add `--tune_vision false` to your command.
 
-</details>
+**Q:** How can we adjust training hyperparameters when using LoRA to train our model?</summary>
 
-<details>
-<summary>Q: How can we adjust training hyperparameters when using LoRA to train our model?</summary>
-
-A: You can refer to the [LoRA documentation](https://huggingface.co/docs/peft/en/package_reference/lora#peft.LoraConfig) for guidance on adjusting your training hyperparameters when using LoRA. This documentation provides detailed information on configuring various parameters specific to the LoRA adaptation technique.
+**A:** You can refer to the [LoRA documentation](https://huggingface.co/docs/peft/en/package_reference/lora#peft.LoraConfig) for guidance on adjusting your training hyperparameters when using LoRA. This documentation provides detailed information on configuring various parameters specific to the LoRA adaptation technique.
 </details>
 
 #### Customizing Hyperparameters

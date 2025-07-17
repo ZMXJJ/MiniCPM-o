@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MiniCPM-o Cookbook \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-17 20:36+0800\n"
+"POT-Creation-Date: 2025-07-17 21:15+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_CN\n"
@@ -22,22 +22,22 @@ msgstr ""
 
 #: ../../source/finetune/fintune.md:1 b968fe590c444c09bb04fd705c93bcf6
 msgid "Finetune"
-msgstr "基础微调"
+msgstr "微调"
 
 #: ../../source/finetune/fintune.md:4 e6a3e5cc6cb94327a881e7ba6aff2a63
 msgid ""
 "We provide official scripts for easily fine-tuning the pretrained models "
-"**MiniCPM-V-4**, **MiniCPM-o-2_6**, **MiniCPM-V-2_6**, **MiniCPM-Llama3-V"
-" 2.5**, and **MiniCPM-V 2.0** on downstream tasks. The fine-tuning "
+"**MiniCPM-V-4**, **MiniCPM-o-2_6**, **MiniCPM-V-2_6**, **MiniCPM-"
+"Llama3-V-2_5**, and **MiniCPM-V-2** on downstream tasks. The fine-tuning "
 "scripts use `transformers Trainer` and `DeepSpeed` by default."
 msgstr ""
-"我们提供官方脚本，便于对预训练的 **MiniCPM-V-4**、**MiniCPM-o-2_6**、**MiniCPM-V-2_6"
-"**、**MiniCPM-Llama3-V 2.5** 和 **MiniCPM-V 2.0** 在下游任务上进行微调。我们的微调脚本默认使用 "
-"transformers Trainer 和 DeepSpeed。"
+"我们提供官方脚本，可以轻松地在下游任务上微调预训练模型 "
+"**MiniCPM-V-4**、**MiniCPM-o-2_6**、**MiniCPM-V-2_6**、**MiniCPM-Llama3-V "
+"2.5** 和 **MiniCPM-V 2.0**。微调脚本默认使用 `transformers Trainer` 和 `DeepSpeed`。"
 
 #: ../../source/finetune/fintune.md:6 628bc035128047e08837624c53cee69b
-msgid "This section takes **MiniCPM-o2.6** as an example."
-msgstr "此部分以 **MiniCPM-o2.6** 为例。"
+msgid "This section takes **MiniCPM-o 2.6** as an example."
+msgstr "本节以 **MiniCPM-o2.6** 为例。"
 
 #: ../../source/finetune/fintune.md:10 36714ca5ff324fc5999f75955be9e140
 msgid "Data preparation"
@@ -48,7 +48,7 @@ msgid ""
 "To prepare your fine-tuning data, you should formulate each sample as a "
 "dictionary consisting of an id, an image path (or list of images), and a "
 "list of conversations. Then, save the data samples in JSON files."
-msgstr "为了准备微调数据，你应将每个样本组织为一个包含 id、图片路径（或图片列表）和对话列表的字典。然后将这些数据样本保存为 JSON 文件。"
+msgstr "要准备微调数据，您应将每个样本格式化为一个字典，其中包含 ID、图像路径（或图像列表）和对话列表。然后，将数据样本保存在 JSON 文件中。"
 
 #: ../../source/finetune/fintune.md:14 206c7f12c4734cdeba5327aae07e85d8
 msgid ""
@@ -57,23 +57,23 @@ msgid ""
 " embeddings within the conversation. If no placeholder is provided, the "
 "image will be placed at the front of the conversation by default."
 msgstr ""
-"对于视觉-语言任务，你必须提供类似 **\\<image\\>** 或 **\\<image_XX\\>** "
-"的占位符，以定义在对话中插入图片嵌入的位置。如果未提供占位符，图片将默认插入到对话的最前面。"
+"对于视觉语言任务，您必须提供像 **\\<image\\>** 或 **\\<image_XX\\>** "
+"这样的占位符，以定义在对话中插入图像嵌入的位置。如果未提供占位符，默认情况下图像将放置在对话的开头。"
 
 #: ../../source/finetune/fintune.md:16 d591c89d6d9748069a2e093c56a3a0f4
 msgid "Single Image Example"
-msgstr "单图示例"
+msgstr "单张图片示例"
 
 #: ../../source/finetune/fintune.md:17 066544e72fd34e1a8addad8a31633b4b
 msgid ""
 "If your input consists of a single image, you can use a single "
 "placeholder **\\<image\\>** to indicate where the image should be "
 "inserted in the conversation."
-msgstr "如果你的输入包含单张图片，可以使用占位符 **\\<image\\>** 指定图片在对话中的插入位置。"
+msgstr "如果您的输入包含单张图像，您可以使用单个占位符 **\\<image\\>** 来指示图像应插入对话中的位置。"
 
 #: ../../source/finetune/fintune.md:59 66eaa010c5ff45ba8e3313f4d7b30925
 msgid "Multiple Images Example"
-msgstr "多图示例"
+msgstr "多张图片示例"
 
 #: ../../source/finetune/fintune.md:60 2a910ade7fa84c1cb24032b3d8ef50c7
 msgid ""
@@ -82,9 +82,7 @@ msgid ""
 "**\\<image_01\\**) with the corresponding image path as its value. These "
 "placeholders can then be used within the conversation to seamlessly "
 "insert images at specific positions."
-msgstr ""
-"对于包含多张图片的输入，使用一个字典，每个键为唯一的占位符（如 "
-"**\\<image_00\\>**、**\\<image_01\\>**），对应的值为图片路径。这些占位符可在对话中用于在特定位置插入图片。"
+msgstr "对于包含多张图像的输入，请使用一个字典，其中每个键代表一个唯一的占位符（例如，**\\<image_00\\>**、**\\<image_01\\>**），其值为相应的图像路径。然后，这些占位符可以在对话中使用，以在特定位置无缝插入图像。"
 
 #: ../../source/finetune/fintune.md:62 d6fdaba0b84544b1add906c731f23468
 msgid ""
@@ -96,9 +94,9 @@ msgid ""
 "the number of tokens used per image, you can set `slice=1`, resulting in "
 "a single image being represented by 64 tokens."
 msgstr ""
-"此外，为了优化资源管理，尤其是在训练或推理时处理大批量图片时，可以考虑减少 `max_slice_nums`。例如，在 2.6 版本中，一张图片用"
-" 64 个 token 表示。当 `slice=9` 时，最大分辨率为 1344x1344 的图片将消耗近 64*(9+1) 个 "
-"token。为了减少每张图片的 token 数量，可以将 `slice` 设置为 1，此时一张图片只用 64 个 token 表示。"
+"此外，为了优化资源管理，尤其是在训练或推理期间处理大量图像时，请考虑减少 `max_slice_nums`。例如，在 2.6 版本中，一张图像由 "
+"64 个 token 表示。当 `slice=9` 时，最大分辨率为 1344x1344 的图像将消耗近 64*(9+1) 个 "
+"token。为了最小化每张图像使用的 token 数量，您可以设置 `slice=1`，这样一张图像就由 64 个 token 表示。"
 
 #: ../../source/finetune/fintune.md:64 35d43fcde996418080911fd56b2e0a25
 msgid ""
@@ -106,7 +104,7 @@ msgid ""
 "applied. For multi-image supervised fine-tuning (SFT), it's recommended "
 "to set `MODEL_MAX_LENGTH=4096` in your script for better performance."
 msgstr ""
-"如果总 token 数超过 `max_length`，将会被截断。对于多图监督微调（SFT），建议在脚本中设置 "
+"如果总 token 数量超过 `max_length`，将进行截断。对于多图像监督微调（SFT），建议在脚本中设置 "
 "`MODEL_MAX_LENGTH=4096` 以获得更好的性能。"
 
 #: ../../source/finetune/fintune.md:98 aab265db415b4a0295c6b1c56bf65da7
@@ -133,7 +131,7 @@ msgid ""
 "The LoRA allows light-weight model tuning with only a small subset of "
 "parameters updated. We provide the LoRA implementation based on `peft`. "
 "To launch your training, run the following script:"
-msgstr "LoRA 允许仅更新少量参数，实现轻量级模型微调。我们基于 `peft` 提供了 LoRA 实现。要启动训练，请运行以下脚本："
+msgstr "LoRA 允许轻量级模型微调，只需更新一小部分参数。我们提供了基于 `peft` 的 LoRA 实现。要启动训练，请运行以下脚本："
 
 #: ../../source/finetune/fintune.md:125 d8838e1b7ddf499c84dbd2eab180445f
 msgid ""
@@ -143,8 +141,8 @@ msgid ""
 "configuration json file is used for finding out the pretrained model to "
 "load."
 msgstr ""
-"训练完成后，你可以通过适配器路径加载模型。建议使用预训练模型的绝对路径，因为 LoRA 只保存适配器，适配器配置 json "
-"文件中的绝对路径用于查找要加载的预训练模型。"
+"训练后，您可以使用适配器的路径加载模型。我们建议您为预训练模型使用绝对路径。这是因为 LoRA "
+"只保存适配器，并且适配器配置文件中的绝对路径用于查找要加载的预训练模型。"
 
 #: ../../source/finetune/fintune.md:147 3b4949bb786d4636881dc20fd0237298
 msgid "Model Fine-tuning Memory Usage Statistics"
@@ -161,15 +159,15 @@ msgid ""
 "stage](https://huggingface.co/docs/transformers/v4.41.2/en/deepspeed#select-a"
 "-zero-stage) to reduce memory cost."
 msgstr ""
-"下表展示了在不同数量的 NVIDIA A100 (80GiB) GPU 下，模型微调时的显存占用。微调采用 DeepSpeed Zero-3 "
-"优化、梯度检查点技术，并将优化器和参数内存卸载到 CPU，最大长度设为 2048，batch size 设为 1。你可以参考 [deepspeed"
-" zero "
+"下表展示了在使用不同数量的 NVIDIA A100 (80GiB) GPU 进行微调时模型的显存占用情况。微调使用了 DeepSpeed "
+"Zero-3 优化、梯度检查点技术以及将优化器和参数内存卸载到 CPU 的方法，最大长度设置为 2048，批处理大小设置为 1。您可以参考 "
+"[deepspeed zero "
 "stage](https://huggingface.co/docs/transformers/v4.41.2/en/deepspeed#select-a"
-"-zero-stage) 以降低显存消耗。"
+"-zero-stage) 来降低显存成本。"
 
 #: ../../source/finetune/fintune.md:3 fa7d6984b76347ec83b7d848ced8918d
 msgid "Fine-tuning Method"
-msgstr "微调方式"
+msgstr "微调方法"
 
 #: ../../source/finetune/fintune.md:3 084fbe11697442fca22c9103fbd13885
 msgid "GPUs: 2"
@@ -213,49 +211,57 @@ msgstr "15.8 GiB"
 
 #: ../../source/finetune/fintune.md:3 4b0cef2f0cc441789208ccb09218a753
 msgid "15.63GiB"
-msgstr "15.63 GiB"
+msgstr "15.63GiB"
 
 #: ../../source/finetune/fintune.md:156 cb829746f83e4e249683dd1ca8111c9b
 msgid "Notes"
-msgstr "说明"
+msgstr "注释"
 
 #: ../../source/finetune/fintune.md:157 18dc592b605143aa921f7d43a46ea811
 msgid ""
 "**Fine-tuning Method**: Displays two different fine-tuning strategies, "
 "LoRA fine-tuning and Full parameters fine-tuning."
-msgstr "**微调方式**：展示了两种不同的微调策略，LoRA 微调和全参数微调。"
+msgstr "**微调方法**：显示两种不同的微调策略，LoRA 微调和全参数微调。"
 
 #: ../../source/finetune/fintune.md:158 cb0f69117c37440c9ef775972cc52dc0
 msgid ""
 "**Number of GPUs**: The table lists the memory usage for configurations "
 "with 2, 4, and 8 GPUs."
-msgstr "**GPU 数量**：表格列出了 2、4 和 8 张 GPU 配置下的显存占用。"
+msgstr "**GPU 数量**：该表列出了使用 2、4 和 8 个 GPU 配置时的显存占用情况。"
 
 #: ../../source/finetune/fintune.md:159 3365d6264327461282a0175ba0c12637
 msgid ""
 "**Memory Usage**: Expressed in GiB, this shows the required memory for "
 "each fine-tuning method under corresponding GPU configurations."
-msgstr "**显存占用**：以 GiB 为单位，展示了每种微调方式在不同 GPU 配置下的显存需求。"
+msgstr "**显存占用**：以 GiB 为单位，显示了每种微调方法在相应 GPU 配置下所需的显存。"
 
 #: ../../source/finetune/fintune.md:160 7aa629411ff74e54bb049390dae68963
 msgid ""
 "**Out of memory**: Indicates that the memory was insufficient for full "
 "parameters fine-tuning under the current GPU configurations."
-msgstr "**显存不足**：表示当前 GPU 配置下全参数微调时显存不足。"
+msgstr "**内存不足**：表示在当前 GPU 配置下，全参数微调的内存不足。"
 
 #: ../../source/finetune/fintune.md:162 28134762b5f347b390adb780b973ba90
 msgid "Finetuning FAQs"
-msgstr "微调常见问题"
+msgstr "微调常见问题解答"
 
-#: ../../source/finetune/fintune.md:167 f78dfb71cf1b44caa976fd8dfc4fd869
+#: ../../source/finetune/fintune.md:164 f78dfb71cf1b44caa976fd8dfc4fd869
 msgid ""
-"A：When you face Out of Memory (OOM) issues during training large models, "
-"the following strategies may help resolve or mitigate the problem:"
-msgstr "答：在训练大模型时遇到显存不足（OOM）问题，可以尝试以下策略来解决或缓解："
+"**Q:** When you encounter Out of Memory (OOM) issues during training "
+"large models, you can try the following methods to resolve or mitigate "
+"the issue:</summary>"
+msgstr "**问：** 当您在训练大模型时遇到内存不足（OOM）问题时，可以尝试以下方法来解决或缓解该问题：</summary>"
+
+#: ../../source/finetune/fintune.md:166 f78dfb71cf1b44caa976fd8dfc4fd869
+msgid ""
+"**A:** When you face Out of Memory (OOM) issues during training large "
+"models, the following strategies may help resolve or mitigate the "
+"problem:"
+msgstr "**答：** 当您在训练大模型时遇到内存不足（OOM）问题时，以下策略可能有助于解决或缓解问题："
 
 #: ../../source/finetune/fintune.md:168 e3045d4389dd40e8b3bc3ef09539cbdb
-msgid "Adjust Model Hyperparameters"
-msgstr "调整模型超参数"
+msgid "**Adjust Model Hyperparameters**"
+msgstr "**调整模型超参数**"
 
 #: ../../source/finetune/fintune.md:169 1e7e6d07cc4849f0a59819b170205131
 msgid ""
@@ -264,53 +270,53 @@ msgid ""
 "operation. For example, reducing the maximum length from 2048 to 1200 or "
 "another value suitable for your dataset."
 msgstr ""
-"**减少 `max_model_length`**：降低模型处理的最大序列长度可以显著减少每次操作所需的显存。例如，将最大长度从 2048 降低到"
-" 1200 或其他适合你数据集的值。"
+"**减少 `max_model_length`**：降低模型处理的最大序列长度可以显著减少每次操作所需的内存。例如，将最大长度从 2048 减少到"
+" 1200 或其他适合您数据集的值。"
 
 #: ../../source/finetune/fintune.md:174 ea81f17eeb76444e969cba1bd90d9949
 msgid ""
 "**Lower `batch_size`**: Reducing the amount of data processed in each "
 "batch helps decrease memory consumption."
-msgstr "**降低 `batch_size`**：减少每个 batch 处理的数据量有助于降低显存消耗。"
+msgstr "**降低 `batch_size`**：减少每个批次处理的数据量有助于降低内存消耗。"
 
 #: ../../source/finetune/fintune.md:178 dffcbb96aaea4d729464c339ffcef69a
 msgid ""
 "**Reduce the number of slices (`slice`)**: When handling large datasets "
 "such as large images files, reducing the number of slices processed each "
 "time can lower memory requirements."
-msgstr "**减少切片数（`slice`）**：在处理大规模数据集（如大图片文件）时，减少每次处理的切片数可以降低显存需求。"
+msgstr "**减少切片数量 (`slice`)**：在处理大型数据集（如大型图像文件）时，减少每次处理的切片数量可以降低内存需求。"
 
 #: ../../source/finetune/fintune.md:183 36120a440d49413ba721702a299dd2c2
-msgid "Reduce Training Model Parameters"
-msgstr "减少训练模型参数"
+msgid "**Reduce Training Model Parameters**"
+msgstr "**减少训练模型参数**"
 
 #: ../../source/finetune/fintune.md:184 d68a2512e94b4df5930ca865b886aaf3
 msgid ""
 "**Do not train VPM (Visual Processing Module)**: You can adjust "
 "hyperparameters in the finetune script to opt out of training the visual "
 "processing module to save memory."
-msgstr "**不训练 VPM（视觉处理模块）**：可以在微调脚本中调整超参数，选择不训练视觉处理模块以节省显存。"
+msgstr "**不训练 VPM（视觉处理模块）**：您可以在微调脚本中调整超参数，选择不训练视觉处理模块以节省内存。"
 
 #: ../../source/finetune/fintune.md:188 72689c213e694523890a73916d83cc42
 msgid "**Use LoRA finetuning**: Refer to the LoRA finetuning section."
-msgstr "**使用 LoRA 微调**：参考 [LoRA 微调](#LoRA-finetuning) 部分。"
+msgstr "**使用 LoRA 微调**：请参考 LoRA 微调部分。"
 
 #: ../../source/finetune/fintune.md:190 9709895785c44fb2be9421854187d685
-msgid "Optimize with DeepSpeed"
-msgstr "使用 DeepSpeed 优化"
+msgid "**Optimize with DeepSpeed**"
+msgstr "**使用 DeepSpeed 优化**"
 
 #: ../../source/finetune/fintune.md:191 718b1ccb98ab4c0885759551117b0064
 msgid ""
 "**Configure DeepSpeed Zero Stage 2**: Use the following configuration to "
 "offload optimizer parameters to the CPU, reducing memory pressure on the "
 "GPU:"
-msgstr "**配置 DeepSpeed Zero Stage 2**：使用以下配置将优化器参数卸载到 CPU，减轻 GPU 显存压力："
+msgstr "**配置 DeepSpeed Zero Stage 2**：使用以下配置将优化器参数卸载到 CPU，以减少 GPU 上的内存压力："
 
 #: ../../source/finetune/fintune.md:200 313f2b3660ae4ba696c53a1ea7ece55d
 msgid ""
 "**Configure DeepSpeed Zero Stage 3**：Further offload model parameters and"
 " optimizer parameters to the CPU, further reducing GPU memory usage:"
-msgstr "**配置 DeepSpeed Zero Stage 3**：进一步将模型参数和优化器参数卸载到 CPU，进一步降低 GPU 显存占用："
+msgstr "**配置 DeepSpeed Zero Stage 3**：进一步将模型参数和优化器参数卸载到 CPU，从而进一步减少 GPU 内存使用："
 
 #: ../../source/finetune/fintune.md:214 6b38b4b34ce64bbc910a79aa07c871a5
 msgid ""
@@ -318,129 +324,168 @@ msgid ""
 "deepspeed](https://huggingface.co/docs/transformers/deepspeed) to find "
 "out more about how to use DeepSpeed."
 msgstr ""
-"你可以访问 [huggingface "
-"deepspeed](https://huggingface.co/docs/transformers/deepspeed) 了解更多 "
-"DeepSpeed 的使用方法。"
+"您可以访问 [huggingface "
+"deepspeed](https://huggingface.co/docs/transformers/deepspeed) 了解更多关于如何使用"
+" DeepSpeed 的信息。"
 
-#: ../../source/finetune/fintune.md:219 9b0d8b6209ce46dd99c4c28eb08ace2f
+#: ../../source/finetune/fintune.md:216 0f2eefa17c964872b7a56a39227f9643
 msgid ""
-"A: The error as described in [issues "
+"**Q:** Encounter an error while using the AutoPeftModelForCausalLM to "
+"load a checkpoint that has undergone lora fine-tuning</summary>"
+msgstr "**问：** 在使用 AutoPeftModelForCausalLM 加载经过 lora 微调的检查点时遇到错误</summary>"
+
+#: ../../source/finetune/fintune.md:218 9b0d8b6209ce46dd99c4c28eb08ace2f
+msgid ""
+"**A:** The error as described in [issues "
 "168](https://github.com/OpenBMB/MiniCPM-V/issues/168) occurs because the "
 "model lacks `get_input_embeddings` and `set_input_embeddings` methods. "
 "Follow these steps to resolve this issue:"
 msgstr ""
-"答：如 [issues 168](https://github.com/OpenBMB/MiniCPM-V/issues/168) "
-"所述，该错误是因为模型缺少 `get_input_embeddings` 和 `set_input_embeddings` "
-"方法。请按照以下步骤解决该问题："
+"**答：** 如 [issues 168](https://github.com/OpenBMB/MiniCPM-V/issues/168) "
+"中所述的错误发生，是因为模型缺少 `get_input_embeddings` 和 `set_input_embeddings` "
+"方法。请按照以下步骤解决此问题："
 
-#: ../../source/finetune/fintune.md:221 b2bd4053a6f34400ba71859f77785f9d
+#: ../../source/finetune/fintune.md:220 b2bd4053a6f34400ba71859f77785f9d
 msgid ""
 "1.**Reload the Fine-Tuned Model:** Make sure you correctly load the "
 "checkpoint that has been fine-tuned using lora techniques. Use the "
 "following code example to guide you:"
-msgstr "1.**重新加载微调模型**：确保你正确加载了使用 lora 技术微调后的 checkpoint。可参考以下代码示例："
+msgstr "1.**重新加载微调后的模型：** 确保您正确加载了使用 lora 技术微调过的检查点。请使用以下代码示例作为指导："
 
-#: ../../source/finetune/fintune.md:234 12200ab35c384c7ca9a8faa1b1f88330
+#: ../../source/finetune/fintune.md:233 12200ab35c384c7ca9a8faa1b1f88330
 msgid "2.**Update the `model_minicpmv.py` File:**"
-msgstr "2.**更新 `model_minicpmv.py` 文件**："
+msgstr "2.**更新 `model_minicpmv.py` 文件：**"
 
-#: ../../source/finetune/fintune.md:235 e003c7a84f0043369937e8e3dc928f65
+#: ../../source/finetune/fintune.md:234 e003c7a84f0043369937e8e3dc928f65
 msgid ""
 "**Verification:** Make sure you verify and update your "
 "`model_minicpmv.py` file to ensure it is the latest version."
-msgstr "**验证**：请确保你的 `model_minicpmv.py` 文件已更新为最新版本。"
+msgstr "**验证：** 确保您验证并更新您的 `model_minicpmv.py` 文件，以确保其为最新版本。"
 
-#: ../../source/finetune/fintune.md:236 d67a73d3fd204cfda2bcda410a182a5f
+#: ../../source/finetune/fintune.md:235 d67a73d3fd204cfda2bcda410a182a5f
 msgid ""
 "**Update Hugging Face Library Code:** If the issue persists after "
 "updating the file, consider updating the related code in the Hugging Face"
 " library."
-msgstr "**更新 Hugging Face 库代码**：如果更新文件后问题仍未解决，请考虑更新 Hugging Face 库中的相关代码。"
+msgstr "**更新 Hugging Face 库代码：** 如果更新文件后问题仍然存在，请考虑更新 Hugging Face 库中的相关代码。"
 
-#: ../../source/finetune/fintune.md:237 952b420b276e43f19a13b4c5de4533f8
+#: ../../source/finetune/fintune.md:236 952b420b276e43f19a13b4c5de4533f8
 msgid ""
 "**Direct File Copy:** For a quick resolution, directly download and copy "
 "the latest `model_minicpmv.py` file into your project. This file is "
 "available from the following sources:"
-msgstr "**直接复制文件**：为快速解决问题，可直接下载并复制最新的 `model_minicpmv.py` 文件到你的项目中。该文件可从以下来源获取："
+msgstr ""
+"**直接复制文件：** 为了快速解决问题，请直接下载最新的 `model_minicpmv.py` "
+"文件并将其复制到您的项目中。该文件可从以下来源获取："
 
-#: ../../source/finetune/fintune.md:238 4c2113ed12c2437d8a66114e57f3b4a8
+#: ../../source/finetune/fintune.md:237 4c2113ed12c2437d8a66114e57f3b4a8
 msgid ""
 "[MiniCPM-Llama3-V-2_5 on Hugging Face](https://huggingface.co/openbmb"
 "/MiniCPM-Llama3-V-2_5/tree/main)"
 msgstr ""
-"[MiniCPM-Llama3-V-2_5 在 Hugging Face](https://huggingface.co/openbmb"
+"[Hugging Face 上的 MiniCPM-Llama3-V-2_5](https://huggingface.co/openbmb"
 "/MiniCPM-Llama3-V-2_5/tree/main)"
 
-#: ../../source/finetune/fintune.md:239 c9ebd7d769b74562ad30031f47881098
+#: ../../source/finetune/fintune.md:238 c9ebd7d769b74562ad30031f47881098
 msgid "[MiniCPM-V-2 on Hugging Face](https://huggingface.co/openbmb/MiniCPM-V-2)"
-msgstr "[MiniCPM-V-2 在 Hugging Face](https://huggingface.co/openbmb/MiniCPM-V-2)"
+msgstr "[Hugging Face 上的 MiniCPM-V-2](https://huggingface.co/openbmb/MiniCPM-V-2)"
 
-#: ../../source/finetune/fintune.md:245 263d20bb99fb47bc87f4d395dc364511
+#: ../../source/finetune/fintune.md:240 7c0c454ae6f746198debe0848dc54ba0
 msgid ""
-"A: If your environment supports `flash_attn2`, you can add an argument "
-"`_attn_implementation=\"flash_attention_2\"` when using the "
+"**Q:** How do I use the `flash_attention_2` implementation when loading a"
+" pretrained model?</summary>"
+msgstr "**问：** 加载预训练模型时如何使用 `flash_attention_2` 实现？</summary>"
+
+#: ../../source/finetune/fintune.md:242 263d20bb99fb47bc87f4d395dc364511
+msgid ""
+"**A:** If your environment supports `flash_attn2`, you can add an "
+"argument `_attn_implementation=\"flash_attention_2\"` when using the "
 "`AutoModel.from_pretrained` method to load a model. For example:"
 msgstr ""
-"答：如果你的环境支持 `flash_attn2`，可以在使用 `AutoModel.from_pretrained` 加载模型时添加参数 "
-"`_attn_implementation=\"flash_attention_2\"`。例如："
+"**答：** 如果您的环境支持 `flash_attn2`，您可以在使用 `AutoModel.from_pretrained` "
+"方法加载模型时添加参数 `_attn_implementation=\"flash_attention_2\"`。例如："
 
-#: ../../source/finetune/fintune.md:255 b468ea442f054159b8f8d1708ff4e232
+#: ../../source/finetune/fintune.md:248 eed7fa96121d4d77a61317f1d878db0e
 msgid ""
-"A: Our model supports up to 1344x1344 lossless encoding. If you are "
+"**Q:** What if our data is resized to 512? Can we use the original image "
+"size instead?</summary>"
+msgstr "**问：** 如果我们的数据被调整到 512 大小怎么办？我们可以使用原始图像尺寸吗？</summary>"
+
+#: ../../source/finetune/fintune.md:250 b468ea442f054159b8f8d1708ff4e232
+msgid ""
+"**A:** Our model supports up to 1344x1344 lossless encoding. If you are "
 "currently resizing your images to 512, you might want to try using the "
 "original image sizes instead. Our system automatically includes a high-"
 "definition image encoding scheme by default."
-msgstr "答：我们的模型支持最高 1344x1344 的无损编码。如果你当前将图片缩放到 512，建议尝试使用原始图片尺寸。系统默认自动采用高清图片编码方案。"
+msgstr ""
+"**答：** 我们的模型支持高达 1344x1344 的无损编码。如果您目前将图像大小调整为 "
+"512，您可能想尝试使用原始图像尺寸。我们的系统默认自动包含高清图像编码方案。"
 
-#: ../../source/finetune/fintune.md:262 845911df13fe49398765114e863fd95d
+#: ../../source/finetune/fintune.md:252 a3d7a210954f49aca26e4ed454edea4b
 msgid ""
-"A: If you experience OOM issues, consider reducing the batch size (`bs`)."
-" To maintain an equivalent total batch size, you can adjust the "
+"**Q:** What should we do if we encounter out-of-memory (OOM) "
+"errors?</summary>"
+msgstr "**问：** 如果我们遇到内存不足（OOM）错误该怎么办？</summary>"
+
+#: ../../source/finetune/fintune.md:254 845911df13fe49398765114e863fd95d
+msgid ""
+"**A:** If you experience OOM issues, consider reducing the batch size "
+"(`bs`). To maintain an equivalent total batch size, you can adjust the "
 "`gradient_accumulation_steps` setting. This approach allows you to manage"
 " memory usage effectively while still processing the desired amount of "
 "data per training step."
 msgstr ""
-"答：如果遇到 OOM 问题，可以尝试减小 batch size（`bs`）。为了保持总 batch size 不变，可以调整 "
-"`gradient_accumulation_steps`。这样可以有效管理显存，同时保证每步训练处理的数据量。"
+"**答：** 如果您遇到 OOM 问题，请考虑减小批处理大小（`bs`）。为了保持等效的总批处理大小，您可以调整 "
+"`gradient_accumulation_steps` 设置。这种方法可以有效地管理内存使用，同时仍然在每个训练步骤中处理所需的数据量。"
 
-#: ../../source/finetune/fintune.md:268 d2ae63f773ef4cba951355dbfd28ca77
+#: ../../source/finetune/fintune.md:256 294c11d4dedb40119100d37dc736196e
 msgid ""
-"A: I recommend using this function "
+"**Q:** How can we determine the maximum length for our training data, and"
+" what if we do not want to train the vision encoder?</summary>"
+msgstr "**问：** 我们如何确定训练数据的最大长度，以及如果我们不想训练视觉编码器该怎么办？</summary>"
+
+#: ../../source/finetune/fintune.md:258 d2ae63f773ef4cba951355dbfd28ca77
+msgid ""
+"**A:** I recommend using this function "
 "[here](https://github.com/OpenBMB/MiniCPM-V/blob/main/finetune/dataset.py#L220)"
 " to sample the length of your training data. Note that the `input_ids` "
 "length includes the image portion. Once you determine the maximum length,"
 " you can specify it in the startup command using `--model_max_length "
 "xxx`."
 msgstr ""
-"答：建议使用 "
-"[此处](https://github.com/OpenBMB/MiniCPM-V/blob/main/finetune/dataset.py#L220)"
-" 的函数来采样训练数据长度。注意，`input_ids` 的长度包含图片部分。确定最大长度后，可以在启动命令中通过 "
-"`--model_max_length xxx` 指定。"
+"**答：** "
+"我建议使用[此处](https://github.com/OpenBMB/MiniCPM-V/blob/main/finetune/dataset.py#L220)的函数来抽样您的训练数据长度。请注意，`input_ids`"
+" 的长度包括图像部分。一旦确定了最大长度，您可以在启动命令中使用 `--model_max_length xxx` 来指定它。"
 
-#: ../../source/finetune/fintune.md:270 d855f7787da542939a5d8a6bb6ba000b
+#: ../../source/finetune/fintune.md:260 d855f7787da542939a5d8a6bb6ba000b
 msgid ""
 "Additionally, if you prefer not to train the vision encoder, you can add "
 "`--tune_vision false` to your command."
-msgstr "另外，如果你不希望训练视觉编码器，可以在命令中添加 `--tune_vision false`。"
+msgstr "此外，如果您不想训练视觉编码器，可以在命令中添加 `--tune_vision false`。"
 
-#: ../../source/finetune/fintune.md:277 a444642f5d484ad4ae336f62c4a91d04
+#: ../../source/finetune/fintune.md:262 d68a2512e94b4df5930ca865b886aaf3
 msgid ""
-"A: You can refer to the [LoRA "
+"**Q:** How can we adjust training hyperparameters when using LoRA to "
+"train our model?</summary>"
+msgstr "**问：** 当使用 LoRA 训练模型时，我们如何调整训练超参数？</summary>"
+
+#: ../../source/finetune/fintune.md:264 a444642f5d484ad4ae336f62c4a91d04
+msgid ""
+"**A:** You can refer to the [LoRA "
 "documentation](https://huggingface.co/docs/peft/en/package_reference/lora#peft.LoraConfig)"
 " for guidance on adjusting your training hyperparameters when using LoRA."
 " This documentation provides detailed information on configuring various "
 "parameters specific to the LoRA adaptation technique."
 msgstr ""
-"答：你可以参考 [LoRA "
-"文档](https://huggingface.co/docs/peft/en/package_reference/lora#peft.LoraConfig)"
-" 了解在使用 LoRA 时如何调整训练超参数。该文档详细介绍了 LoRA 相关参数的配置方法。"
+"**答：** 您可以参考 [LoRA "
+"文档](https://huggingface.co/docs/peft/en/package_reference/lora#peft.LoraConfig)来获取有关在使用"
+" LoRA 时调整训练超参数的指导。该文档提供了有关配置 LoRA 适应技术特定各种参数的详细信息。"
 
-#: ../../source/finetune/fintune.md:280 739260469fd04ff6aace007d33509df5
+#: ../../source/finetune/fintune.md:267 739260469fd04ff6aace007d33509df5
 msgid "Customizing Hyperparameters"
 msgstr "自定义超参数"
 
-#: ../../source/finetune/fintune.md:281 3cdacd496ed54182b855968935727732
+#: ../../source/finetune/fintune.md:268 3cdacd496ed54182b855968935727732
 msgid ""
 "To tailor the training process according to your specific requirements, "
 "you can adjust various hyperparameters. For comprehensive documentation "
@@ -453,8 +498,8 @@ msgid ""
 "achieving optimal model performance tailored to your specific task and "
 "dataset."
 msgstr ""
-"你可以根据具体需求调整各种超参数，以定制训练过程。关于可用超参数及其功能的详细文档，请参考 [Transformers "
-"官方文档](https://huggingface.co/docs/transformers/main_classes/trainer#transformers.TrainingArguments)"
-" 和 [Lora "
-"文档](https://huggingface.co/docs/peft/en/package_reference/lora#peft.LoraConfig)。通过实验和微调这些参数，可以获得针对特定任务和数据集的最佳模型性能。"
+"为了根据您的特定需求定制训练过程，您可以调整各种超参数。有关可用超参数及其功能的全面文档，您可以参考 [官方 Transformers "
+"文档](https://huggingface.co/docs/transformers/main_classes/trainer#transformers.TrainingArguments)和"
+" [Lora "
+"文档](https://huggingface.co/docs/peft/en/package_reference/lora#peft.LoraConfig)。对这些参数进行实验和微调对于实现针对您的特定任务和数据集优化的最佳模型性能至关重要。"
 
