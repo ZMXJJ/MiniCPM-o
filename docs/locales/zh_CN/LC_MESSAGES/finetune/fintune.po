@@ -25,7 +25,6 @@ msgid "Finetune"
 msgstr "基础微调"
 
 #: ../../source/finetune/fintune.md:4 e6a3e5cc6cb94327a881e7ba6aff2a63
-#, fuzzy
 msgid ""
 "We provide official scripts for easily fine-tuning the pretrained models "
 "**MiniCPM-V-4**, **MiniCPM-o-2_6**, **MiniCPM-V-2_6**, **MiniCPM-Llama3-V"
