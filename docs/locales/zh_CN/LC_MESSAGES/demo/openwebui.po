@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../source/demo/openwebui.md:1 cde607126de9441aab6dea3e8f78ce9f
 msgid "OpenWebUI with MiniCPM-V Integration Guide"
-msgstr "OpenWebUI 与 MiniCPM-V 集成指南"
+msgstr "OpenWebUI"
 
 #: ../../source/demo/openwebui.md:3 6440793eae0841eca9b53287db7e05dc
 msgid "Overview"

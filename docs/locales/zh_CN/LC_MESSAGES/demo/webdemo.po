@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../source/demo/webdemo.md:1 942cb22b507048d581897e4e0da9d050
 msgid "MiniCPM-o Omni Stream Demo"
-msgstr "MiniCPM-o 全域流式（Omni Stream）演示"
+msgstr "Omni Stream"
 
 #: ../../source/demo/webdemo.md:3 745d58580e6d4d7582eb9dfdab75c2da
 msgid "Overview"
@@ -125,7 +125,6 @@ msgid "Architecture"
 msgstr "架构"
 
 #: ../../source/demo/webdemo.md:41 b9b74db05ef541bcbab734998eb807e2
-#, fuzzy
 msgid "Local WebUI Demo"
 msgstr "本地 WebUI 演示"
 

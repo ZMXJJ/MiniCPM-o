@@ -1,4 +1,4 @@
-# OpenWebUI with MiniCPM-V Integration Guide
+# OpenWebUI
 
 ## Overview
 

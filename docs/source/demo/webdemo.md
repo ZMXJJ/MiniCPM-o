@@ -1,4 +1,4 @@
-# MiniCPM-o Omni Stream Demo
+# Omni Stream
 
 ## Overview
 
