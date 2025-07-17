@@ -1,4 +1,4 @@
-   # SOME DESCRIPTIVE TITLE.
+# SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2025, OpenBMB
 # This file is distributed under the same license as the MiniCPM-o Cookbook
 # package.
@@ -26,11 +26,11 @@ msgstr "SGLang"
 
 #: ../../source/deployment/sglang.md:3 00d60a6adc7d438db20151e1d92f3ca0
 msgid "1. Installing SGLang"
-msgstr "安装 SGLang"
+msgstr "1. 安装SGLang"
 
 #: ../../source/deployment/sglang.md:4 febfd5c82d604a61a614a102a19567d5
 msgid "Install SGLang from Source Code"
-msgstr "从源码安装"
+msgstr "从源码安装 SGLang"
 
 #: ../../source/deployment/sglang.md:13 c20f9b9e31324f2695d94f5b710e6f3c
 msgid "Installing flashinfer Dependencies"
@@ -87,7 +87,7 @@ msgstr "或者，你可以在 `--model-path` 参数后指定本地路径"
 
 #: ../../source/deployment/sglang.md:40 726571326d874122998534c569881661
 msgid "3. Service API Calls"
-msgstr "3. API 调用"
+msgstr "3. 服务 API 调用"
 
 #: ../../source/deployment/sglang.md:41 a48f5e51c07a4394ab1cc240cb3f0e55
 msgid "Bash call"
