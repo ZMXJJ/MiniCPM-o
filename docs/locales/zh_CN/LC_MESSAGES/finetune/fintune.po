@@ -32,7 +32,9 @@ msgid ""
 "2.5** and **MiniCPM-V 2.0** on downstream tasks. Our finetune scripts use"
 " transformers Trainer and DeepSpeed by default."
 msgstr ""
-"我们提供官方脚本，便于对预训练的 **MiniCPM-o-2_6**、**MiniCPM-V-2_6**、**MiniCPM-Llama3-V 2.5** 和 **MiniCPM-V 2.0** 在下游任务上进行微调。我们的微调脚本默认使用 transformers Trainer 和 DeepSpeed。"
+"我们提供官方脚本，便于对预训练的 **MiniCPM-o-2_6**、**MiniCPM-V-2_6**、**MiniCPM-Llama3-V "
+"2.5** 和 **MiniCPM-V 2.0** 在下游任务上进行微调。我们的微调脚本默认使用 transformers Trainer 和 "
+"DeepSpeed。"
 
 #: ../../source/finetune/fintune.md:8 f5801db6e1f54ae2ba10bb9d37981b81
 msgid "Data preparation"

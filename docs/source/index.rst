@@ -106,4 +106,3 @@ Welcome to join our community by joining our `Discord <https://discord.gg/rM6sC9
 
    demo/webdemo
    demo/openwebui
-   demo/iosdemo

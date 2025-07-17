@@ -180,7 +180,7 @@ Convert the PyTorch model to GGUF:
 ```bash
 python ./tools/mtmd/legacy-models/minicpmv-surgery.py -m ../MiniCPM-V-4
 
-python ./tools/mtmd/legacy-models/minicpmv-convert-image-encoder-to-gguf.py -m ../MiniCPM-V-4 --minicpmv-projector ../MiniCPM-V-4/minicpmv.projector --output-dir ../MiniCPM-V-4/ --image-mean 0.5 0.5 0.5 --image-std 0.5 0.5 0.5
+python ./tools/mtmd/legacy-models/minicpmv-convert-image-encoder-to-gguf.py -m ../MiniCPM-V-4 --minicpmv-projector ../MiniCPM-V-4/minicpmv.projector --output-dir ../MiniCPM-V-4/ --minicpmv_version 5
 
 python ./convert_hf_to_gguf.py ../MiniCPM-V-4/model
 
