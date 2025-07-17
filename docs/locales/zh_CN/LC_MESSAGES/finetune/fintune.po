@@ -25,7 +25,6 @@ msgid "Finetune"
 msgstr "基础微调"
 
 #: ../../source/finetune/fintune.md:4 05e82695fd4c4b81a57bc3c8fbd788cf
-#, fuzzy
 msgid ""
 "We provide official scripts for easily fine-tuning the pretrained models "
 "**MiniCPM-V4**, **MiniCPM-o-2_6**, **MiniCPM-V-2_6**, **MiniCPM-Llama3-V "
@@ -293,7 +292,6 @@ msgid ""
 msgstr "**不训练 VPM（视觉处理模块）**：可以在微调脚本中调整超参数，选择不训练视觉处理模块以节省显存。"
 
 #: ../../source/finetune/fintune.md:188 f78a4c88a31d464bb08af5faef40b4a1
-#, fuzzy
 msgid "**Use LoRA finetuning**: Refer to the LoRA finetuning section."
 msgstr "**使用 LoRA 微调**：参考 [LoRA 微调](#LoRA-finetuning) 部分。"
 
