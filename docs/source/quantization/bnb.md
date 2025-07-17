@@ -5,11 +5,11 @@
 :::
 
 
-## 1. Download the Model
+## 1.Download the Model
 
 Download the MiniCPM-V-4 model from [HuggingFace](https://huggingface.co/openbmb/MiniCPM-V-4) and extract it to your local directory.
 
-## 2. Quantization Script
+## 2.Quantization Script
 
 The following script loads the original model, quantizes it to 4-bit using bitsandbytes, and saves the quantized model.
 
@@ -72,14 +72,14 @@ model.save_pretrained(save_path, safe_serialization=True)
 tokenizer.save_pretrained(save_path)
 ```
 
-## 3. Expected Output
+## 3.Expected Output
 
 After quantization, you should see output similar to:
 
 ```
-Output after quantization: This picture contains specific parts of an airplane, including wings, engines, and tail sections. ...
-Inference time after quantization: 8.58 seconds
-GPU memory usage after quantization: 6.41 GB
+Output after quantization: The image features an Airbus A380-800 aircraft belonging to Hainan Airlines. The airplane is captured in mid-flight against a clear blue sky, showcasing its impressive size and design. The livery of the plane includes distinctive markings such as the red logo on the tail fin and Chinese characters along the fuselage. This particular model is known for being one of the largest passenger airliners globally due to its four powerful engines and double-deck configuration.
+Inference time after quantization: 6.637855052947998
+GPU memory usage after quantization: 4.35GB
 ```
 
 The quantized model will be saved in the directory specified by `save_path` and can be used for further fine-tuning or inference.

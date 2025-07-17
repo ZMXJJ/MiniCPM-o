@@ -141,7 +141,7 @@ print(f"Model parameters: {sum(p.numel() for p in model.parameters()) / 1e9:.1f}
 - **Authentication**: Login with `huggingface-cli login` if needed
 
 ### ModelScope Issues  
-- **Network errors**: Check [ModelScope status](https://modelscope.cn/docs/models/download)
+- **Network errors**: Check [ModelScope](https://modelscope.cn/docs/models/download) status
 - **Permission issues**: Ensure proper access credentials
 - **Installation problems**: Try `pip install modelscope --upgrade`
 

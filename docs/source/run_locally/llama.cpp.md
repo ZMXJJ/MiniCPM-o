@@ -225,11 +225,9 @@ Here are more detailed explanations to the command:
     *   CPU: `llama-cli` by default will use CPU and you can change `-t` to specify how many threads you would like it to use, e.g., `-t 8` means using 8 threads.
     *   GPU: If the programs are built with GPU support, you can use `-ngl`, which allows offloading some layers to the GPU for computation. If there are multiple GPUs, it will offload to all the GPUs. You can use `-dev` to control the devices used and `-sm` to control which kinds of parallelism is used. For example, `-ngl 99 -dev cuda0,cuda1 -sm row` means offload all layers to GPU 0 and GPU1 using the split mode row. Adding `-fa` may also speed up the generation.
 
-*   **Sampling Parameters**: llama.cpp supports a variety of [sampling methods](https://github.com/ggml-org/llama.cpp/tree/master/tools/main#generation-flags) and has default configuration for many of them. It is recommended to adjust those parameters according to the actual case and the recommended parameters from MiniCPM-V 4.0 modelcard could be used as a reference. If you encounter repetition and endless generation, it is recommended to pass in addition `--presence-penalty` up to 2.0.
+*   **Sampling Parameters**: llama.cpp supports a variety of [sampling methods](https://github.com/ggml-org/llama.cpp/tree/master/tools/main#generation-flags) and has default configuration for many of them. It is recommended to adjust those parameters according to the actual case and the recommended parameters from MiniCPM-V 4.0 modelcard could be used as a reference. If you encounter repetition and endless generation, it is recommended to pass in addition `--presence-penalty` up to `2.0`.
 
-*   **Context Management**: llama.cpp adopts the “rotating” context management by default. The `-c` controls the maximum context length (default 4096, 0 means loaded from model), and `-n` controls the maximum generation length each time (default -1 means infinite until ending, -2 means until context full). When the context is full but the generation doesn’t end, the first `--keep` tokens (default 0, -1 means all) from the initial prompt is kept, and the first half of the rest is discarded. Then, the model continues to generate based on the new context tokens. You can set `--no-context-shift` to prevent this rotating behavior and the generation will stop once `-c` is reached. 
-
-llama.cpp supports YaRN, which can be enabled by `-c 131072 --rope-scaling yarn --rope-scale 4 --yarn-orig-ctx 32768`.
+*   **Context Management**: llama.cpp adopts the “rotating” context management by default. The `-c` controls the maximum context length (default 4096, 0 means loaded from model), and `-n` controls the maximum generation length each time (default -1 means infinite until ending, -2 means until context full). When the context is full but the generation doesn’t end, the first `--keep` tokens (default 0, -1 means all) from the initial prompt is kept, and the first half of the rest is discarded. Then, the model continues to generate based on the new context tokens. You can set `--no-context-shift` to prevent this rotating behavior and the generation will stop once `-c` is reached. llama.cpp supports YaRN, which can be enabled by `-c 131072 --rope-scaling yarn --rope-scale 4 --yarn-orig-ctx 32768`.
 
 *   **Chat**: `--jinja` indicates using the chat template embedded in the GGUF which is preferred and `--color` indicates coloring the texts so that user input and model output can be better differentiated. If there is a chat template, `llama-cli` will enter chat mode automatically. To stop generation or exit press "Ctrl+C". You can use `-sys` to add a system prompt.
 
@@ -240,7 +238,7 @@ llama.cpp supports YaRN, which can be enabled by `-c 131072 --rope-scaling yarn 
 he core command is similar to that of llama-cli. In addition, it supports thinking content parsing and tool call parsing.
 
 ```bash
-./llama-server -m ../MiniCPM-V-4/model/Model-3.6B-Q4_K_M.gguf -ngl 99 -fa -...
+./llama-server -m ../MiniCPM-V-4/model/Model-3.6B-Q4_K_M.gguf --mmproj ../MiniCPM-V-4/mmproj-model-f16.gguf -ngl 100 -...
 ```
 
 By default, the server will listen at `http://localhost:8080` which can be changed by passing `--host` and `--port`. The web front end can be assessed from a browser at `http://localhost:8080/`. The OpenAI compatible API is at `http://localhost:8080/v1/`.

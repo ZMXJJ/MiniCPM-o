@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MiniCPM-o Cookbook \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-16 14:54+0800\n"
+"POT-Creation-Date: 2025-07-17 19:03+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_CN\n"
@@ -20,7 +20,154 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.17.0\n"
 
-#: ../../source/applications/openwebui.md:1 c4a10ab445ad466ebdbae7a9ca7c98e8
-msgid "Open WebUI"
-msgstr "Open WebUI"
+#: ../../source/demo/openwebui.md:1 cde607126de9441aab6dea3e8f78ce9f
+msgid "OpenWebUI with MiniCPM-V Integration Guide"
+msgstr "OpenWebUI 与 MiniCPM-V 集成指南"
+
+#: ../../source/demo/openwebui.md:3 6440793eae0841eca9b53287db7e05dc
+msgid "Overview"
+msgstr "概述"
+
+#: ../../source/demo/openwebui.md:5 c1a90f07be164dc7a26063f88963e0cc
+msgid ""
+"Open WebUI is an extensible web interface designed for Ollama with full "
+"OpenAI API compatibility. It provides seamless interaction with MiniCPM-V"
+" multimodal models through an intuitive chat interface."
+msgstr "Open WebUI 是一个为 Ollama 设计的可扩展 Web 界面，完全兼容 OpenAI API。它通过直观的聊天界面，提供了与 MiniCPM-V 多模态模型的无缝交互。"
+
+#: ../../source/demo/openwebui.md:7 3d974f66258142268ffc569cedab9a9c
+msgid ""
+"MiniCPM-V is a series of efficient multimodal models with strong OCR "
+"capabilities, supporting high-resolution images, multi-image reasoning, "
+"and video understanding."
+msgstr "MiniCPM-V 是一系列高效的多模态模型，具有强大的 OCR 能力，支持高分辨率图像、多图像推理和视频理解。"
+
+#: ../../source/demo/openwebui.md:9 b1ad84992b5f4a4481e16dd26cc41b9e
+msgid "Requirements"
+msgstr "环境要求"
+
+#: ../../source/demo/openwebui.md:11 67bd8140ddd04a8f9566a036ae2682e7
+msgid "Python 3.11+"
+msgstr "Python 3.11+"
+
+#: ../../source/demo/openwebui.md:12 77dd6bf051784dbf88be3bd51b5497a7
+msgid "Docker (recommended) or local Python environment"
+msgstr "Docker（推荐）或本地 Python 环境"
+
+#: ../../source/demo/openwebui.md:13 31ec04653a52407badafae3c931ebb26
+msgid "8GB+ RAM (16GB+ recommended)"
+msgstr "8GB+ 内存（推荐 16GB+）"
+
+#: ../../source/demo/openwebui.md:14 4c11b59271d3474980494978d3090229
+msgid "CUDA-compatible GPU (for local inference)"
+msgstr "兼容 CUDA 的 GPU（用于本地推理）"
+
+#: ../../source/demo/openwebui.md:16 b3abf54f40cd4391971f6a65ee8514dd
+msgid "Quick Setup"
+msgstr "快速设置"
+
+#: ../../source/demo/openwebui.md:18 b34b36f243264b4aa24ea78fe278fda8
+msgid "Option 1: Docker (Recommended)"
+msgstr "方案一：Docker（推荐）"
+
+#: ../../source/demo/openwebui.md:29 28c0fedecb6040bf8cacf18a3d789ccb
+msgid "Option 2: pip Installation"
+msgstr "方案二：pip 安装"
+
+#: ../../source/demo/openwebui.md:36 e158de5af06d4751af6e912de09e7c75
+msgid "Access at: http://localhost:8080"
+msgstr "访问地址：http://localhost:8080"
+
+#: ../../source/demo/openwebui.md:38 53473e66c3ba4381997c4d97a53bae50
+msgid "Model Deployment"
+msgstr "模型部署"
+
+#: ../../source/demo/openwebui.md:40 b845f68491a74431aa2ad8b2bdd7a0f0
+msgid "Using Ollama (Easiest)"
+msgstr "使用 Ollama（最简单）"
+
+#: ../../source/demo/openwebui.md:50 46c6134d579a4d2da3da3668587d0842
+msgid ""
+"Configure in Open WebUI: Settings → Connections → Ollama API → "
+"`http://localhost:11434`"
+msgstr "在 Open WebUI 中配置：设置 → 连接 → Ollama API → `http://localhost:11434`"
+
+#: ../../source/demo/openwebui.md:52 ec15169ea49442a5bba8feb339e3c160
+msgid "Using vLLM (High Performance)"
+msgstr "使用 vLLM（高性能）"
+
+#: ../../source/demo/openwebui.md:63 033612145d284aef8f067394c55b9b42
+msgid "Configure in Open WebUI: Settings → Connections → OpenAI API"
+msgstr "在 Open WebUI 中配置：设置 → 连接 → OpenAI API"
+
+#: ../../source/demo/openwebui.md:64 f65435a804594943b8822cefb91b3b95
+msgid "API Base URL: `http://localhost:8000/v1`"
+msgstr "API 基础 URL：`http://localhost:8000/v1`"
+
+#: ../../source/demo/openwebui.md:65 98835b6b1ef94783b0a7bbb0480f1836
+msgid "API Key: `token-abc123`"
+msgstr "API 密钥：`token-abc123`"
+
+#: ../../source/demo/openwebui.md:67 7cd00d69cc2e48edbc20c00342ae14bf
+msgid "Using SGLang (Structured Generation)"
+msgstr "使用 SGLang（结构化生成）"
+
+#: ../../source/demo/openwebui.md:81 b25c7732575d4059887bf8564eb1b3d9
+msgid "Configure API Base URL: `http://localhost:30000/v1`"
+msgstr "配置 API 基础 URL：`http://localhost:30000/v1`"
+
+#: ../../source/demo/openwebui.md:83 f4e3d5e961934644acba1cea5c089873
+msgid "Usage Examples"
+msgstr "使用示例"
+
+#: ../../source/demo/openwebui.md:85 87af1d84e19f491bac3f03554248908c
+msgid "Image Understanding"
+msgstr "图像理解"
+
+#: ../../source/demo/openwebui.md:86 71e80a5c02b343638ba12127e3f56882
+msgid "Upload an image and ask:"
+msgstr "上传一张图片并提问："
+
+#: ../../source/demo/openwebui.md:91 64624f1e997c455aa6e30e6d71287565
+msgid "OCR Text Extraction"
+msgstr "OCR 文本提取"
+
+#: ../../source/demo/openwebui.md:96 f8d74946f2fa49a9beb31e699863404d
+msgid "Multi-image Comparison"
+msgstr "多图对比"
+
+#: ../../source/demo/openwebui.md:101 68312ba3d48b4290a459523c18be5a27
+msgid "Document Analysis"
+msgstr "文档分析"
+
+#: ../../source/demo/openwebui.md:106 e6ec3fa8dd3d40b8a5ef5e130f75ea11
+msgid "API Integration"
+msgstr "API 集成"
+
+#: ../../source/demo/openwebui.md:108 4838160097f04df39f2619e438c22dc6
+msgid "Python Example"
+msgstr "Python 示例"
+
+#: ../../source/demo/openwebui.md:133 b186f9fc84de4725a223e0e49163b991
+msgid "Resources"
+msgstr "资源"
+
+#: ../../source/demo/openwebui.md:135 41456ad2842c408d8ae6393dece5c48a
+msgid "[Open WebUI Documentation](https://docs.openwebui.com/)"
+msgstr "[Open WebUI 文档](https://docs.openwebui.com/)"
+
+#: ../../source/demo/openwebui.md:136 8917bd289f8d45d7abf87599d46e5b50
+msgid "[MiniCPM-V Models](https://huggingface.co/openbmb)"
+msgstr "[MiniCPM-V 模型](https://huggingface.co/openbmb)"
+
+#: ../../source/demo/openwebui.md:137 515ceff2a0e74ee1983288e588329ebb
+msgid "[Ollama Official Site](https://ollama.ai/)"
+msgstr "[Ollama 官网](https://ollama.ai/)"
+
+#: ../../source/demo/openwebui.md:138 fcb298f541464f41b2bd36ad4f089c16
+msgid "[vLLM Documentation](https://docs.vllm.ai/)"
+msgstr "[vLLM 文档](https://docs.vllm.ai/)"
+
+#~ msgid "Open WebUI"
+#~ msgstr "Open WebUI"
 

@@ -1,6 +1,6 @@
 # SGLang 
 
-## 1. Installing SGLang
+## 1.Installing SGLang
 ### Install SGLang from Source Code
 ```bash
 git clone https://github.com/sgl-project/sglang.git
@@ -26,24 +26,24 @@ Method 2: whl file installation
     ```
 For any installation issues, please consult the [official installation documentation](https://docs.sglang.ai/start/install.html)
 
-## 2. Launching Inference Service with sglang
+## 2.Launching Inference Service with sglang
 
 By default, it downloads model files from Hugging Face Hub
 ```cpp
-python -m sglang.launch_server --model-path openbmb/MiniCPM-V-4.0 --port 30000
+python -m sglang.launch_server --model-path openbmb/MiniCPM-V-4 --port 30000
 ```
 Alternatively, you can specify a local path after the `--model-path` parameter
 ```cpp
 python -m sglang.launch_server --model-path your_model_path --port 30000 --trust-remote-code
 ```
 
-## 3. Service API Calls
+## 3.Service API Calls
 - Bash call
     ```python
     curl -s http://localhost:30000/v1/chat/completions \
     -H "Content-Type: application/json" \
     -d '{
-        "model": "MiniCPM-V-4.0",
+        "model": "MiniCPM-V-4",
         "messages": [
         {
             "role": "user",
@@ -72,7 +72,7 @@ python -m sglang.launch_server --model-path your_model_path --port 30000 --trust
     client = OpenAI(base_url=f"http://localhost:30000/v1", api_key="None")
 
     response = client.chat.completions.create(
-        model="MiniCPM-V-4.0",
+        model="MiniCPM-V-4",
         messages=[
             {
                 "role": "user",

@@ -251,7 +251,7 @@ tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME, trust_remote_code=True)
 # Initialize LLM
 llm = LLM(
     model=MODEL_NAME, 
-    max_model_len=2048,
+    max_model_len=4096,
     trust_remote_code=True,
     disable_mm_preprocessor_cache=True,
     limit_mm_per_prompt={"image": 5}
@@ -295,8 +295,8 @@ stop_token_ids = [tokenizer.convert_tokens_to_ids(i) for i in stop_tokens]
 sampling_params = SamplingParams(
     stop_token_ids=stop_token_ids, 
     temperature=0.7,
-    top_p=0.7,
-    max_tokens=1024
+    top_p=0.8,
+    max_tokens=4096
 )
 
 # Generate results

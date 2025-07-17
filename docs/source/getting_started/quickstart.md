@@ -11,8 +11,8 @@ import torch
 from transformers import AutoModel, AutoTokenizer
 
 # Load the model
-model = AutoModel.from_pretrained('openbmb/MiniCPM-o-2_6', trust_remote_code=True)
-tokenizer = AutoTokenizer.from_pretrained('openbmb/MiniCPM-o-2_6', trust_remote_code=True)
+model = AutoModel.from_pretrained('openbmb/MiniCPM-V-4', trust_remote_code=True)
+tokenizer = AutoTokenizer.from_pretrained('openbmb/MiniCPM-V-4', trust_remote_code=True)
 
 # Start inference!
 # See our recipe notebooks for detailed instructions

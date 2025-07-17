@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MiniCPM-o Cookbook \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-17 14:34+0800\n"
+"POT-Creation-Date: 2025-07-17 19:58+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_CN\n"
@@ -20,50 +20,47 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.17.0\n"
 
-#: ../../source/quantization/gguf.md:1 c79cd97c50264370931944fbc8c9f0ff
+#: ../../source/quantization/gguf.md:1 4cad9ad18ab54756bcbc177aec0c0fd9
 msgid "GGUF"
 msgstr "GGUF"
 
-#: ../../source/quantization/gguf.md:4 69a8f5725404460cadef4f69920ab672
-#, fuzzy
+#: ../../source/quantization/gguf.md:4 8a53a88e6eac44a1ba4bdef8f83574dd
 msgid "**Support:** MiniCPM-V4.0 / MiniCPM-V2.6 / MiniCPM-V2.5"
 msgstr "**支持模型:** MiniCPM-V2.6 / MiniCPM-V 2.5"
 
-#: ../../source/quantization/gguf.md:7 c878a8d5f4fb47999ff8ba684f10ba4f
-msgid "1. Download the PyTorch Model"
-msgstr "1. 下载 PyTorch 模型"
+#: ../../source/quantization/gguf.md:7 5a8e1b2128ce4972a4086902760d7eae
+msgid "1.Download the PyTorch Model"
+msgstr "1.下载 PyTorch 模型"
 
-#: ../../source/quantization/gguf.md:9 f5dda278372a4bb18cd8fdd71b62a718
+#: ../../source/quantization/gguf.md:9 5537ac332a82445fbb3fcf5ceddeaf62
 msgid ""
 "First, obtain the original PyTorch model files from one of the following "
 "sources:"
 msgstr "首先，从以下来源之一获取原始的 PyTorch 模型文件："
 
-#: ../../source/quantization/gguf.md:11 26a6ddcb0c4446c69e90d797a66b4d3b
-#, fuzzy
+#: ../../source/quantization/gguf.md:11 37c07d05683a4946b0657964a3efaec8
 msgid "**HuggingFace:** https://huggingface.co/openbmb/MiniCPM-V-4"
 msgstr "**[HuggingFace](https://huggingface.co/openbmb/MiniCPM-V-2_6)**"
 
-#: ../../source/quantization/gguf.md:12 96c205b91f60492bbaeb744eee38b43e
-#, fuzzy
+#: ../../source/quantization/gguf.md:12 e5808694aec3400b93d2303c5b4aba21
 msgid "**ModelScope Community:** https://modelscope.cn/models/OpenBMB/MiniCPM-V-4"
 msgstr "**[ModelScope](https://modelscope.cn/models/OpenBMB/MiniCPM-V-2_6)**"
 
-#: ../../source/quantization/gguf.md:14 2f6006142980429e993775d89dfc2bee
-msgid "2. Convert the PyTorch Model to GGUF Format"
-msgstr "2. 将 PyTorch 模型转换为 GGUF 格式"
+#: ../../source/quantization/gguf.md:14 06abca6b3a0b41b9b55909823c4a2936
+msgid "2.Convert the PyTorch Model to GGUF Format"
+msgstr "2.将 PyTorch 模型转换为 GGUF 格式"
 
-#: ../../source/quantization/gguf.md:16 34dc6a7778b44633af64cfd21226af97
+#: ../../source/quantization/gguf.md:16 5ef90d0403764e9dba897567fbbedd46
 msgid ""
 "Run the following commands in sequence to perform model surgery, convert "
 "the vision encoder, and then convert the language model."
 msgstr "依次运行以下命令以进行模型结构调整、转换视觉编码器，然后转换语言模型。"
 
-#: ../../source/quantization/gguf.md:29 3600f89acc73438d916cb81349457694
-msgid "3. Perform INT4 Quantization"
-msgstr "3. 执行 INT4 量化"
+#: ../../source/quantization/gguf.md:29 5bb40e3350074dd49afb4429fc9ace48
+msgid "3.Perform INT4 Quantization"
+msgstr "3.执行 INT4 量化"
 
-#: ../../source/quantization/gguf.md:31 b599e3d74c19404faf531a2464396218
+#: ../../source/quantization/gguf.md:31 09b1ed3aa78e406dbfaec0bab0146f8c
 msgid ""
 "Once the conversion is complete, use the `llama-quantize` tool to "
 "quantize the F16 precision GGUF model to INT4."
