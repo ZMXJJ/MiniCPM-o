@@ -1,4 +1,4 @@
-# SGLang
+# SGLang 
 
 ## 1. Installing SGLang
 ### Install SGLang from Source Code
@@ -24,7 +24,7 @@ Method 2: whl file installation
     ```cpp
     pip install flashinfer-0.1.6+cu121torch2.4-cp310-cp310-linux_x86_64.whl
     ```
-    For any installation issues, please consult the [official installation documentation](https://docs.sglang.ai/start/install.html)
+For any installation issues, please consult the [official installation documentation](https://docs.sglang.ai/start/install.html)
 
 ## 2. Launching Inference Service with sglang
 
@@ -68,9 +68,9 @@ python -m sglang.launch_server --model-path your_model_path --port 30000 --trust
 - Python call
     ```python
     from openai import OpenAI
-    
+
     client = OpenAI(base_url=f"http://localhost:30000/v1", api_key="None")
-    
+
     response = client.chat.completions.create(
         model="MiniCPM-V-4.0",
         messages=[
@@ -92,7 +92,7 @@ python -m sglang.launch_server --model-path your_model_path --port 30000 --trust
         ],
         max_tokens=300,
     )
-    
+
     print(response.choices[0].message.content)
     ```
 > **If the image_url is inaccessible, it can be replaced with a local image path**

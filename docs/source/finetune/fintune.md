@@ -1,7 +1,7 @@
 # Finetune
 
 :::{note}
-We offer the official scripts for easy finetuning of the pretrained **MiniCPM-o-2_6**, **MiniCPM-V-2_6**, **MiniCPM-Llama3-V 2.5** and **MiniCPM-V 2.0** on downstream tasks. Our finetune scripts use transformers Trainer and DeepSpeed by default.
+We offer the official scripts for easy finetuning of the pretrained **MiniCPM-V4**, **MiniCPM-o-2_6**, **MiniCPM-V-2_6**, **MiniCPM-Llama3-V 2.5** and **MiniCPM-V 2.0** on downstream tasks. Our finetune scripts use transformers Trainer and DeepSpeed by default.
 :::
 
 
@@ -183,7 +183,7 @@ A：When you face Out of Memory (OOM) issues during training large models, the f
 ```
 --tune_vision false
 ```
-- **Use LoRA finetuning**: Refer to the [LoRA finetuning](#LoRA-finetuning) section.
+- **Use LoRA finetuning**: Refer to the LoRA finetuning section.
 
 #### Optimize with DeepSpeed
 - **Configure DeepSpeed Zero Stage 2**: Use the following configuration to offload optimizer parameters to the CPU, reducing memory pressure on the GPU:

@@ -80,7 +80,6 @@ Welcome to join our community by joining our `Discord <https://discord.gg/rM6sC9
 
    run_locally/llama.cpp
    run_locally/ollama
-   run_locally/openvino
 
 .. toctree::
    :maxdepth: 1
