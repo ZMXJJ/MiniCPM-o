@@ -60,8 +60,7 @@ msgstr "MiniCPM"
 msgid ""
 "`🏠 Main Repository`_  |  `🤗 Hugging Face`_  |  `🤖 ModelScope`_  |  `📖 "
 "Technical Blog`_"
-msgstr ""
-"`🏠 仓库地址`_  |  `🤗 Hugging Face`_  |  `🤖 ModelScope`_  |  `📖 技术报告`_"
+msgstr "`🏠 仓库地址`_  |  `🤗 Hugging Face`_  |  `🤖 ModelScope`_  |  `📖 技术报告`_"
 
 #: ../../source/index.rst:25 a2d973e3ea844d5bafbadb410b734b21
 msgid ""
