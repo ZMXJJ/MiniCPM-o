@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MiniCPM-o Cookbook \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-16 18:21+0800\n"
+"POT-Creation-Date: 2025-07-18 10:22+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_CN\n"
@@ -20,43 +20,50 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.17.0\n"
 
-#: ../../source/index.rst:53
+#: ../../source/index.rst:59
 msgid "Getting Started"
 msgstr "快速开始"
 
-#: ../../source/index.rst:61
+#: ../../source/index.rst:67
 msgid "Inference"
 msgstr "推理"
 
-#: ../../source/index.rst:68
+#: ../../source/index.rst:74
 msgid "Deployment"
 msgstr "部署"
 
-#: ../../source/index.rst:76
+#: ../../source/index.rst:82
 msgid "Run Locally"
 msgstr "端侧运行"
 
-#: ../../source/index.rst:85
+#: ../../source/index.rst:90
 msgid "Quantization"
 msgstr "量化"
 
-#: ../../source/index.rst:95
+#: ../../source/index.rst:100
 msgid "finetune"
 msgstr ""
 
-#: ../../source/index.rst:103
+#: ../../source/index.rst:108
 msgid "Demo"
 msgstr ""
 
-#: ../../source/index.rst:7 b329ee784fba476f9dacf3a8fb4c738c
+#: ../../source/index.rst:7 e07c2ec368ef47bf82ba287dbff11d8b
 msgid "Welcome to MiniCPM-o Cookbook"
 msgstr "欢迎来到MiniCPM-o Cookbook"
 
-#: ../../source/index.rst:8 b5b04712ab1d4cdcb98823931e2e3201
+#: ../../source/index.rst:8 bebd853c1f7f40d9b9eaeb55443df163
 msgid "MiniCPM"
 msgstr "MiniCPM"
 
-#: ../../source/index.rst:19 b8663b19143143609c91360e4d23ea87
+#: ../../source/index.rst:23 0776f1fc9550450c87c40e3f450d49c7
+msgid ""
+"`🏠 Main Repository`_  |  `🤗 Hugging Face`_  |  `🤖 ModelScope`_  |  `📖 "
+"Technical Blog`_"
+msgstr ""
+"`🏠 仓库地址`_  |  `🤗 Hugging Face`_  |  `🤖 ModelScope`_  |  `📖 技术报告`_"
+
+#: ../../source/index.rst:25 a2d973e3ea844d5bafbadb410b734b21
 msgid ""
 "**MiniCPM-V / MiniCPM-o** is a lightweight, high-performance edge-side "
 "large multimodal model jointly developed by ModelBest, the OpenBMB, and "
@@ -71,43 +78,43 @@ msgstr ""
 "和清华大学自然语言处理实验室联合开发的轻量级高性能端侧大规模多模态模型。这两个多模态模型均在大规模多语言和多模态数据集上进行了预训练，并在高质量数据上进行了微调以对齐人类偏好。MiniCPM系列模型能够执行自然语言理解、文本生成、视觉理解、工具使用、角色扮演以及作为"
 " AI 智能体等多种能力。"
 
-#: ../../source/index.rst:22 b51b25efd67349848a91b791c6ef4871
+#: ../../source/index.rst:28 2bdc52a101b349ae81493f3db2236c63
 msgid "The latest version, MiniCPM-V 4.0,  includes the following key features:"
 msgstr "最新版本 MiniCPM-V 4.0 包含以下主要特性："
 
-#: ../../source/index.rst:25 de22b88831de409e909adb312d65b72a
+#: ../../source/index.rst:31 89f4043163f74627b7e3d31c50016324
 msgid "🎯 **GPT-4V Level Performance**"
 msgstr "🎯 **GPT-4V 级别性能**"
 
-#: ../../source/index.rst:26 33faec03b7f24d8795a82a5d297ba2a8
+#: ../../source/index.rst:32 5605cf8756c3488aaea0ef3fb86916a0
 msgid "Surpasses GPT-4V in single-image, multi-image, and video understanding"
 msgstr "在单图、多图和视频理解方面超越 GPT-4V"
 
-#: ../../source/index.rst:27 9ca68a58672e4ecab99924dd10997282
+#: ../../source/index.rst:33 5fcd6c2689e14de0af5f659a78b1da0f
 msgid "Advanced multimodal reasoning capabilities"
 msgstr "先进的多模态推理能力"
 
-#: ../../source/index.rst:28 346f5d7614e84b6d83e7adeacadca242
+#: ../../source/index.rst:34 8725237f888a4cf09ac9b88f11b2a446
 msgid "Real-time video understanding on iPad"
 msgstr "iPad 上实时视频理解"
 
-#: ../../source/index.rst:31 9e4b210ef0f44a12858104cbed02c070
+#: ../../source/index.rst:37 311f7c82175144e0a6c608f66dcb516e
 msgid "📱 **Edge-Friendly & Efficient**"
 msgstr "📱 **端侧友好且高效**"
 
-#: ../../source/index.rst:32 b7a3f4165f7e431397ddb6362f8f4751
+#: ../../source/index.rst:38 ecbff551b7ec4259b18058109c2cf322
 msgid "Only 4B parameters of pure AI magic"
 msgstr "仅 40 亿参数，端侧友好"
 
-#: ../../source/index.rst:33 3849a7ed65a1485f99bca03c473ff6e8
+#: ../../source/index.rst:39 93daeb11823f4a938171ba37cd2853d4
 msgid "Smooth and fast inference on iPad"
 msgstr "iPad 上流畅快速推理"
 
-#: ../../source/index.rst:34 ea1f9ea1a8674cc993babf2135857a76
+#: ../../source/index.rst:40 85a41f3cbafe4e83b9f645e2a3fbbf8c
 msgid "Efficient memory usage (~3GB RAM)"
 msgstr "高效内存占用（约 3GB 内存）"
 
-#: ../../source/index.rst:35 6dcdfe0eefe541babc97285301058ba8
+#: ../../source/index.rst:41 8036ed77ad1048d1824dcd44aa8af279
 msgid ""
 "**Nature Published** – Research in prestigious `Nature Communications "
 "<https://www.nature.com/articles/s41467-025-61040-5>`__!"
@@ -115,43 +122,43 @@ msgstr ""
 "**发表于 Nature** —— 研究成果已发表在权威期刊 `Nature Communications "
 "<https://www.nature.com/articles/s41467-025-61040-5>`__！"
 
-#: ../../source/index.rst:38 cee660f33f5f4668b7ebe32eb901e4b3
+#: ../../source/index.rst:44 817f1bc63b8840dda62813f5dee63129
 msgid "🌍 **Multilingual & Creative**"
 msgstr "🌍 **多语言与创造力**"
 
-#: ../../source/index.rst:39 0ac3fccb656045a5ac7267ddccedd1ce
+#: ../../source/index.rst:45 ff599e0c37914af08a10dc79366b7f40
 msgid "30+ languages supported"
 msgstr "支持 30+ 种语言"
 
-#: ../../source/index.rst:40 f02a902f789a46c9bffb6f4fff110a89
+#: ../../source/index.rst:46 8e473b25418249ffb4df0166d885756a
 msgid "Cross-language understanding"
 msgstr "跨语言理解"
 
-#: ../../source/index.rst:41 d36bcc54f90b439ab631f175c4ada84e
+#: ../../source/index.rst:47 9a125d2e754746f59dd39deca851108c
 msgid "Advanced OCR capabilities"
 msgstr "先进的 OCR 能力"
 
-#: ../../source/index.rst:42 dfd4f450d7b645c9a436b719e70960a6
+#: ../../source/index.rst:48 c4d402e2917a4ec08c5f5d4b4c8bead4
 msgid "Multimodal reasoning & analysis"
 msgstr "多模态推理与分析"
 
-#: ../../source/index.rst:44 0398d7a8e2e14757a71f1ec2420c75b2
+#: ../../source/index.rst:50 b9e696fd3fa1491da08526ef262e3e6f
 msgid "For more information, please visit our:"
 msgstr "更多信息请访问："
 
-#: ../../source/index.rst:46 dcc3affc2e154e6cbd39378b8b1328d6
+#: ../../source/index.rst:52 bf538a21622d46c3a6f1cf36825b320e
 msgid "`GitHub <https://github.com/OpenBMB>`__"
 msgstr "`GitHub <https://github.com/OpenBMB>`__"
 
-#: ../../source/index.rst:47 95c99a3063ce4a0a9d2bbf8929a58a02
+#: ../../source/index.rst:53 8b3fe369cc5b4c3aa6c4699c467d61bd
 msgid "`Hugging Face <https://huggingface.co/OpenBMB>`__"
 msgstr "`Hugging Face <https://huggingface.co/OpenBMB>`__"
 
-#: ../../source/index.rst:48 8efb6776fb2543ed8eeb3e4f312c1588
+#: ../../source/index.rst:54 3d510489f5e64be6958c04342fcad439
 msgid "`Modelscope <https://modelscope.cn/organization/OpenBMB>`__"
 msgstr "`Modelscope <https://modelscope.cn/organization/OpenBMB>`__"
 
-#: ../../source/index.rst:50 fa4dae15b66447d7b978b96eaa81b50a
+#: ../../source/index.rst:56 465f7964eca8405d899f0734c084be47
 msgid ""
 "Welcome to join our community by joining our `Discord "
 "<https://discord.gg/rM6sC9G2MA>`__ and `WeChat "

@@ -15,6 +15,12 @@ Welcome to MiniCPM-o Cookbook
 
    <br>
 
+.. _`🏠 Main Repository`: https://github.com/OpenBMB/MiniCPM-o 
+.. _`🤗 Hugging Face`: https://huggingface.co/openbmb/MiniCPM-o-4 
+.. _`🤖 ModelScope`: https://modelscope.cn/models/openbmb/MiniCPM-o-4 
+.. _`📖 Technical Blog`: https://openbmb.notion.site/MiniCPM-o-2-6-A-GPT-4o-Level-MLLM-for-Vision-Speech-and-Multimodal-Live-Streaming-on-Your-Phone-185ede1b7a558042b5d5e45e6b237da9 
+
+| `🏠 Main Repository`_  |  `🤗 Hugging Face`_  |  `🤖 ModelScope`_  |  `📖 Technical Blog`_ 
 
 **MiniCPM-V / MiniCPM-o** is a lightweight, high-performance edge-side large multimodal model jointly developed by ModelBest, the OpenBMB, and the Tsinghua NLP Lab. Both multimodal models are pretrained on large-scale multilingual and multimodal datasets, and subsequently fine-tuned on high-quality data to align with human preferences.
 MiniCPM can perform natural language understanding, text generation, visual comprehension, tool utilization, role-playing, and function as an AI agent, among other capabilities.
