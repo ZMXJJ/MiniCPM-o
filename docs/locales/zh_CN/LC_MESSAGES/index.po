@@ -66,11 +66,11 @@ msgid ""
 "MiniCPM-V, bringing vision, speech, and live-streaming capabilities right"
 " to your fingertips!"
 msgstr ""
-"使用 MiniCPM-o / MiniCPM-V 轻松打造出色的多模态 AI 应用，将视觉、语音和直播功能带到您的指尖！"
+"使用 MiniCPM-o / MiniCPM-V 轻松打造出色的多模态 AI 应用，将视觉、语音能力带到您的身边！"
 
 #: ../../source/index.rst:35 d0e7e5a195844708bb161281bd6d24b0
 msgid "🌟 What Makes Our Recipes Special?"
-msgstr "🌟 我们的Cookbook有何特别之处？"
+msgstr "🌟 我们的教程有何特别之处？"
 
 #: ../../source/index.rst:38 a66d553ede0a44eab972b03891cd2714
 msgid "User Groups Covered"
@@ -119,7 +119,6 @@ msgid "**Edge devices:** iOS, iPad"
 msgstr "**端侧设备：** iOS, iPad"
 
 #: ../../source/index.rst:56 c93e00478f5847049153ad2afea7ba0b
-#, fuzzy
 msgid "🔥 Inference recipes"
 msgstr "推理"
 
@@ -298,7 +297,6 @@ msgid "`Llama.cpp <./run_locally/llama.cpp.html>`_"
 msgstr ""
 
 #: ../../source/index.rst:147 4aa2b6a6e3164f3f996487cde1d06e98
-#, fuzzy
 msgid "Fast CPU inference"
 msgstr "推理"
 
@@ -319,7 +317,6 @@ msgid "Interactive user interface"
 msgstr ""
 
 #: ../../source/index.rst:157 335c5ba48e2b4e64b6ed2f343ef67e34
-#, fuzzy
 msgid "🥄 Quantization recipes"
 msgstr "量化"
 
