@@ -107,7 +107,7 @@ msgstr "我们的解决方案适用于各种部署需求和硬件环境。"
 
 #: ../../source/index.rst:46 6d7f0978c77944fbbf9836eb00f1a729
 msgid "**Private deployment:** Web Demo"
-msgstr "**私有化部署：** 网页演示"
+msgstr "**私有化部署：** Web Demo"
 
 #: ../../source/index.rst:47 fd5082733c754b7f8e82dc3897bfe152
 msgid "**Quantized deployment:** GGUF, BNB, AWQ"
@@ -229,7 +229,7 @@ msgstr "🏋️ 微调指南"
 
 #: ../../source/index.rst:101 2e28ec100b4d401fb1d17f1216cd8a50
 msgid "*Customize your model with your own ingredients*"
-msgstr "*用您自己的原料定制您的模型*"
+msgstr "*用您自己的数据集定制您的模型*"
 
 #: ../../source/index.rst:103 dabc8770f3f048f4bef4657243c8ece6
 msgid "**Data preparation**"
@@ -239,7 +239,7 @@ msgstr "**数据准备**"
 msgid ""
 "Follow the `guidance <./finetune/fintune.html#data-preparation>`_ to set "
 "up your training datasets."
-msgstr "请遵循`指南 <./finetune/fintune.html#data-preparation>`_ 来设置您的训练数据集。"
+msgstr "请遵循 `指南 <./finetune/fintune.html#data-preparation>`_  来设置您的训练数据集。"
 
 #: ../../source/index.rst:108 65ee8b39742b4645bb6f422c5787550a
 msgid "**Training**"
