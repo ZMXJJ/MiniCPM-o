@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MiniCPM-o Cookbook \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-19 17:22+0800\n"
+"POT-Creation-Date: 2025-07-19 17:42+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_CN\n"
@@ -47,50 +47,50 @@ msgstr "微调"
 msgid "Demo"
 msgstr "演示"
 
-#: ../../source/index.rst:7 98550d98365e4f8aa029911f86c4ce4e
+#: ../../source/index.rst:7 fae768de66c9460b8b2fd72068fcc232
 msgid "Welcome to MiniCPM-o Cookbook"
 msgstr "欢迎来到MiniCPM-o Cookbook"
 
-#: ../../source/index.rst:9 43c2798face2411fa20804e093c86033
+#: ../../source/index.rst:9 4d94423314454f03ba74e064f11fcea5
 msgid "MiniCPM"
 msgstr "MiniCPM"
 
-#: ../../source/index.rst:24 99e98374da9344da88ecb1360587a8e3
+#: ../../source/index.rst:24 f52a73525c1f4feb9d6f81bbf23835e6
 msgid ""
 "`🏠 Main Repository`_  |  `🤗 Hugging Face`_  |  `🤖 ModelScope`_  |  `📖 "
 "Technical Blog`_"
 msgstr "`🏠 仓库地址`_  |  `🤗 Hugging Face`_  |  `🤖 ModelScope`_  |  `📖 技术报告`_"
 
-#: ../../source/index.rst:26 790fedf37da44322b0e67767cc82369a
+#: ../../source/index.rst:26 493c82229b1e474f940e8a2ed0f28ffb
 msgid ""
 "Cook up amazing multimodal AI applications effortlessly with MiniCPM-o / "
 "MiniCPM-V, bringing vision, speech, and live-streaming capabilities right"
 " to your fingertips!"
 msgstr "使用 MiniCPM-o / MiniCPM-V 轻松打造出色的多模态 AI 应用，将视觉、语音和直播功能带到您的身边！"
 
-#: ../../source/index.rst:30 d0e7e5a195844708bb161281bd6d24b0
+#: ../../source/index.rst:30 64daf3a6fcbe4e61a3a1a6c28cce5040
 msgid "🌟 What Makes Our Recipes Special?"
 msgstr "🌟 我们的Cookbook有何特别之处？"
 
-#: ../../source/index.rst:33 a66d553ede0a44eab972b03891cd2714
+#: ../../source/index.rst:33 281f0c33d719455fac07955e91b3dfc3
 msgid "User Groups Covered"
 msgstr "覆盖的用户群体"
 
-#: ../../source/index.rst:35 7870789823da428c93704fcb1f26557e
+#: ../../source/index.rst:35 9335124b8e274b7c989bd602e52fcdae
 msgid ""
 "We support a wide range of users, from individuals to enterprises and "
 "researchers."
 msgstr "我们为广泛用户提供全方位支持。"
 
-#: ../../source/index.rst:37 5774c56b3a5c4abab4923a7275d58183
+#: ../../source/index.rst:37 8bba9eef7cc846c5b7fe4bb4f98b385c
 msgid "**Individuals (Low-barrier, easy inference):** Ollama, Llama.cpp"
 msgstr "**个人用户（低门槛，端侧推理）：** Ollama, Llama.cpp"
 
-#: ../../source/index.rst:38 d991c65f040644f6a662aa6f201227b0
+#: ../../source/index.rst:38 c3fb6c84c956413bbb9bc4fb0d0cc80f
 msgid "**Enterprises (High-throughput inference):** vLLM, SGLang"
 msgstr "**企业用户（高并发推理）：** vLLM, SGLang"
 
-#: ../../source/index.rst:39 b20a082892ab4056a4c80849334f8876
+#: ../../source/index.rst:39 e948572472e1437dadf92cb530d68b67
 msgid ""
 "**Researchers (Secondary development):** Huggingface Transformers, LLaMA-"
 "Factory, SWIFT, Align-anything"
@@ -98,399 +98,309 @@ msgstr ""
 "**研究人员（二次开发）：** Huggingface Transformers, LLaMA-Factory, SWIFT, Align-"
 "anything"
 
-#: ../../source/index.rst:42 f7113ec1bddd439d89a453231a041bc5
+#: ../../source/index.rst:42 31d85c09a334480fa80829f40c7c6537
 msgid "Application Scenarios Covered"
 msgstr "覆盖的应用场景"
 
-#: ../../source/index.rst:44 c21916f72ef7464a858b892fc7a78b9d
+#: ../../source/index.rst:44 3e6c705b38fc4ad2ad95f5d1adfb71bf
 msgid "Our solutions fit various deployment needs and hardware environments."
 msgstr "我们的解决方案适用于各种部署需求和硬件环境。"
 
-#: ../../source/index.rst:46 4a6d6020b3494f89afba03d42bb54021
+#: ../../source/index.rst:46 6d7f0978c77944fbbf9836eb00f1a729
 msgid "**Private deployment:** Web Demo"
 msgstr "**私有化部署：** Web Demo"
 
-#: ../../source/index.rst:47 e6fad0719c274cadb9c0722da57db84f
+#: ../../source/index.rst:47 fd5082733c754b7f8e82dc3897bfe152
 msgid "**Quantized deployment:** GGUF, BNB, AWQ"
 msgstr "**量化部署：** GGUF, BNB, AWQ"
 
-#: ../../source/index.rst:48 541d5b9eba574b4aa5f419b1fb404ef2
+#: ../../source/index.rst:48 8b19f83220a04ca7b2479cd2bfed2b97
 msgid "**Edge devices:** iOS, iPad"
 msgstr "**端侧设备：** iOS, iPad"
 
-#: ../../source/index.rst:51 c93e00478f5847049153ad2afea7ba0b
+#: ../../source/index.rst:51 2d3e76e0975c49f5aa41106f9a3ce5ef
 msgid "🔥 Inference recipes"
-msgstr "🔥 Inference recipes"
+msgstr "🔥 推理指南"
 
-#: ../../source/index.rst:53 0b10beaa746a4796be11b992c3e6713a
+#: ../../source/index.rst:53 c6a1f600d499411f9e486fd2e2ed8cdb
 msgid "*Ready-to-run examples*"
 msgstr "*开箱即用的示例*"
 
-#: ../../source/index.rst:59 57e68a5b0f424ea2b7889a28c1d529c4
+#: ../../source/index.rst:59 1107ddc0d50547bbb5368743b66502d6
 msgid "Recipe"
 msgstr "指南"
 
 #: ../../source/index.rst:60 ../../source/index.rst:117
-#: ../../source/index.rst:136 2a2837598a3a403dac003fe4631d2ef1
-#: 53efa68f35344e119b4fafffe10bcf20 f8d0e003b6ec454194452ca8f7503f2c
+#: ../../source/index.rst:136 5a837eb9cb97454dbcaa9cf027e18f00
+#: 8e4f5d9ae76d4231afcdb8713537e265 b6889e04c9c54e6eb257e08034f1e2b5
 msgid "Description"
-msgstr "描述"
+msgstr "说明"
 
-#: ../../source/index.rst:62 009723473b2749a79c4e5a7a2f61b464
+#: ../../source/index.rst:62 20ca2db5e0cf413c8a82fbdd43760958
 msgid "**Vision Capabilities**"
 msgstr "**视觉能力**"
 
-#: ../../source/index.rst:65 6549c8cf3fb1496e8b0d83593e65f8a0
+#: ../../source/index.rst:65 22afff231e4343988714d1ed15958a80
 msgid "🎬 `Video QA <./inference/video_understanding.md>`_"
 msgstr "🎬 `视频问答 <./inference/video_understanding.md>`_"
 
-#: ../../source/index.rst:66 1bdbee0e01ae47949808919f7fbc65a3
+#: ../../source/index.rst:66 79d03a2a25994756b46500220108f97c
 msgid "Video-based question answering"
 msgstr "基于视频的问答"
 
-#: ../../source/index.rst:68 1d33f2ffa6ff49a19d82c279833baf13
+#: ../../source/index.rst:68 1b29a049b7b34c46bf93bd31abfaa428
 msgid "🧩 `Multi-image QA <./inference/multi_images.md>`_"
 msgstr "🧩 `多图问答 <./inference/multi_images.md>`_"
 
-#: ../../source/index.rst:69 4f49ea19a7264f80a73e0e7e51be7183
+#: ../../source/index.rst:69 932bb3eca78a4a2680a3fcf7bfe35ce8
 msgid "Question answering with multiple images"
-msgstr "使用多张图片进行问答"
+msgstr "基于多张图片的问答"
 
-#: ../../source/index.rst:71 b9a534d02a474df6a122503a271d61a8
+#: ../../source/index.rst:71 770ee83e49fa43668fac0de9caaf21bc
 msgid "🖼️ `Single-image QA <./inference/single_image.md>`_"
 msgstr "🖼️ `单图问答 <./inference/single_image.md>`_"
 
-#: ../../source/index.rst:72 c8120121e43b4f0c8229e7a44c48d59c
+#: ../../source/index.rst:72 909ab122599f4a23a655e3ce5d800457
 msgid "Question answering on a single image"
-msgstr "对单张图片进行问答"
+msgstr "基于单张图片的问答"
 
-#: ../../source/index.rst:74 13c505f9e90f4985a328390fcf305927
+#: ../../source/index.rst:74 afe75423219244f18c45c2fb7c32da68
 msgid "📄 `Document Parser <./inference/pdf_parse.md>`_"
 msgstr "📄 `文档解析 <./inference/pdf_parse.md>`_"
 
-#: ../../source/index.rst:75 559f338c10064374bedfd590275e5d89
+#: ../../source/index.rst:75 b88df5db6b614ee59000ad28b3624c9e
 msgid "Parse and extract content from PDFs and webpages"
-msgstr "解析并提取 PDF 和网页中的内容"
+msgstr "解析并提取PDF和网页中的内容"
 
-#: ../../source/index.rst:77 3e32a2fa23b8416e89fbd61cc4381ace
+#: ../../source/index.rst:77 fddec22bc10a4224b07f7621b464efea
 msgid "📝 `Text Recognition <./inference/ocr.md>`_"
-msgstr "📝 `文本识别 <./inference/ocr.md>`_"
+msgstr "📝 `文字识别 <./inference/ocr.md>`_"
 
-#: ../../source/index.rst:78 070dabc5506642aeb5719cb4e4286be0
+#: ../../source/index.rst:78 74a82f48e9774869aa3175defd688c48
 msgid "Reliable OCR for photos and screenshots"
-msgstr "可靠的照片和截图 OCR"
+msgstr "可靠的照片和截图OCR"
 
-#: ../../source/index.rst:80 a55c03d6811f4478bf72e039d544aaff
+#: ../../source/index.rst:80 5276b4ae527e4024bb254dee6a5db546
 msgid "🔍 `Multimodal RAG <./inference/rag.md>`_"
-msgstr "🔍 `多模态 RAG <./inference/rag.md>`_"
+msgstr "🔍 `多模态RAG <./inference/rag.md>`_"
 
-#: ../../source/index.rst:81 74c0949738294e99b2cbbde572ff763e
+#: ../../source/index.rst:81 f1aaf11331074039ab94658e9f67394f
 msgid "Retrieve and organize multimodal data"
-msgstr "检索和组织多模态数据"
+msgstr "检索并组织多模态数据"
 
-#: ../../source/index.rst:83 94aa438243f1485184a75efed98efe09
+#: ../../source/index.rst:83 3ff76b1f132c4201834dd5e99c184b6d
 msgid "🤖 `Agents <./inference/agent.md>`_"
 msgstr "🤖 `智能体 <./inference/agent.md>`_"
 
-#: ../../source/index.rst:84 8d68e267704c4fdeb6f7809cb99dd890
+#: ../../source/index.rst:84 1c0a6effe4aa407f8a1597a21ea69214
 msgid "AI assistants with tool integration"
-msgstr "集成工具的 AI 助手"
+msgstr "集成工具的AI助手"
 
-#: ../../source/index.rst:86 5bc06dcbb81a4e9e95203794d15dd165
+#: ../../source/index.rst:86 7add84d4f9e94fc8b5a656e13c6918f4
 msgid "**Audio Capabilities**"
 msgstr "**音频能力**"
 
-#: ../../source/index.rst:89 a20f43be75264c81af963ca2e05a9e09
+#: ../../source/index.rst:89 e81d478667e64eaf8b3c8990aff590fc
 msgid "🎤 `Speech-to-Text <./inference/speech2text.md>`_"
-msgstr "🎤 `语音转文本 <./inference/speech2text.md>`_"
+msgstr "🎤 `语音转文字 <./inference/speech2text.md>`_"
 
-#: ../../source/index.rst:90 d5137bb15fd24134b5ace3b03b22e505
+#: ../../source/index.rst:90 302aaf9d1aa6448397ad2d8c8cb1ad3e
 msgid "Multilingual speech recognition"
 msgstr "多语言语音识别"
 
-#: ../../source/index.rst:92 062e5d419d7d44e397faf37661ce8b5b
+#: ../../source/index.rst:92 e40fcfbde3a74f5787994c7b9209d5f4
 msgid "🎭 `Voice Cloning <./inference/voice_clone.md>`_"
 msgstr "🎭 `声音克隆 <./inference/voice_clone.md>`_"
 
-#: ../../source/index.rst:93 d6123e98cb144cff8d21acee2f3cc04c
+#: ../../source/index.rst:93 67b446aa491a4176863022c1dfa48c1a
 msgid "Realistic voice cloning and role-play"
 msgstr "逼真的声音克隆和角色扮演"
 
-#: ../../source/index.rst:95 ff232d73e2394cd59b5ecdf207e522ae
+#: ../../source/index.rst:95 008a7fd082cc46b39441eb667fc9cdb8
 msgid "🗣️ `Text-to-Speech <./inference/text2speech.md>`_"
 msgstr "🗣️ `文本转语音 <./inference/text2speech.md>`_"
 
-#: ../../source/index.rst:96 c8e2508e89464d7382557bd97e4c64c2
+#: ../../source/index.rst:96 1384342a61f24832a8da696019006d65
 msgid "Instruction-following speech synthesis"
-msgstr "遵循指令的语音合成"
+msgstr "指令跟随的语音合成"
 
-#: ../../source/index.rst:99 be8ef1fda36640fea29eb6a90240c417
+#: ../../source/index.rst:99 dac6de9a97174cf6b061a0ccb5ff0a15
 msgid "🏋️ Fine-tuning recipes"
 msgstr "🏋️ 微调指南"
 
-#: ../../source/index.rst:101 b6c4b0c0668e47d495dc3c17bbd0ec27
+#: ../../source/index.rst:101 2e28ec100b4d401fb1d17f1216cd8a50
 msgid "*Customize your model with your own ingredients*"
-msgstr "*用你自己的原料定制你的模型*"
+msgstr "*使用您自己的“原料”定制模型*"
 
-#: ../../source/index.rst:103 e38238dd583540b1a158c2027505afbf
+#: ../../source/index.rst:103 dabc8770f3f048f4bef4657243c8ece6
 msgid "**Data preparation**"
 msgstr "**数据准备**"
 
-#: ../../source/index.rst:105 ddac14d3ea2b4473bef59ef00847cc6f
+#: ../../source/index.rst:105 9f0c07e29bb94b4e904a4ff5ee2af19a
 msgid ""
 "Follow the `guidance <./finetune/fintune.html#data-preparation>`_ to set "
 "up your training datasets."
-msgstr "按照 `指南 <./finetune/fintune.html#data-preparation>`_ 设置您的训练数据集。"
+msgstr "请遵循`指南 <./finetune/fintune.html#data-preparation>`_来设置您的训练数据集。"
 
-#: ../../source/index.rst:108 247ccda1875f4ec4bb578796e68e15c1
+#: ../../source/index.rst:108 65ee8b39742b4645bb6f422c5787550a
 msgid "**Training**"
 msgstr "**训练**"
 
-#: ../../source/index.rst:110 b61e99ff2ade4d4a8f2a5ab7370ce662
+#: ../../source/index.rst:110 0c3a2e1a08e447208395d89d2a279ca3
 msgid "We provide training methods serving different needs as following:"
 msgstr "我们提供以下训练方法以满足不同需求："
 
 #: ../../source/index.rst:116 ../../source/index.rst:135
-#: 56f11802817a40f5bd34e67257461c43 625a19eeec7641c1ae9768144463bf3b
+#: 041e473dd36342ea95a9db9d4afd15b5 cb3e78aede474ff7a04e0d5fbce6e36c
 msgid "Method"
 msgstr "方法"
 
-#: ../../source/index.rst:118 6dbd3fddb13149b8ab96dee5b9c6b5bb
+#: ../../source/index.rst:118 ec6a29fd03ab43228c97861f04712931
 msgid "`Full <./finetune/fintune.html#full-parameter-finetuning>`_"
-msgstr "`全量微调 <./finetune/fintune.html#full-parameter-finetuning>`_"
+msgstr "`全量 <./finetune/fintune.html#full-parameter-finetuning>`_"
 
-#: ../../source/index.rst:119 210b232b2c204002aa21d1869a429cca
+#: ../../source/index.rst:119 9f8cce3203594e2abe0aeb4e3f842acd
 msgid "Comprehensive model customization"
 msgstr "全面的模型定制"
 
-#: ../../source/index.rst:120 4b5f610966bf46878f0aaedeb7ab2100
+#: ../../source/index.rst:120 4b2b6e2032a740f590c5d518d94b9e02
 msgid "`LoRA <./finetune/fintune.html#lora-finetuning>`_"
 msgstr "`LoRA <./finetune/fintune.html#lora-finetuning>`_"
 
-#: ../../source/index.rst:121 534a7188adb745fd88790cf06fd3bde1
+#: ../../source/index.rst:121 84c59ef0de014a7f92a1dfbaa7fd7994
 msgid "Efficient parameter tuning"
 msgstr "高效的参数调整"
 
-#: ../../source/index.rst:127 7a3d35ede29845d4b37dc4d7d01fbf4d
+#: ../../source/index.rst:127 f7183d7cc1bf4804b5f3285c8898d639
 msgid "🥡 Serving recipes"
-msgstr "🥡 服务食谱"
+msgstr "🥡 服务部署指南"
 
-#: ../../source/index.rst:129 f3f7dc17f35b4bbd9525b0cd2552722a
+#: ../../source/index.rst:129 c7f737bb3d21416e9a66a8e363de2543
 msgid "*Deploy your model efficiently*"
 msgstr "*高效部署您的模型*"
 
-#: ../../source/index.rst:137 1a70a99041d947dc96c1fdbc6b97a9c1
+#: ../../source/index.rst:137 832eb4206bd84f27ac735ae319f03a6d
 msgid "`vLLM <./deployment/vllm.html>`_"
 msgstr "`vLLM <./deployment/vllm.html>`_"
 
 #: ../../source/index.rst:138 ../../source/index.rst:140
-#: 4908a3798d644d7bad7381af950504e8 a4091846633749e1bda0c3bd2e167901
+#: d225c504f27b4c17a0c9aa0406aba80a f8c91a0f4f044a599a290519c645eb67
 msgid "High-throughput GPU inference"
-msgstr "高吞吐量 GPU 推理"
+msgstr "高吞吐量GPU推理"
 
-#: ../../source/index.rst:139 6b0837febe5d4088a7ee53a5dd20b378
+#: ../../source/index.rst:139 258393add2cb41939b5a104759da4111
 msgid "`SGLang <./deployment/sglang.html>`_"
 msgstr "`SGLang <./deployment/sglang.html>`_"
 
-#: ../../source/index.rst:141 f81dfc52a3ed4533897d1a97c7848c52
+#: ../../source/index.rst:141 587c670647964cedb6d445660e9aa361
 msgid "`Llama.cpp <./run_locally/llama.cpp.html>`_"
 msgstr "`Llama.cpp <./run_locally/llama.cpp.html>`_"
 
-#: ../../source/index.rst:142 4aa2b6a6e3164f3f996487cde1d06e98
+#: ../../source/index.rst:142 ef5df591174d4c1e8534987f7edc02c9
 msgid "Fast CPU inference"
-msgstr "快速 CPU 推理"
+msgstr "快速CPU推理"
 
-#: ../../source/index.rst:143 8d93a035f9cd48c9a83a52e2c0b501b9
+#: ../../source/index.rst:143 52b4d5afa93e441099ce3ff6bd966ff5
 msgid "`Ollama <./run_locally/ollama.html>`_"
 msgstr "`Ollama <./run_locally/ollama.html>`_"
 
-#: ../../source/index.rst:144 c49cc605b11845ea955a45913cae217a
+#: ../../source/index.rst:144 9abaa3417c7d41d5a4524366656cdadf
 msgid "User-friendly setup"
 msgstr "用户友好的设置"
 
-#: ../../source/index.rst:145 1fca58a34e474dfca9e2d4123a463f3b
+#: ../../source/index.rst:145 2b3251ddbad943eaa3f99492574d34d0
 msgid "`Web Demo <./demo/webdemo.html>`_"
-msgstr "`Web 演示 <./demo/webdemo.html>`_"
+msgstr "`Web Demo <./demo/webdemo.html>`_"
 
-#: ../../source/index.rst:146 e7ce7a8d4af74b65a9fc99c05213149b
+#: ../../source/index.rst:146 5289806274b342909be35d20fcb1366f
 msgid "Interactive user interface"
 msgstr "交互式用户界面"
 
-#: ../../source/index.rst:152 335c5ba48e2b4e64b6ed2f343ef67e34
+#: ../../source/index.rst:152 0d5927343dc14ba2a794788c5431c090
 msgid "🥄 Quantization recipes"
 msgstr "🥄 量化指南"
 
-#: ../../source/index.rst:153 250349f4fc484fec87402083063823ce
+#: ../../source/index.rst:153 63cdeeecf8c948d092360c6787092170
 msgid "*Compress your model to improve efficiency*"
-msgstr "*压缩您的模型以提高效率*"
+msgstr "*压缩模型以提高效率*"
 
-#: ../../source/index.rst:159 75012c1bf57440d6a65504359ca80760
+#: ../../source/index.rst:159 71f337e21c0f4758999657a62f1d6310
 msgid "Format"
 msgstr "格式"
 
-#: ../../source/index.rst:160 51e1a44324ec49448b4885333919b197
+#: ../../source/index.rst:160 0c3854093794416db551bb573bf496db
 msgid "Key Feature"
 msgstr "主要特点"
 
-#: ../../source/index.rst:161 5fb1e63c3c7a474ba8eb5ffdac701c89
+#: ../../source/index.rst:161 bd4ff669f1804b03a275f369cc90d877
 msgid "`GGUF <./quantization/gguf.html>`_"
 msgstr "`GGUF <./quantization/gguf.html>`_"
 
-#: ../../source/index.rst:162 53b7aa6a305a45e9b2f1f82ccde54af1
+#: ../../source/index.rst:162 d79667f95ed9464c86ec31b0c8f27c62
 msgid "Simplest and most portable format"
 msgstr "最简单、最便携的格式"
 
-#: ../../source/index.rst:163 1e3e1966bd8d401ba5bc75e710c428a2
+#: ../../source/index.rst:163 f177b402ca26458f82d18cb4c09dc49b
 msgid "`BNB <./quantization/bnb.html>`_"
 msgstr "`BNB <./quantization/bnb.html>`_"
 
-#: ../../source/index.rst:164 971f05b6522444d7a9e23729a8af2f81
+#: ../../source/index.rst:164 875685a547264ef9b31070d85f51054f
 msgid "Efficient 4/8-bit weight quantization"
-msgstr "高效的 4/8 位权重化"
+msgstr "高效的4/8位权重化"
 
-#: ../../source/index.rst:170 6cebacee8b30403fb4cf7fc0279c1c7c
+#: ../../source/index.rst:170 89be2a7c4c1f439e9387ada09c051bfa
 msgid "👥 Community"
 msgstr "👥 社区"
 
-#: ../../source/index.rst:174 3905b5752e2f467db18073f77e964dcd
+#: ../../source/index.rst:174 bf78476955524eb8b03112d396faa2c4
 msgid "**Contributing**"
 msgstr "**贡献**"
 
-#: ../../source/index.rst:176 e9f50226b9ef493192185333b03a9115
+#: ../../source/index.rst:176 36428c7137eb4a8e8f27a46c75fb2765
 msgid "We love new recipes! Please share your creative dishes:"
-msgstr "我们欢迎更多的应用！期待你来一展身手："
+msgstr "我们欢迎新的指南！请分享您的创意："
 
-#: ../../source/index.rst:178 c56916e9b2664240918b3cc240db515e
+#: ../../source/index.rst:178 aabbac79a3734bb2950607bfd021b0f0
 msgid "Fork the repository"
-msgstr "Fork 仓库"
+msgstr "Fork 本仓库"
 
-#: ../../source/index.rst:179 22de6bd9bd6944dba6c5d7690cc9e22b
+#: ../../source/index.rst:179 62986e424e17477b96d6a1321316764a
 msgid "Create your recipe"
 msgstr "创建您的指南"
 
-#: ../../source/index.rst:180 0569fedaa6354485b60dc4bc8ef75b7c
+#: ../../source/index.rst:180 228878edb5ed4fb59b502c9aaf6faed4
 msgid "Submit a pull request"
-msgstr "提交拉取请求"
+msgstr "提交 Pull Request"
 
-#: ../../source/index.rst:185 383208bff80e465391dbd8617dfad3d5
+#: ../../source/index.rst:185 10a69901d03941fd9d3ca0869463ae2b
 msgid "**Issues & Support**"
 msgstr "**问题与支持**"
 
-#: ../../source/index.rst:187 d5d3914a801348938591eb1c1c97e4b8
+#: ../../source/index.rst:187 a11bafde2dbd4e4e9dd479fabfc1892c
 msgid ""
 "Found a bug? `Open an issue "
 "<https://github.com/OpenBMB/MiniCPM-o/issues>`__"
-msgstr "`GitHub <https://github.com/OpenBMB>`__"
+msgstr "发现了一个bug？ `提交一个 Issue <https://github.com/OpenBMB/MiniCPM-o/issues>`__"
 
-#: ../../source/index.rst:188 c6195374824d4769b775e98b8cdc6c72
+#: ../../source/index.rst:188 4ec8b6195cf44b5c9c72fe7e0f6322ec
 msgid ""
 "Need help? Join our `Discord <https://discord.gg/rM6sC9G2MA>`__ and "
 "`WeChat <https://github.com/OpenBMB/MiniCPM-o/blob/main/assets/wechat-"
 "QR.jpeg>`__ group."
-msgstr ""
-"欢迎加入我们的社区，可通过 `Discord <https://discord.gg/rM6sC9G2MA>`__ 和 `微信群 "
-"<https://github.com/OpenBMB/MiniCPM-o/blob/main/assets/wechat-QR.jpeg>`__"
-" 加入我们。期待您的参与！"
+msgstr "需要帮助？加入我们的 `Discord <https://discord.gg/rM6sC9G2MA>`__ 和 `微信 <https://github.com/OpenBMB/MiniCPM-o/blob/main/assets/wechat-QR.jpeg>`__ 群组。"
 
-#: ../../source/index.rst:190 693ed78092eb49e19b06adfbe0531d47
+#: ../../source/index.rst:190 10003e83ea9141eab7a1c030ccc9ffc8
 msgid "For more information, please visit our:"
-msgstr "更多信息请访问："
+msgstr "更多信息，请访问我们的："
 
-#: ../../source/index.rst:192 0105ee629ec44953b7531d07a5c7ba79
+#: ../../source/index.rst:192 523a0223a75242f1b9d60ee473cf68a0
 msgid "`GitHub <https://github.com/OpenBMB>`__"
 msgstr "`GitHub <https://github.com/OpenBMB>`__"
 
-#: ../../source/index.rst:193 ce9f7c7421024b15b445b434fd03c2f6
+#: ../../source/index.rst:193 32b8f2372a84468985e99700917b50d3
 msgid "`Hugging Face <https://huggingface.co/OpenBMB>`__"
 msgstr "`Hugging Face <https://huggingface.co/OpenBMB>`__"
 
-#: ../../source/index.rst:194 abc8aa50495943d7bce6c825a0faf39b
+#: ../../source/index.rst:194 6dece2c45db7416c87b7e140cee3fca2
 msgid "`Modelscope <https://modelscope.cn/organization/OpenBMB>`__"
 msgstr "`Modelscope <https://modelscope.cn/organization/OpenBMB>`__"
-
-#~ msgid "Training"
-#~ msgstr "训练"
-
-#~ msgid "Applications"
-#~ msgstr "应用"
-
-#~ msgid ""
-#~ "**MiniCPM-V / MiniCPM-o** is a "
-#~ "lightweight, high-performance edge-side "
-#~ "large multimodal model jointly developed "
-#~ "by ModelBest, the OpenBMB, and the "
-#~ "Tsinghua NLP Lab. Both multimodal models"
-#~ " are pretrained on large-scale "
-#~ "multilingual and multimodal datasets, and "
-#~ "subsequently fine-tuned on high-quality"
-#~ " data to align with human "
-#~ "preferences. MiniCPM can perform natural "
-#~ "language understanding, text generation, "
-#~ "visual comprehension, tool utilization, "
-#~ "role-playing, and function as an AI"
-#~ " agent, among other capabilities."
-#~ msgstr ""
-#~ "**MiniCPM-V / MiniCPM-o** 是由 面壁智能、OpenBMB "
-#~ "和清华大学自然语言处理实验室联合开发的轻量级高性能端侧大规模多模态模型。这两个多模态模型均在大规模多语言和多模态数据集上进行了预训练，并在高质量数据上进行了微调以对齐人类偏好。MiniCPM系列模型能够执行自然语言理解、文本生成、视觉理解、工具使用、角色扮演以及作为"
-#~ " AI 智能体等多种能力。"
-
-#~ msgid ""
-#~ "The latest version, MiniCPM-V 4.0,  "
-#~ "includes the following key features:"
-#~ msgstr "最新版本 MiniCPM-V 4.0 包含以下主要特性："
-
-#~ msgid "🎯 **GPT-4V Level Performance**"
-#~ msgstr "🎯 **GPT-4V 级别性能**"
-
-#~ msgid "Surpasses GPT-4V in single-image, multi-image, and video understanding"
-#~ msgstr "在单图、多图和视频理解方面超越 GPT-4V"
-
-#~ msgid "Advanced multimodal reasoning capabilities"
-#~ msgstr "先进的多模态推理能力"
-
-#~ msgid "Real-time video understanding on iPad"
-#~ msgstr "iPad 上实时视频理解"
-
-#~ msgid "📱 **Edge-Friendly & Efficient**"
-#~ msgstr "📱 **端侧友好且高效**"
-
-#~ msgid "Only 4B parameters of pure AI magic"
-#~ msgstr "仅 40 亿参数，端侧友好"
-
-#~ msgid "Smooth and fast inference on iPad"
-#~ msgstr "iPad 上流畅快速推理"
-
-#~ msgid "Efficient memory usage (~3GB RAM)"
-#~ msgstr "高效内存占用（约 3GB 内存）"
-
-#~ msgid ""
-#~ "**Nature Published** – Research in "
-#~ "prestigious `Nature Communications "
-#~ "<https://www.nature.com/articles/s41467-025-61040-5>`__!"
-#~ msgstr ""
-#~ "**发表于 Nature** —— 研究成果已发表在权威期刊 `Nature "
-#~ "Communications "
-#~ "<https://www.nature.com/articles/s41467-025-61040-5>`__！"
-
-#~ msgid "30+ languages supported"
-#~ msgstr "支持 30+ 种语言"
-
-#~ msgid "Cross-language understanding"
-#~ msgstr "跨语言理解"
-
-#~ msgid "Multimodal reasoning & analysis"
-#~ msgstr "多模态推理与分析"
-
-#~ msgid ""
-#~ "Welcome to join our community by "
-#~ "joining our `Discord "
-#~ "<https://discord.gg/rM6sC9G2MA>`__ and `WeChat "
-#~ "<https://github.com/OpenBMB/MiniCPM-o/blob/main/assets/wechat-"
-#~ "QR.jpeg>`__ group. We are looking "
-#~ "forward to seeing you there!"
-#~ msgstr ""
-#~ "欢迎加入我们的社区，可通过 `Discord <https://discord.gg/rM6sC9G2MA>`__"
-#~ " 和 `微信群 "
-#~ "<https://github.com/OpenBMB/MiniCPM-o/blob/main/assets/wechat-"
-#~ "QR.jpeg>`__ 加入我们。期待您的参与！"
-
