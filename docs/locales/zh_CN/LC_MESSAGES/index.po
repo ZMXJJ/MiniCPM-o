@@ -3,8 +3,7 @@
 # This file is distributed under the same license as the MiniCPM-o Cookbook
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
-#
-#, fuzzy
+
 msgid ""
 msgstr ""
 "Project-Id-Version: MiniCPM-o Cookbook \n"
