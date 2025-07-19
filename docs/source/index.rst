@@ -25,11 +25,6 @@ Welcome to MiniCPM-o Cookbook
 
 Cook up amazing multimodal AI applications effortlessly with MiniCPM-o / MiniCPM-V, bringing vision, speech, and live-streaming capabilities right to your fingertips!
 
-.. _inference_recipes:
-.. _fine_tuning_recipes:
-
-.. role:: raw-html(raw)
-   :format: html
 
 🌟 What Makes Our Recipes Special?
 *********************************
