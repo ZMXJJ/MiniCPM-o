@@ -60,14 +60,6 @@ msgid ""
 "Technical Blog`_"
 msgstr "`🏠 仓库地址`_  |  `🤗 Hugging Face`_  |  `🤖 ModelScope`_  |  `📖 技术报告`_"
 
-#: ../../source/index.rst:26 790fedf37da44322b0e67767cc82369a
-#, fuzzy
-msgid ""
-"Cook up amazing multimodal AI applications effortlessly with MiniCPM-o / "
-"MiniCPM-V, bringing vision, speech, and live-streaming capabilities right"
-" to your fingertips!"
-msgstr "使用 MiniCPM-o / MiniCPM-V 轻松打造出色的多模态 AI 应用，将视觉、语音和直播功能带到您的身边！"
-
 #: ../../source/index.rst:35 d0e7e5a195844708bb161281bd6d24b0
 msgid "🌟 What Makes Our Recipes Special?"
 msgstr "🌟 我们的Cookbook有何特别之处？"
@@ -493,4 +485,13 @@ msgstr "`Modelscope <https://modelscope.cn/organization/OpenBMB>`__"
 #~ " 和 `微信群 "
 #~ "<https://github.com/OpenBMB/MiniCPM-o/blob/main/assets/wechat-"
 #~ "QR.jpeg>`__ 加入我们。期待您的参与！"
+
+
+#: ../../source/index.rst:26 790fedf37da44322b0e67767cc82369a
+#, fuzzy
+msgid ""
+"Cook up amazing multimodal AI applications effortlessly with MiniCPM-o / "
+"MiniCPM-V, bringing vision, speech, and live-streaming capabilities right"
+" to your fingertips!"
+msgstr "使用 MiniCPM-o / MiniCPM-V 轻松打造出色的多模态 AI 应用，将视觉、语音和直播功能带到您的身边！"
 
