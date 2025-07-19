@@ -23,8 +23,7 @@ Welcome to MiniCPM-o Cookbook
 
 | `🏠 Main Repository`_  |  `🤗 Hugging Face`_  |  `🤖 ModelScope`_  |  `📖 Technical Blog`_ 
 
-Cook up amazing multimodal AI applications effortlessly with MiniCPM-o, bringing vision, speech, and live-streaming capabilities right to your fingertips!
-
+Cook up amazing multimodal AI applications effortlessly with MiniCPM-o / MiniCPM-V, bringing vision, speech, and live-streaming capabilities right to your fingertips!
 
 .. _inference_recipes:
 .. _fine_tuning_recipes:
