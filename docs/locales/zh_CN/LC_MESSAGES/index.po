@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MiniCPM-o Cookbook \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-18 10:22+0800\n"
+"POT-Creation-Date: 2025-07-19 16:36+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_CN\n"
@@ -20,157 +20,476 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.17.0\n"
 
-#: ../../source/index.rst:59
+#: ../../source/index.rst:202
 msgid "Getting Started"
 msgstr "快速开始"
 
-#: ../../source/index.rst:67
+#: ../../source/index.rst:210
 msgid "Inference"
 msgstr "推理"
 
-#: ../../source/index.rst:74
+#: ../../source/index.rst:217
 msgid "Deployment"
 msgstr "部署"
 
-#: ../../source/index.rst:82
+#: ../../source/index.rst:225
 msgid "Run Locally"
 msgstr "端侧运行"
 
-#: ../../source/index.rst:90
+#: ../../source/index.rst:233
 msgid "Quantization"
 msgstr "量化"
 
-#: ../../source/index.rst:100
+#: ../../source/index.rst:243
 msgid "finetune"
-msgstr ""
+msgstr "微调"
 
-#: ../../source/index.rst:108
+#: ../../source/index.rst:251
 msgid "Demo"
-msgstr ""
+msgstr "演示"
 
 #: ../../source/index.rst:7 e07c2ec368ef47bf82ba287dbff11d8b
 msgid "Welcome to MiniCPM-o Cookbook"
 msgstr "欢迎来到MiniCPM-o Cookbook"
 
-#: ../../source/index.rst:8 bebd853c1f7f40d9b9eaeb55443df163
+#: ../../source/index.rst:9 bebd853c1f7f40d9b9eaeb55443df163
 msgid "MiniCPM"
 msgstr "MiniCPM"
 
-#: ../../source/index.rst:23 0776f1fc9550450c87c40e3f450d49c7
+#: ../../source/index.rst:24 0776f1fc9550450c87c40e3f450d49c7
 msgid ""
 "`🏠 Main Repository`_  |  `🤗 Hugging Face`_  |  `🤖 ModelScope`_  |  `📖 "
 "Technical Blog`_"
 msgstr "`🏠 仓库地址`_  |  `🤗 Hugging Face`_  |  `🤖 ModelScope`_  |  `📖 技术报告`_"
 
-#: ../../source/index.rst:25 a2d973e3ea844d5bafbadb410b734b21
+#: ../../source/index.rst:26 93ed0e8c89824fdfafd6e9f41746e890
 msgid ""
-"**MiniCPM-V / MiniCPM-o** is a lightweight, high-performance edge-side "
-"large multimodal model jointly developed by ModelBest, the OpenBMB, and "
-"the Tsinghua NLP Lab. Both multimodal models are pretrained on large-"
-"scale multilingual and multimodal datasets, and subsequently fine-tuned "
-"on high-quality data to align with human preferences. MiniCPM can perform"
-" natural language understanding, text generation, visual comprehension, "
-"tool utilization, role-playing, and function as an AI agent, among other "
-"capabilities."
-msgstr ""
-"**MiniCPM-V / MiniCPM-o** 是由 面壁智能、OpenBMB "
-"和清华大学自然语言处理实验室联合开发的轻量级高性能端侧大规模多模态模型。这两个多模态模型均在大规模多语言和多模态数据集上进行了预训练，并在高质量数据上进行了微调以对齐人类偏好。MiniCPM系列模型能够执行自然语言理解、文本生成、视觉理解、工具使用、角色扮演以及作为"
-" AI 智能体等多种能力。"
+"Cook up amazing multimodal AI applications effortlessly with MiniCPM-o, "
+"bringing vision, speech, and live-streaming capabilities right to your "
+"fingertips!"
+msgstr "使用 MiniCPM-o / MiniCPM-V 轻松打造出色的多模态 AI 应用，将视觉、语音和直播功能带到您的身边！"
 
-#: ../../source/index.rst:28 2bdc52a101b349ae81493f3db2236c63
-msgid "The latest version, MiniCPM-V 4.0,  includes the following key features:"
-msgstr "最新版本 MiniCPM-V 4.0 包含以下主要特性："
+#: ../../source/index.rst:36 a6c09fe5bef8475ebe7c7018b8bbd8e1
+msgid "🌟 What Makes Our Recipes Special?"
+msgstr "🌟 我们的Cookbook有何特别之处？"
 
-#: ../../source/index.rst:31 89f4043163f74627b7e3d31c50016324
-msgid "🎯 **GPT-4V Level Performance**"
-msgstr "🎯 **GPT-4V 级别性能**"
+#: ../../source/index.rst:39 eadb7285bfe04766a23b32eeab95355a
+msgid "User Groups Covered"
+msgstr "覆盖的用户群体"
 
-#: ../../source/index.rst:32 5605cf8756c3488aaea0ef3fb86916a0
-msgid "Surpasses GPT-4V in single-image, multi-image, and video understanding"
-msgstr "在单图、多图和视频理解方面超越 GPT-4V"
-
-#: ../../source/index.rst:33 5fcd6c2689e14de0af5f659a78b1da0f
-msgid "Advanced multimodal reasoning capabilities"
-msgstr "先进的多模态推理能力"
-
-#: ../../source/index.rst:34 8725237f888a4cf09ac9b88f11b2a446
-msgid "Real-time video understanding on iPad"
-msgstr "iPad 上实时视频理解"
-
-#: ../../source/index.rst:37 311f7c82175144e0a6c608f66dcb516e
-msgid "📱 **Edge-Friendly & Efficient**"
-msgstr "📱 **端侧友好且高效**"
-
-#: ../../source/index.rst:38 ecbff551b7ec4259b18058109c2cf322
-msgid "Only 4B parameters of pure AI magic"
-msgstr "仅 40 亿参数，端侧友好"
-
-#: ../../source/index.rst:39 93daeb11823f4a938171ba37cd2853d4
-msgid "Smooth and fast inference on iPad"
-msgstr "iPad 上流畅快速推理"
-
-#: ../../source/index.rst:40 85a41f3cbafe4e83b9f645e2a3fbbf8c
-msgid "Efficient memory usage (~3GB RAM)"
-msgstr "高效内存占用（约 3GB 内存）"
-
-#: ../../source/index.rst:41 8036ed77ad1048d1824dcd44aa8af279
+#: ../../source/index.rst:41 5af6525990424e59a34b31539b77c557
 msgid ""
-"**Nature Published** – Research in prestigious `Nature Communications "
-"<https://www.nature.com/articles/s41467-025-61040-5>`__!"
-msgstr ""
-"**发表于 Nature** —— 研究成果已发表在权威期刊 `Nature Communications "
-"<https://www.nature.com/articles/s41467-025-61040-5>`__！"
+"We support a wide range of users, from individuals to enterprises and "
+"researchers."
+msgstr "我们为广泛用户提供全方位支持。"
 
-#: ../../source/index.rst:44 817f1bc63b8840dda62813f5dee63129
-msgid "🌍 **Multilingual & Creative**"
-msgstr "🌍 **多语言与创造力**"
+#: ../../source/index.rst:43 fb15eff689e94a518632b3e159b1d20e
+msgid "**Individuals (Low-barrier, easy inference):** Ollama, Llama.cpp"
+msgstr "**个人用户（低门槛，端侧推理）：** Ollama, Llama.cpp"
 
-#: ../../source/index.rst:45 ff599e0c37914af08a10dc79366b7f40
-msgid "30+ languages supported"
-msgstr "支持 30+ 种语言"
+#: ../../source/index.rst:44 957dbb18fa3c415aae5cf00ed9e030e9
+msgid "**Enterprises (High-throughput inference):** vLLM, SGLang"
+msgstr "**企业用户（高并发推理）：** vLLM, SGLang"
 
-#: ../../source/index.rst:46 8e473b25418249ffb4df0166d885756a
-msgid "Cross-language understanding"
-msgstr "跨语言理解"
+#: ../../source/index.rst:45 d2af7bf9ce544eecba22fa1b0c40aef6
+msgid ""
+"**Researchers (Secondary development):** Huggingface Transformers, LLaMA-"
+"Factory, SWIFT, Align-anything"
+msgstr "**研究人员（二次开发）：** Huggingface Transformers, LLaMA-Factory, SWIFT, Align-anything"
 
-#: ../../source/index.rst:47 9a125d2e754746f59dd39deca851108c
-msgid "Advanced OCR capabilities"
-msgstr "先进的 OCR 能力"
+#: ../../source/index.rst:48 0c33a8ceb6664e39aa95fb1922b90411
+msgid "Application Scenarios Covered"
+msgstr "覆盖的应用场景"
 
-#: ../../source/index.rst:48 c4d402e2917a4ec08c5f5d4b4c8bead4
-msgid "Multimodal reasoning & analysis"
-msgstr "多模态推理与分析"
+#: ../../source/index.rst:50 681b98dcf0a24691bb4342bda9a9b8fe
+msgid "Our solutions fit various deployment needs and hardware environments."
+msgstr "我们的解决方案适用于各种部署需求和硬件环境。"
 
-#: ../../source/index.rst:50 b9e696fd3fa1491da08526ef262e3e6f
-msgid "For more information, please visit our:"
-msgstr "更多信息请访问："
+#: ../../source/index.rst:52 2775712e7b594ce6b93cda98522814c2
+msgid "**Private deployment:** Web Demo"
+msgstr "**私有化部署：** Web Demo"
 
-#: ../../source/index.rst:52 bf538a21622d46c3a6f1cf36825b320e
-msgid "`GitHub <https://github.com/OpenBMB>`__"
+#: ../../source/index.rst:53 8a7eb08681d74415b8b40f1f8645b5d7
+msgid "**Quantized deployment:** GGUF, BNB, AWQ"
+msgstr "**量化部署：** GGUF, BNB, AWQ"
+
+#: ../../source/index.rst:54 3a51022e39d240c6966c0eb266ed650e
+msgid "**Edge devices:** iOS, iPad"
+msgstr "**端侧设备：** iOS, iPad"
+
+#: ../../source/index.rst:57 02ed58a3ff13456081102a90d4c75da6
+msgid "🔥 Inference recipes"
+msgstr "🔥 Inference recipes"
+
+#: ../../source/index.rst:59 4b44b2268e5d4ba19be4510ff90c3937
+msgid "*Ready-to-run examples*"
+msgstr "*开箱即用的示例*"
+
+#: ../../source/index.rst:65 c09c3c1c85354e57b79f8b927326cb34
+msgid "Recipe"
+msgstr "指南"
+
+#: ../../source/index.rst:66 ../../source/index.rst:123
+#: ../../source/index.rst:142 168596b4a5f9430cbec9f6145b348070
+#: d501e8f1f9104c82901abdd3ec2101a0 dfba74e18d7f404aad4980763d47b76e
+msgid "Description"
+msgstr "描述"
+
+#: ../../source/index.rst:68 9a125d2e754746f59dd39deca851108c
+msgid "**Vision Capabilities**"
+msgstr "**视觉能力**"
+
+#: ../../source/index.rst:71 5572d139421c49659f46c74402a4d055
+msgid "🎬 `Video QA <./inference/video_understanding.md>`_"
+msgstr "🎬 `视频问答 <./inference/video_understanding.md>`_"
+
+#: ../../source/index.rst:72 26444b8e7b93463c9fe70709cd5f9b38
+msgid "Video-based question answering"
+msgstr "基于视频的问答"
+
+#: ../../source/index.rst:74 375a0102d4134293b9b3310e9c1a5e83
+msgid "🧩 `Multi-image QA <./inference/multi_images.md>`_"
+msgstr "🧩 `多图问答 <./inference/multi_images.md>`_"
+
+#: ../../source/index.rst:75 90de2e99d19248c9adb4fadf5e448208
+msgid "Question answering with multiple images"
+msgstr "使用多张图片进行问答"
+
+#: ../../source/index.rst:77 49f4b59fb09f4120a56fdb1b008ac867
+msgid "🖼️ `Single-image QA <./inference/single_image.md>`_"
+msgstr "🖼️ `单图问答 <./inference/single_image.md>`_"
+
+#: ../../source/index.rst:78 8864a30ef47840a9a4b922623c473640
+msgid "Question answering on a single image"
+msgstr "对单张图片进行问答"
+
+#: ../../source/index.rst:80 af50eafc517f42d6b86684656bdf585a
+msgid "📄 `Document Parser <./inference/pdf_parse.md>`_"
+msgstr "📄 `文档解析 <./inference/pdf_parse.md>`_"
+
+#: ../../source/index.rst:81 1b5c3a2ec2f14e1d91c25f89f63a01e0
+msgid "Parse and extract content from PDFs and webpages"
+msgstr "解析并提取 PDF 和网页中的内容"
+
+#: ../../source/index.rst:83 11272af521744dcdb3e5f694bb892191
+msgid "📝 `Text Recognition <./inference/ocr.md>`_"
+msgstr "📝 `文本识别 <./inference/ocr.md>`_"
+
+#: ../../source/index.rst:84 396f9ffe931443d2806d13e6758cf8ce
+msgid "Reliable OCR for photos and screenshots"
+msgstr "可靠的照片和截图 OCR"
+
+#: ../../source/index.rst:86 c1be44f2d4ee45c0a760fb758fae79af
+msgid "🔍 `Multimodal RAG <./inference/rag.md>`_"
+msgstr "🔍 `多模态 RAG <./inference/rag.md>`_"
+
+#: ../../source/index.rst:87 9e0731e15fd54328b921bfcc80887bf2
+msgid "Retrieve and organize multimodal data"
+msgstr "检索和组织多模态数据"
+
+#: ../../source/index.rst:89 3c916a6306fd49aaa9c33e928acb0bf2
+msgid "🤖 `Agents <./inference/agent.md>`_"
+msgstr "🤖 `智能体 <./inference/agent.md>`_"
+
+#: ../../source/index.rst:90 7115004e3a6f4f6e88e5e1620ab23d78
+msgid "AI assistants with tool integration"
+msgstr "集成工具的 AI 助手"
+
+#: ../../source/index.rst:92 9a125d2e754746f59dd39deca851108c
+msgid "**Audio Capabilities**"
+msgstr "**音频能力**"
+
+#: ../../source/index.rst:95 b18942e2528b4ac2ba907136199307ae
+msgid "🎤 `Speech-to-Text <./inference/speech2text.md>`_"
+msgstr "🎤 `语音转文本 <./inference/speech2text.md>`_"
+
+#: ../../source/index.rst:96 a6182b3dbbe04c139cf7acf9e8e98d51
+msgid "Multilingual speech recognition"
+msgstr "多语言语音识别"
+
+#: ../../source/index.rst:98 ea382876a90b4d46b42033f1a25b4eb2
+msgid "🎭 `Voice Cloning <./inference/voice_clone.md>`_"
+msgstr "🎭 `声音克隆 <./inference/voice_clone.md>`_"
+
+#: ../../source/index.rst:99 e0eee9288adc46f486fe8c9ecb1301d3
+msgid "Realistic voice cloning and role-play"
+msgstr "逼真的声音克隆和角色扮演"
+
+#: ../../source/index.rst:101 8237499147e54421a41377167916464e
+msgid "🗣️ `Text-to-Speech <./inference/text2speech.md>`_"
+msgstr "🗣️ `文本转语音 <./inference/text2speech.md>`_"
+
+#: ../../source/index.rst:102 98c1d7d4918742b1addbebb285e10ad2
+msgid "Instruction-following speech synthesis"
+msgstr "遵循指令的语音合成"
+
+#: ../../source/index.rst:105 beaacdd940354b6495d164fb528393e4
+msgid "🏋️ Fine-tuning recipes"
+msgstr "🏋️ 微调指南"
+
+#: ../../source/index.rst:107 df1011e4a3ea49bd8cfc262c33aae93b
+msgid "*Customize your model with your own ingredients*"
+msgstr "*用你自己的原料定制你的模型*"
+
+#: ../../source/index.rst:109 b7c34acb65084244bddd1915ba215736
+msgid "**Data preparation**"
+msgstr "**数据准备**"
+
+#: ../../source/index.rst:111 14a99aa2538e469b916a5fa420c6602d
+msgid ""
+"Follow the `guidance <./finetune/fintune.html#data-preparation>`_ to set "
+"up your training datasets."
+msgstr "按照 `指南 <./finetune/fintune.html#data-preparation>`_ 设置您的训练数据集。"
+
+#: ../../source/index.rst:114 7cbe39fdf3ae4415a96683bf44a15715
+msgid "**Training**"
+msgstr "**训练**"
+
+#: ../../source/index.rst:116 c164b68d229947cfa49eaa84693fc3eb
+msgid "We provide training methods serving different needs as following:"
+msgstr "我们提供以下训练方法以满足不同需求："
+
+#: ../../source/index.rst:122 ../../source/index.rst:141
+#: 3fb10b1d4c474a92a8065e7253a83a1f ef3863c0ea1f4694be64cd44ad04e76f
+msgid "Method"
+msgstr "方法"
+
+#: ../../source/index.rst:124 3a0b88ccd33c41b89bdc07da4504d48c
+msgid "`Full <./finetune/fintune.html#full-parameter-finetuning>`_"
+msgstr "`全量微调 <./finetune/fintune.html#full-parameter-finetuning>`_"
+
+#: ../../source/index.rst:125 482463e999a049a29d8d131c3245c52c
+msgid "Comprehensive model customization"
+msgstr "全面的模型定制"
+
+#: ../../source/index.rst:126 9ce51280a09a455bbcc509d6c3cdba1c
+msgid "`LoRA <./finetune/fintune.html#lora-finetuning>`_"
+msgstr "`LoRA <./finetune/fintune.html#lora-finetuning>`_"
+
+#: ../../source/index.rst:127 85a41f3cbafe4e83b9f645e2a3fbbf8c
+msgid "Efficient parameter tuning"
+msgstr "高效的参数调整"
+
+#: ../../source/index.rst:133 3f6217862f774299941b52170b28350f
+msgid "🥡 Serving recipes"
+msgstr "🥡 服务食谱"
+
+#: ../../source/index.rst:135 581cb8b0a2db4ba4a9780ba56cf47576
+msgid "*Deploy your model efficiently*"
+msgstr "*高效部署您的模型*"
+
+#: ../../source/index.rst:143 a46622157f2c45409da4c655aa9a57f8
+msgid "`vLLM <./deployment/vllm.html>`_"
+msgstr "`vLLM <./deployment/vllm.html>`_"
+
+#: ../../source/index.rst:144 ../../source/index.rst:146
+#: 060a85b6e22d4951b8389e3e9f556693 683577f6dc37429fbb92b1e7f1153611
+msgid "High-throughput GPU inference"
+msgstr "高吞吐量 GPU 推理"
+
+#: ../../source/index.rst:145 257a74f705b94f638ffe45a401cc1c9b
+msgid "`SGLang <./deployment/sglang.html>`_"
+msgstr "`SGLang <./deployment/sglang.html>`_"
+
+#: ../../source/index.rst:147 a04c1ff302f94bd48a00ee8a01fa0fb2
+msgid "`Llama.cpp <./run_locally/llama.cpp.html>`_"
+msgstr "`Llama.cpp <./run_locally/llama.cpp.html>`_"
+
+#: ../../source/index.rst:148 93daeb11823f4a938171ba37cd2853d4
+msgid "Fast CPU inference"
+msgstr "快速 CPU 推理"
+
+#: ../../source/index.rst:149 945f2312f31d48dc801ec2fa934d4741
+msgid "`Ollama <./run_locally/ollama.html>`_"
+msgstr "`Ollama <./run_locally/ollama.html>`_"
+
+#: ../../source/index.rst:150 311f7c82175144e0a6c608f66dcb516e
+msgid "User-friendly setup"
+msgstr "用户友好的设置"
+
+#: ../../source/index.rst:151 36a958a01aef42618a25134113e7c0fe
+msgid "`Web Demo <./demo/webdemo.html>`_"
+msgstr "`Web 演示 <./demo/webdemo.html>`_"
+
+#: ../../source/index.rst:152 54ea098d11824872821f150ce4c39d76
+msgid "Interactive user interface"
+msgstr "交互式用户界面"
+
+#: ../../source/index.rst:158 1ee98ac7af6d47e1ba99e031d9030f4d
+msgid "🥄 Quantization recipes"
+msgstr "🥄 量化指南"
+
+#: ../../source/index.rst:159 0767206ce2cd47529af46c1c0ace1ec3
+msgid "*Compress your model to improve efficiency*"
+msgstr "*压缩您的模型以提高效率*"
+
+#: ../../source/index.rst:165 28f606d26ccb47f3a802c3f9014fddbf
+msgid "Format"
+msgstr "格式"
+
+#: ../../source/index.rst:166 a85f3af6ea8a4522857b283db5e39060
+msgid "Key Feature"
+msgstr "主要特点"
+
+#: ../../source/index.rst:167 b2cec3da5053456fa7cdfa6bca8cf4e0
+msgid "`GGUF <./quantization/gguf.html>`_"
+msgstr "`GGUF <./quantization/gguf.html>`_"
+
+#: ../../source/index.rst:168 e7c31d98d19344a7abceb6ada9a44551
+msgid "Simplest and most portable format"
+msgstr "最简单、最便携的格式"
+
+#: ../../source/index.rst:169 78c8580272e844be904824758415077f
+msgid "`BNB <./quantization/bnb.html>`_"
+msgstr "`BNB <./quantization/bnb.html>`_"
+
+#: ../../source/index.rst:170 45a92c2cdfab46369420a0da60f55a90
+msgid "Efficient 4/8-bit weight quantization"
+msgstr "高效的 4/8 位权重化"
+
+#: ../../source/index.rst:176 1e1f8b73201f4b97aff0a5c66c5375f4
+msgid "👥 Community"
+msgstr "👥 社区"
+
+#: ../../source/index.rst:180 1c47ada316c44e60b08c037f65739d7b
+msgid "**Contributing**"
+msgstr "**贡献**"
+
+#: ../../source/index.rst:182 e96695ad825e487dbe2b75d063ddace1
+msgid "We love new recipes! Please share your creative dishes:"
+msgstr "我们欢迎新的应用！期待你来一展身手："
+
+#: ../../source/index.rst:184 867659713e8a465d9991bc43850ed966
+msgid "Fork the repository"
+msgstr "Fork 仓库"
+
+#: ../../source/index.rst:185 c7aa966a5ddc4ab9971ee8bab9de710b
+msgid "Create your recipe"
+msgstr "创建您的指南"
+
+#: ../../source/index.rst:186 eacdc9c5715e4c47aa4bfe9ea91e1b0a
+msgid "Submit a pull request"
+msgstr "提交拉取请求"
+
+#: ../../source/index.rst:191 0ebce4a640ae4214a56fb963cd4ffc89
+msgid "**Issues & Support**"
+msgstr "**问题与支持**"
+
+#: ../../source/index.rst:193 5a1f312cb18c4bcd85fbec65f46b90be
+msgid ""
+"Found a bug? `Open an issue "
+"<https://github.com/OpenBMB/MiniCPM-o/issues>`__"
 msgstr "`GitHub <https://github.com/OpenBMB>`__"
 
-#: ../../source/index.rst:53 8b3fe369cc5b4c3aa6c4699c467d61bd
-msgid "`Hugging Face <https://huggingface.co/OpenBMB>`__"
-msgstr "`Hugging Face <https://huggingface.co/OpenBMB>`__"
-
-#: ../../source/index.rst:54 3d510489f5e64be6958c04342fcad439
-msgid "`Modelscope <https://modelscope.cn/organization/OpenBMB>`__"
-msgstr "`Modelscope <https://modelscope.cn/organization/OpenBMB>`__"
-
-#: ../../source/index.rst:56 465f7964eca8405d899f0734c084be47
+#: ../../source/index.rst:194 465f7964eca8405d899f0734c084be47
 msgid ""
-"Welcome to join our community by joining our `Discord "
-"<https://discord.gg/rM6sC9G2MA>`__ and `WeChat "
-"<https://github.com/OpenBMB/MiniCPM-o/blob/main/assets/wechat-QR.jpeg>`__"
-" group. We are looking forward to seeing you there!"
+"Need help? Join our `Discord <https://discord.gg/rM6sC9G2MA>`__ and "
+"`WeChat <https://github.com/OpenBMB/MiniCPM-o/blob/main/assets/wechat-"
+"QR.jpeg>`__ group."
 msgstr ""
 "欢迎加入我们的社区，可通过 `Discord <https://discord.gg/rM6sC9G2MA>`__ 和 `微信群 "
 "<https://github.com/OpenBMB/MiniCPM-o/blob/main/assets/wechat-QR.jpeg>`__"
 " 加入我们。期待您的参与！"
+
+#: ../../source/index.rst:196 b9e696fd3fa1491da08526ef262e3e6f
+msgid "For more information, please visit our:"
+msgstr "更多信息请访问："
+
+#: ../../source/index.rst:198 bf538a21622d46c3a6f1cf36825b320e
+msgid "`GitHub <https://github.com/OpenBMB>`__"
+msgstr "`GitHub <https://github.com/OpenBMB>`__"
+
+#: ../../source/index.rst:199 8b3fe369cc5b4c3aa6c4699c467d61bd
+msgid "`Hugging Face <https://huggingface.co/OpenBMB>`__"
+msgstr "`Hugging Face <https://huggingface.co/OpenBMB>`__"
+
+#: ../../source/index.rst:200 3d510489f5e64be6958c04342fcad439
+msgid "`Modelscope <https://modelscope.cn/organization/OpenBMB>`__"
+msgstr "`Modelscope <https://modelscope.cn/organization/OpenBMB>`__"
 
 #~ msgid "Training"
 #~ msgstr "训练"
 
 #~ msgid "Applications"
 #~ msgstr "应用"
+
+#~ msgid ""
+#~ "**MiniCPM-V / MiniCPM-o** is a "
+#~ "lightweight, high-performance edge-side "
+#~ "large multimodal model jointly developed "
+#~ "by ModelBest, the OpenBMB, and the "
+#~ "Tsinghua NLP Lab. Both multimodal models"
+#~ " are pretrained on large-scale "
+#~ "multilingual and multimodal datasets, and "
+#~ "subsequently fine-tuned on high-quality"
+#~ " data to align with human "
+#~ "preferences. MiniCPM can perform natural "
+#~ "language understanding, text generation, "
+#~ "visual comprehension, tool utilization, "
+#~ "role-playing, and function as an AI"
+#~ " agent, among other capabilities."
+#~ msgstr ""
+#~ "**MiniCPM-V / MiniCPM-o** 是由 面壁智能、OpenBMB "
+#~ "和清华大学自然语言处理实验室联合开发的轻量级高性能端侧大规模多模态模型。这两个多模态模型均在大规模多语言和多模态数据集上进行了预训练，并在高质量数据上进行了微调以对齐人类偏好。MiniCPM系列模型能够执行自然语言理解、文本生成、视觉理解、工具使用、角色扮演以及作为"
+#~ " AI 智能体等多种能力。"
+
+#~ msgid ""
+#~ "The latest version, MiniCPM-V 4.0,  "
+#~ "includes the following key features:"
+#~ msgstr "最新版本 MiniCPM-V 4.0 包含以下主要特性："
+
+#~ msgid "🎯 **GPT-4V Level Performance**"
+#~ msgstr "🎯 **GPT-4V 级别性能**"
+
+#~ msgid "Surpasses GPT-4V in single-image, multi-image, and video understanding"
+#~ msgstr "在单图、多图和视频理解方面超越 GPT-4V"
+
+#~ msgid "Advanced multimodal reasoning capabilities"
+#~ msgstr "先进的多模态推理能力"
+
+#~ msgid "Real-time video understanding on iPad"
+#~ msgstr "iPad 上实时视频理解"
+
+#~ msgid "📱 **Edge-Friendly & Efficient**"
+#~ msgstr "📱 **端侧友好且高效**"
+
+#~ msgid "Only 4B parameters of pure AI magic"
+#~ msgstr "仅 40 亿参数，端侧友好"
+
+#~ msgid "Smooth and fast inference on iPad"
+#~ msgstr "iPad 上流畅快速推理"
+
+#~ msgid "Efficient memory usage (~3GB RAM)"
+#~ msgstr "高效内存占用（约 3GB 内存）"
+
+#~ msgid ""
+#~ "**Nature Published** – Research in "
+#~ "prestigious `Nature Communications "
+#~ "<https://www.nature.com/articles/s41467-025-61040-5>`__!"
+#~ msgstr ""
+#~ "**发表于 Nature** —— 研究成果已发表在权威期刊 `Nature "
+#~ "Communications "
+#~ "<https://www.nature.com/articles/s41467-025-61040-5>`__！"
+
+#~ msgid "30+ languages supported"
+#~ msgstr "支持 30+ 种语言"
+
+#~ msgid "Cross-language understanding"
+#~ msgstr "跨语言理解"
+
+#~ msgid "Multimodal reasoning & analysis"
+#~ msgstr "多模态推理与分析"
+
+#~ msgid ""
+#~ "Welcome to join our community by "
+#~ "joining our `Discord "
+#~ "<https://discord.gg/rM6sC9G2MA>`__ and `WeChat "
+#~ "<https://github.com/OpenBMB/MiniCPM-o/blob/main/assets/wechat-"
+#~ "QR.jpeg>`__ group. We are looking "
+#~ "forward to seeing you there!"
+#~ msgstr ""
+#~ "欢迎加入我们的社区，可通过 `Discord <https://discord.gg/rM6sC9G2MA>`__"
+#~ " 和 `微信群 "
+#~ "<https://github.com/OpenBMB/MiniCPM-o/blob/main/assets/wechat-"
+#~ "QR.jpeg>`__ 加入我们。期待您的参与！"
 

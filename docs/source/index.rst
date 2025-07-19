@@ -5,7 +5,8 @@
 
 Welcome to MiniCPM-o Cookbook
 ==============================
-.. figure:: assets/minicpm-logo.svg
+
+.. figure:: assets/minicpm.svg
   :width: 70%
   :align: center
   :alt: MiniCPM
@@ -22,39 +23,181 @@ Welcome to MiniCPM-o Cookbook
 
 | `🏠 Main Repository`_  |  `🤗 Hugging Face`_  |  `🤖 ModelScope`_  |  `📖 Technical Blog`_ 
 
-**MiniCPM-V / MiniCPM-o** is a lightweight, high-performance edge-side large multimodal model jointly developed by ModelBest, the OpenBMB, and the Tsinghua NLP Lab. Both multimodal models are pretrained on large-scale multilingual and multimodal datasets, and subsequently fine-tuned on high-quality data to align with human preferences.
-MiniCPM can perform natural language understanding, text generation, visual comprehension, tool utilization, role-playing, and function as an AI agent, among other capabilities.
+Cook up amazing multimodal AI applications effortlessly with MiniCPM-o, bringing vision, speech, and live-streaming capabilities right to your fingertips!
 
-The latest version, MiniCPM-V 4.0,  includes the following key features:
 
-.. rubric:: 🎯 **GPT-4V Level Performance**
+.. _inference_recipes:
+.. _fine_tuning_recipes:
 
-- Surpasses GPT-4V in single-image, multi-image, and video understanding
-- Advanced multimodal reasoning capabilities
-- Real-time video understanding on iPad
+.. role:: raw-html(raw)
+   :format: html
 
-.. rubric:: 📱 **Edge-Friendly & Efficient**
+🌟 What Makes Our Recipes Special?
+*********************************
 
-- Only 4B parameters of pure AI magic
-- Smooth and fast inference on iPad
-- Efficient memory usage (~3GB RAM)
-- **Nature Published** – Research in prestigious `Nature Communications <https://www.nature.com/articles/s41467-025-61040-5>`__!
+User Groups Covered
+~~~~~~~~~~~~~~~~~~
 
-.. rubric:: 🌍 **Multilingual & Creative**
+We support a wide range of users, from individuals to enterprises and researchers.
 
-- 30+ languages supported
-- Cross-language understanding
-- Advanced OCR capabilities
-- Multimodal reasoning & analysis
+* **Individuals (Low-barrier, easy inference):** Ollama, Llama.cpp
+* **Enterprises (High-throughput inference):** vLLM, SGLang
+* **Researchers (Secondary development):** Huggingface Transformers, LLaMA-Factory, SWIFT, Align-anything
+
+Application Scenarios Covered
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Our solutions fit various deployment needs and hardware environments.
+
+* **Private deployment:** Web Demo
+* **Quantized deployment:** GGUF, BNB, AWQ
+* **Edge devices:** iOS, iPad
+
+🔥 Inference recipes
+********************
+
+*Ready-to-run examples*
+
+.. list-table::
+   :widths: 25 75
+   :header-rows: 1
+
+   * - Recipe
+     - Description
+
+   * - **Vision Capabilities**
+     - 
+
+   * - 🎬 `Video QA <./inference/video_understanding.md>`_
+     - Video-based question answering
+
+   * - 🧩 `Multi-image QA <./inference/multi_images.md>`_
+     - Question answering with multiple images
+
+   * - 🖼️ `Single-image QA <./inference/single_image.md>`_
+     - Question answering on a single image
+
+   * - 📄 `Document Parser <./inference/pdf_parse.md>`_
+     - Parse and extract content from PDFs and webpages
+
+   * - 📝 `Text Recognition <./inference/ocr.md>`_
+     - Reliable OCR for photos and screenshots
+
+   * - 🔍 `Multimodal RAG <./inference/rag.md>`_
+     - Retrieve and organize multimodal data
+
+   * - 🤖 `Agents <./inference/agent.md>`_
+     - AI assistants with tool integration
+
+   * - **Audio Capabilities**
+     -
+
+   * - 🎤 `Speech-to-Text <./inference/speech2text.md>`_
+     - Multilingual speech recognition
+
+   * - 🎭 `Voice Cloning <./inference/voice_clone.md>`_
+     - Realistic voice cloning and role-play
+
+   * - 🗣️ `Text-to-Speech <./inference/text2speech.md>`_
+     - Instruction-following speech synthesis
+
+🏋️ Fine-tuning recipes
+**********************
+
+*Customize your model with your own ingredients*
+
+**Data preparation**
+
+Follow the `guidance <./finetune/fintune.html#data-preparation>`_ to set up your training datasets.
+
+
+**Training**
+
+We provide training methods serving different needs as following:
+
+.. list-table::
+   :widths: 25 75
+   :header-rows: 1
+
+   * - Method
+     - Description
+   * - `Full <./finetune/fintune.html#full-parameter-finetuning>`_
+     - Comprehensive model customization
+   * - `LoRA <./finetune/fintune.html#lora-finetuning>`_
+     - Efficient parameter tuning
+
+
+.. _serving-recipes:
+
+🥡 Serving recipes
+******************
+
+*Deploy your model efficiently*
+
+.. list-table::
+   :widths: 25 75
+   :header-rows: 1
+
+   * - Method
+     - Description
+   * - `vLLM <./deployment/vllm.html>`_
+     - High-throughput GPU inference
+   * - `SGLang <./deployment/sglang.html>`_
+     - High-throughput GPU inference
+   * - `Llama.cpp <./run_locally/llama.cpp.html>`_
+     - Fast CPU inference
+   * - `Ollama <./run_locally/ollama.html>`_
+     - User-friendly setup
+   * - `Web Demo <./demo/webdemo.html>`_
+     - Interactive user interface
+
+
+.. _quantization-recipes:
+
+🥄 Quantization recipes
+***********************
+*Compress your model to improve efficiency*
+
+.. list-table::
+   :widths: 25 75
+   :header-rows: 1
+
+   * - Format
+     - Key Feature
+   * - `GGUF <./quantization/gguf.html>`_
+     - Simplest and most portable format
+   * - `BNB <./quantization/bnb.html>`_
+     - Efficient 4/8-bit weight quantization
+
+
+.. _community:
+
+👥 Community
+============
+
+.. _contributing:
+
+**Contributing**
+
+We love new recipes! Please share your creative dishes:
+
+1. Fork the repository
+2. Create your recipe
+3. Submit a pull request
+
+
+.. _issues-support:
+
+**Issues & Support**
+
+- Found a bug? `Open an issue <https://github.com/OpenBMB/MiniCPM-o/issues>`__
+- Need help? Join our `Discord <https://discord.gg/rM6sC9G2MA>`__ and `WeChat <https://github.com/OpenBMB/MiniCPM-o/blob/main/assets/wechat-QR.jpeg>`__ group.
 
 For more information, please visit our:
 
 * `GitHub <https://github.com/OpenBMB>`__
 * `Hugging Face <https://huggingface.co/OpenBMB>`__
 * `Modelscope <https://modelscope.cn/organization/OpenBMB>`__
-
-Welcome to join our community by joining our `Discord <https://discord.gg/rM6sC9G2MA>`__ and `WeChat <https://github.com/OpenBMB/MiniCPM-o/blob/main/assets/wechat-QR.jpeg>`__ group. We are looking forward to seeing you there!
-
 
 .. toctree::
    :maxdepth: 1

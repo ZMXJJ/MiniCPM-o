@@ -64,48 +64,48 @@ msgid "**Vision Capabilities**"
 msgstr "**视觉能力**"
 
 #: ../../source/getting_started/quickstart.md 18b33531eb7f42c3adf347a77b1b506a
-msgid "🖼️ [Single Image](./inference/single_image.ipynb)"
-msgstr "🖼️ [单张图片](./inference/single_image.ipynb)"
+msgid "🖼️ [Single Image](./inference/single_image.md)"
+msgstr "🖼️ [单张图片](./inference/single_image.md)"
 
 #: ../../source/getting_started/quickstart.md 23222d89bd57461286873f64dd2f97d0
 msgid "Image understanding with high-resolution support"
 msgstr "支持高分辨率的图像理解"
 
 #: ../../source/getting_started/quickstart.md 98acbe5483d6464ab32252f4ec5bf70b
-msgid "🧩 [Multi Images](./inference/multi_images.ipynb)"
-msgstr "🧩 [多图推理](./inference/multi_images.ipynb)"
+msgid "🧩 [Multi Images](./inference/multi_images.md)"
+msgstr "🧩 [多图推理](./inference/multi_images.md)"
 
 #: ../../source/getting_started/quickstart.md 8da7af91f9c148d0a4c321a48b736af8
 msgid "Multi-image reasoning and comparison"
 msgstr "多图推理与对比"
 
 #: ../../source/getting_started/quickstart.md 3d6807e9a8a744b1a98bceafde09cdb8
-msgid "🎬 [Video Understanding](./inference/video_understanding.ipynb)"
-msgstr "🎬 [视频理解](./inference/video_understanding.ipynb)"
+msgid "🎬 [Video Understanding](./inference/video_understanding.md)"
+msgstr "🎬 [视频理解](./inference/video_understanding.md)"
 
 #: ../../source/getting_started/quickstart.md c001d209de664758a1c24c5350e601e6
 msgid "Real-time video analysis and dense captions"
 msgstr "实时视频分析与密集描述"
 
 #: ../../source/getting_started/quickstart.md fa4e23af900f409699468efade534591
-msgid "📝 [OCR](./inference/ocr.ipynb)"
-msgstr "📝 [OCR文字识别](./inference/ocr.ipynb)"
+msgid "📝 [OCR](./inference/ocr.md)"
+msgstr "📝 [OCR文字识别](./inference/ocr.md)"
 
 #: ../../source/getting_started/quickstart.md 58b631b0a77b42cb88aa1ca932e48949
 msgid "Robust text extraction and recognition"
 msgstr "强大的文本提取与识别"
 
 #: ../../source/getting_started/quickstart.md 9ef34251fca24e1299503a79426175f8
-msgid "🔍 [Scene Text Recognition](./inference/scene_text_recongize.ipynb)"
-msgstr "🔍 [场景文字识别](./inference/scene_text_recongize.ipynb)"
+msgid "🔍 [Scene Text Recognition](./inference/scene_text_recognize.md)"
+msgstr "🔍 [场景文字识别](./inference/scene_text_recognize.md)"
 
 #: ../../source/getting_started/quickstart.md 3054b44cf1f743bfacb50fbc7c9e535c
 msgid "Scene text detection and license plate recognition"
 msgstr "场景文字检测与车牌识别"
 
 #: ../../source/getting_started/quickstart.md 524835cc1c004579914fa8b6932b6c93
-msgid "📄 [PDF Parse](./inference/pdf_parse.ipynb)"
-msgstr "📄 [PDF解析](./inference/pdf_parse.ipynb)"
+msgid "📄 [PDF Parse](./inference/pdf_parse.md)"
+msgstr "📄 [PDF解析](./inference/pdf_parse.md)"
 
 #: ../../source/getting_started/quickstart.md f25d9166353e4ab68986c3bceaaff1c0
 msgid "PDF document parsing and text extraction"
@@ -116,24 +116,24 @@ msgid "**Omni Capabilities**"
 msgstr "**全模态能力**"
 
 #: ../../source/getting_started/quickstart.md 4205893f8d7344be9435455d8ad00e4f
-msgid "🎤 [Speech-to-Text](./inference/speech2text.ipynb)"
-msgstr "🎤 [语音转文本](./inference/speech2text.ipynb)"
+msgid "🎤 [Speech-to-Text](./inference/speech2text.md)"
+msgstr "🎤 [语音转文本](./inference/speech2text.md)"
 
 #: ../../source/getting_started/quickstart.md a3f538da32c34a57ba2ad9d9f0beb7ee
 msgid "Multilingual speech recognition"
 msgstr "多语言语音识别"
 
 #: ../../source/getting_started/quickstart.md 0b5f879147e14a71b7be42a165f5ff68
-msgid "🗣️ [Text-to-Speech](./inference/text2speech.ipynb)"
-msgstr "🗣️ [文本转语音](./inference/text2speech.ipynb)"
+msgid "🗣️ [Text-to-Speech](./inference/text2speech.md)"
+msgstr "🗣️ [文本转语音](./inference/text2speech.md)"
 
 #: ../../source/getting_started/quickstart.md 35cff4b101d443c7b588314815084cfa
 msgid "Natural speech synthesis with emotion control"
 msgstr "支持情感控制的自然语音合成"
 
 #: ../../source/getting_started/quickstart.md b4e8fb899ed048d387e2fabe808926a9
-msgid "🎭 [Voice Clone](./inference/voice_clone.ipynb)"
-msgstr "🎭 [声音克隆](./inference/voice_clone.ipynb)"
+msgid "🎭 [Voice Clone](./inference/voice_clone.md)"
+msgstr "🎭 [声音克隆](./inference/voice_clone.md)"
 
 #: ../../source/getting_started/quickstart.md cd8ff6f6c35e4b35a26c3c0ff4661cde
 msgid "End-to-end voice cloning and role-playing"
@@ -242,8 +242,8 @@ msgid "[Web Demo](./demo/webdemo)"
 msgstr "[Web Demo](./demo/webdemo)"
 
 #: ../../source/getting_started/quickstart.md 188d9f26f1ce4ab8883cdbf08c7ce96e
-msgid "Interactive interface"
-msgstr "交互界面"
+msgid "FastAPI interactive interface"
+msgstr "FastAPI 交互界面"
 
 #: ../../source/getting_started/quickstart.md ba280f29790942cca5c313e652d14392
 msgid "User-friendly apps"

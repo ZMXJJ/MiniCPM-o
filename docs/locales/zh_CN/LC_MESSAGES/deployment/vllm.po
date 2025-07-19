@@ -35,7 +35,7 @@ msgstr ""
 
 #: ../../source/deployment/vllm.md:6 c606a5e926bd42af898f35588b73bcc9
 msgid "1. Environment Setup"
-msgstr "环境配置"
+msgstr "1.环境配置"
 
 #: ../../source/deployment/vllm.md:8 78582609a6b04140a097f704ee9d46e5
 msgid "1.1 Install vLLM"
@@ -59,7 +59,7 @@ msgstr ""
 
 #: ../../source/deployment/vllm.md:24 21fec9ddb35b428e803bc84c316fa6ab
 msgid "2. API Service Deployment"
-msgstr "2. API 服务部署"
+msgstr "2.API 服务部署"
 
 #: ../../source/deployment/vllm.md:26 0468f4fbee4648c79c211ff51b26915c
 msgid "2.1 Launch API Service"
@@ -135,7 +135,7 @@ msgstr "多轮对话示例代码"
 
 #: ../../source/deployment/vllm.md:235 4fc49ccac0f04b85b6d4df5c1bdd0f26
 msgid "3. Offline Inference"
-msgstr "3. 离线推理"
+msgstr "3.离线推理"
 
 #: ../../source/deployment/vllm.md:307 4ea5c1994021423d823f21eab32d3fdb
 msgid "Notes"

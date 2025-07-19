@@ -26,16 +26,16 @@ tokenizer = AutoTokenizer.from_pretrained('openbmb/MiniCPM-V-4', trust_remote_co
 | Recipe | Description | 
 |---------|-------------|
 | **Vision Capabilities** | |
-| 🖼️ [Single Image](./inference/single_image.ipynb) | Image understanding with high-resolution support |
-| 🧩 [Multi Images](./inference/multi_images.ipynb) | Multi-image reasoning and comparison |
-| 🎬 [Video Understanding](./inference/video_understanding.ipynb) | Real-time video analysis and dense captions |
-| 📝 [OCR](./inference/ocr.ipynb) | Robust text extraction and recognition |
-| 🔍 [Scene Text Recognition](./inference/scene_text_recongize.ipynb) | Scene text detection and license plate recognition |
-| 📄 [PDF Parse](./inference/pdf_parse.ipynb) | PDF document parsing and text extraction |
+| 🖼️ [Single Image](./inference/single_image.md) | Image understanding with high-resolution support |
+| 🧩 [Multi Images](./inference/multi_images.md) | Multi-image reasoning and comparison |
+| 🎬 [Video Understanding](./inference/video_understanding.md) | Real-time video analysis and dense captions |
+| 📝 [OCR](./inference/ocr.md) | Robust text extraction and recognition |
+| 🔍 [Scene Text Recognition](./inference/scene_text_recognize.md) | Scene text detection and license plate recognition |
+| 📄 [PDF Parse](./inference/pdf_parse.md) | PDF document parsing and text extraction |
 | **Omni Capabilities** | |
-| 🎤 [Speech-to-Text](./inference/speech2text.ipynb) | Multilingual speech recognition |
-| 🗣️ [Text-to-Speech](./inference/text2speech.ipynb) | Natural speech synthesis with emotion control |
-| 🎭 [Voice Clone](./inference/voice_clone.ipynb) | End-to-end voice cloning and role-playing |
+| 🎤 [Speech-to-Text](./inference/speech2text.md) | Multilingual speech recognition |
+| 🗣️ [Text-to-Speech](./inference/text2speech.md) | Natural speech synthesis with emotion control |
+| 🎭 [Voice Clone](./inference/voice_clone.md) | End-to-end voice cloning and role-playing |
 
 ### 🏋️ Training Camp (Fine-tuning)
 > *Customize your model with your own ingredients*
@@ -54,7 +54,7 @@ tokenizer = AutoTokenizer.from_pretrained('openbmb/MiniCPM-V-4', trust_remote_co
 | [Ollama](./run_locally/ollama) | Easy management | Quick setup |
 | [vLLM](./deployment/vllm) | High throughput | Production servers |
 | [SGLang](./deployment/sglang) | Structured generation | Complex workflows |
-| [Web Demo](./demo/webdemo) | Interactive interface | User-friendly apps |
+| [Web Demo](./demo/webdemo) | FastAPI interactive interface | User-friendly apps |
 
 ### 🥄 Light Bites (Quantization)
 > *Compress your model without losing flavor*
