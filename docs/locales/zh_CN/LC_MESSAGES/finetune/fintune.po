@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MiniCPM-o Cookbook \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-20 22:01+0800\n"
+"POT-Creation-Date: 2025-07-20 22:28+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_CN\n"
@@ -20,11 +20,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.17.0\n"
 
-#: ../../source/finetune/fintune.md:1 4a9c9fa2d7844be9aaa0542cea0d3c80
+#: ../../source/finetune/fintune.md:1 0b55ab4c629847719986088369d118b7
 msgid "Finetune"
 msgstr "微调"
 
-#: ../../source/finetune/fintune.md:4 17e78377dc354fb7bd5f4cfb8f26e171
+#: ../../source/finetune/fintune.md:4 595e949c61e64c7688b489b17456bd60
 msgid ""
 "We provide official scripts for easily fine-tuning the pretrained models "
 "**MiniCPM-V 4.0**, **MiniCPM-o 2.6**, **MiniCPM-V 2.6**, **MiniCPM-"
@@ -35,235 +35,270 @@ msgstr ""
 "2.6**、**MiniCPM-V 2.6**、**MiniCPM-Llama3-V 2.5** 和 **MiniCPM-V "
 "2.0**。微调脚本默认使用 `transformers Trainer` 和 `DeepSpeed`。"
 
-#: ../../source/finetune/fintune.md:6 b8409786193a4d2fa78b7f51b2149c3f
+#: ../../source/finetune/fintune.md:6 628dd329aa664db89409665dded31f7d
 msgid "This section takes **MiniCPM-o 2.6** as an example."
 msgstr "本节以 **MiniCPM-o2.6** 为例。"
 
-#: ../../source/finetune/fintune.md:10 5f5558893cb74ae9b69ebdcb5c858e2b
+#: ../../source/finetune/fintune.md:9 a2a4838666f84b5983addb38578731f1
+msgid "Download Code"
+msgstr "下载代码"
+
+#: ../../source/finetune/fintune.md:11 61489e6d6a7e495fbf6efe642ea7353d
+msgid ""
+"Before the fine-tuning, please go to our Cookbook repository to download "
+"the relevant code."
+msgstr "在进行微调之前，请前往我们的 Cookbook 仓库下载相关代码。"
+
+#: ../../source/finetune/fintune.md:13 c6f03af5b44944e4bbd0e706416d3dd5
 msgid "Data preparation"
 msgstr "数据准备"
 
-#: ../../source/finetune/fintune.md:12 a6139a70ee19450cb404d5914a4a9e9e
+#: ../../source/finetune/fintune.md:15 dc968fc58ea841c1a1b812a43380f50c
 msgid ""
 "Prepare your data in a JSON file. Each entry should be a dictionary with "
 "`id`, `image` (a path, or a dictionary of paths for multiple images), and"
 " `conversations`."
-msgstr "请在 JSON 文件中准备您的数据。每个条目都应该是一个包含 `id`、`image`（单个图像的路径，或多个图像的路径字典）和 `conversations` 的字典。"
+msgstr ""
+"请在 JSON 文件中准备您的数据。每个条目都应该是一个包含 `id`、`image`（单个图像的路径，或多个图像的路径字典）和 "
+"`conversations` 的字典。"
 
-#: ../../source/finetune/fintune.md:14 3ea49fcf5036469592990ea3ebe605b0
+#: ../../source/finetune/fintune.md:17 b8ad67945d894955b3cb5847462e3c67
 msgid ""
 "In `conversations`, use `<image>` or `<image_XX>` placeholders to "
 "position images. Without placeholders, the image is placed at the "
 "beginning. For multi-image supervised fine-tuning (SFT), it's recommended"
 " to set `MODEL_MAX_LENGTH=4096` in your script for better performance."
-msgstr "在 `conversations` 中，使用 `<image>` 或 `<image_XX>` 占位符来定位图像。如果没有占位符，图像将被放置在开头。对于多图像监督微调（SFT），建议在脚本中设置 `MODEL_MAX_LENGTH=4096` 以获得更好的性能。"
+msgstr ""
+"在 `conversations` 中，使用 `<image>` 或 `<image_XX>` "
+"占位符来定位图像。如果没有占位符，图像将被放置在开头。对于多图像监督微调（SFT），建议在脚本中设置 "
+"`MODEL_MAX_LENGTH=4096` 以获得更好的性能。"
 
-#: ../../source/finetune/fintune.md:87 fd13a4d409a142a78f07a8ed30187a30
+#: ../../source/finetune/fintune.md:91 478d96176ac9442791f34110ae6f592d
 msgid "Full-parameter finetuning"
 msgstr "全参数微调"
 
-#: ../../source/finetune/fintune.md:89 aa2cfe83c8c84ed78e31c3bda1001540
+#: ../../source/finetune/fintune.md:93 9e68903770334cab90800f56ced3deb4
 msgid ""
 "This method updates all model parameters. Specify your model and data "
 "paths in the script:"
 msgstr "此方法会更新所有模型参数。请在脚本中指定您的模型和数据路径："
 
-#: ../../source/finetune/fintune.md:98 8ff273950a674b4eb71ad24331b963c3
+#: ../../source/finetune/fintune.md:102 3d859485e922445fb0c4978e11c09622
 msgid "To launch your training, run:"
 msgstr "要启动您的训练，请运行："
 
-#: ../../source/finetune/fintune.md:104 b76e4cbea8094af3a2264b84a5ce6527
+#: ../../source/finetune/fintune.md:108 11f919411322466eb14a19c02bf03223
 msgid "LoRA finetuning"
 msgstr "LoRA 微调"
 
-#: ../../source/finetune/fintune.md:106 eab2c083fe0043a48b538d8be6b8bdca
+#: ../../source/finetune/fintune.md:110 ba196d64ad4246c49b1182848b6fc011
 msgid ""
 "LoRA is a lightweight method that updates only a small subset of "
 "parameters. To launch your training, run:"
 msgstr "LoRA 是一种轻量级方法，仅更新一小部分参数。要启动您的训练，请运行："
 
-#: ../../source/finetune/fintune.md:111 19a3ac06996a42d5aedf7316119f4856
+#: ../../source/finetune/fintune.md:115 da2bf3962ec74b5bac5bf65f96a4bffd
 msgid ""
 "After training, load the LoRA adapter. Use an absolute path for the base "
 "model."
 msgstr "训练后，加载 LoRA 适配器。请为基础模型使用绝对路径。"
 
-#: ../../source/finetune/fintune.md:134 e0abd49455614a1f81611d5ed617ca45
+#: ../../source/finetune/fintune.md:138 db70572b3e8e4702a78fab0feb1cfa47
 msgid "Model Fine-tuning Memory Usage Statistics"
 msgstr "模型微调显存占用统计"
 
-#: ../../source/finetune/fintune.md:136 9bef183b459c4b3ab898c89973c76129
+#: ../../source/finetune/fintune.md:140 88e3832f4e7d44caa2cb0ecca21cb869
 msgid ""
 "The following table shows memory usage for fine-tuning on NVIDIA A100 "
 "(80GiB) GPUs with DeepSpeed Zero-3, a max length of 2048, and a batch "
 "size of 1."
-msgstr "下表显示了在使用 DeepSpeed Zero-3、最大长度为 2048、批处理大小为 1 的情况下，在 NVIDIA A100 (80GiB) GPU 上进行微调的显存使用情况。"
+msgstr ""
+"下表显示了在使用 DeepSpeed Zero-3、最大长度为 2048、批处理大小为 1 的情况下，在 NVIDIA A100 (80GiB) "
+"GPU 上进行微调的显存使用情况。"
 
-#: ../../source/finetune/fintune.md:3 c07644417ab2437881daac7c854fa780
+#: ../../source/finetune/fintune.md:3 036b11510c1e4903a802a1c20ef84173
 msgid "Fine-tuning Method"
 msgstr "微调方法"
 
-#: ../../source/finetune/fintune.md:3 577e6b1e127947c3805854a305975dfc
+#: ../../source/finetune/fintune.md:3 8e85dae4a70a4382a32c627675c76fd5
 msgid "GPUs: 2"
 msgstr "GPU 数量：2"
 
-#: ../../source/finetune/fintune.md:3 d2e6bfcb92c74884ab88a5a806a99ab6
+#: ../../source/finetune/fintune.md:3 c92cada9f237434ea43792c5a494aa5e
 msgid "GPUs: 4"
 msgstr "GPU 数量：4"
 
-#: ../../source/finetune/fintune.md:3 088eaacfc23b44949eeb7ed4303f92c2
+#: ../../source/finetune/fintune.md:3 610a07e763dc41b28865a7cf17ee7757
 msgid "GPUs: 8"
 msgstr "GPU 数量：8"
 
-#: ../../source/finetune/fintune.md:3 543e2b3f9bf94bcf965b124881328584
+#: ../../source/finetune/fintune.md:3 b2b6ff9e881c48e3b47abab2a77780af
 msgid "LoRA Fine-tuning"
 msgstr "LoRA 微调"
 
-#: ../../source/finetune/fintune.md:3 3ae7172e721746f5912e792feb553a01
+#: ../../source/finetune/fintune.md:3 782bc5bf05954c5c82aed7c4cb0c68bc
 msgid "14.4 GiB"
 msgstr "14.4 GiB"
 
-#: ../../source/finetune/fintune.md:3 30550029e6b4470194f0926983ef6942
+#: ../../source/finetune/fintune.md:3 38da37ccd7d34c3bb571ddcbaf445dc9
 msgid "13.6 GiB"
 msgstr "13.6 GiB"
 
-#: ../../source/finetune/fintune.md:3 e2890f4bd3d14ead9aa70c4d3fa73c85
+#: ../../source/finetune/fintune.md:3 1f1cbe48583743a0b3de3568ea86a6f1
 msgid "13.1 GiB"
 msgstr "13.1 GiB"
 
-#: ../../source/finetune/fintune.md:3 b6f6dd81999248a3865d6919611cdb67
+#: ../../source/finetune/fintune.md:3 aac621ad2f074ba589376ff3ee156323
 msgid "Full Parameters Fine-tuning"
 msgstr "全参数微调"
 
-#: ../../source/finetune/fintune.md:3 b8ec9db09a3c4a84800cdbcb4af8da46
+#: ../../source/finetune/fintune.md:3 a48588b6b1ed49758ef73a019ed9428d
 msgid "16.0 GiB"
 msgstr "16.0 GiB"
 
-#: ../../source/finetune/fintune.md:3 701f1d0befae42eab8166af93052a648
+#: ../../source/finetune/fintune.md:3 5efd6d713edc41319515d6ce0fbe6c6a
 msgid "15.8 GiB"
 msgstr "15.8 GiB"
 
-#: ../../source/finetune/fintune.md:3 b6dc6f19319a49c1bf23fecd30455606
+#: ../../source/finetune/fintune.md:3 d033695309f944b397b8f1573853e008
 msgid "15.63GiB"
 msgstr "15.63GiB"
 
-#: ../../source/finetune/fintune.md:143 efb28c07b72a4c078e9ee82696a1212f
+#: ../../source/finetune/fintune.md:147 9f3e586917dc4a65b41861310cc2c666
 msgid "Tips & Troubleshooting"
 msgstr "提示与故障排除"
 
-#: ../../source/finetune/fintune.md:148 c57c9f56360946d9b061d410bdcd226a
+#: ../../source/finetune/fintune.md:152 799a1af705d44ed6a57415024555f2df
 msgid "**Adjust Hyperparameters**:"
 msgstr "**调整超参数**："
 
-#: ../../source/finetune/fintune.md:149 62ae279114d1480498f8e87b6e46367d
+#: ../../source/finetune/fintune.md:153 f769796897e94950a5d3a2d126e159c3
 msgid "Reduce `--model_max_length` (e.g., to 1200)."
 msgstr "减少 `--model_max_length`（例如，减少到 1200）。"
 
-#: ../../source/finetune/fintune.md:150 3e33600ed6a9477b96381f8ea91c7e11
+#: ../../source/finetune/fintune.md:154 7a315f801af8402c8c848a16882d6a17
 msgid ""
 "Lower `--batch_size` (e.g., to 1) and increase "
 "`gradient_accumulation_steps` to compensate."
 msgstr "降低 `--batch_size`（例如，降至 1）并增加 `gradient_accumulation_steps` 以进行补偿。"
 
-#: ../../source/finetune/fintune.md:151 1e422b2761ba446dac98ae23af6c4c4c
+#: ../../source/finetune/fintune.md:155 a66c47f86fc04b809121799ae77113c6
 msgid ""
 "For high-resolution images, reduce `--max_slice_nums` to lower token "
 "usage per image."
 msgstr "对于高分辨率图像，减少 `--max_slice_nums` 以降低每张图像的 token 使用量。"
 
-#: ../../source/finetune/fintune.md:152 1be2c721fcce4ddeb026ba6993ea0c4c
+#: ../../source/finetune/fintune.md:156 d0f845e4f73d4df4af6f03467baf30ed
 msgid "**Reduce Model Parameters**:"
 msgstr "**减少模型参数**："
 
-#: ../../source/finetune/fintune.md:153 bae8f4e587904927811901071bd5876f
+#: ../../source/finetune/fintune.md:157 11f3a2f21749434493f4f201cb8b6b38
 msgid "Freeze the vision module with `--tune_vision false`."
 msgstr "使用 `--tune_vision false` 冻结视觉模块。"
 
-#: ../../source/finetune/fintune.md:154 b15e3c84ea884e2083d7456843fb68de
+#: ../../source/finetune/fintune.md:158 3d83639e7ab24234abde0aede3aceaf9
 msgid "Use LoRA finetuning instead of full-parameter tuning."
 msgstr "使用 LoRA 微调代替全参数微调。"
 
-#: ../../source/finetune/fintune.md:155 b10df1687b0e40908171de3435f3fc42
+#: ../../source/finetune/fintune.md:159 48f331301ce44d76bdfee0d3772847fe
 msgid "**Use DeepSpeed Optimization**:"
 msgstr "**使用 DeepSpeed 优化**："
 
-#: ../../source/finetune/fintune.md:156 8cc8f279b8b146f5bf48b89cb927e1b2
+#: ../../source/finetune/fintune.md:160 639406e23f9f4572afdee065b390aa5a
 msgid ""
 "Configure DeepSpeed Zero Stage 2 or 3 to offload optimizer and model "
 "parameters to the CPU. See the [Hugging Face DeepSpeed "
 "docs](https://huggingface.co/docs/transformers/deepspeed) for details."
-msgstr "配置 DeepSpeed Zero Stage 2 或 3，将优化器和模型参数卸载到 CPU。详情请参阅 [Hugging Face DeepSpeed 文档](https://huggingface.co/docs/transformers/deepspeed)。"
+msgstr ""
+"配置 DeepSpeed Zero Stage 2 或 3，将优化器和模型参数卸载到 CPU。详情请参阅 [Hugging Face "
+"DeepSpeed 文档](https://huggingface.co/docs/transformers/deepspeed)。"
 
-#: ../../source/finetune/fintune.md:162 22dece83bb344886916ff414a1b4d254
+#: ../../source/finetune/fintune.md:166 6117b81128494e1f86e0e1c5a5e8f85c
 msgid ""
 "An error like `NotImplementedError` when using `AutoPeftModelForCausalLM`"
 " (see [issue #168](https://github.com/OpenBMB/MiniCPM-V/issues/168)) can "
 "occur if the model lacks `get_input_embeddings` and "
 "`set_input_embeddings` methods."
-msgstr "如果模型缺少 `get_input_embeddings` 和 `set_input_embeddings` 方法，在使用 `AutoPeftModelForCausalLM` 时可能会出现类似 `NotImplementedError` 的错误（参见 [issue #168](https://github.com/OpenBMB/MiniCPM-V/issues/168)）。"
+msgstr ""
+"如果模型缺少 `get_input_embeddings` 和 `set_input_embeddings` 方法，在使用 "
+"`AutoPeftModelForCausalLM` 时可能会出现类似 `NotImplementedError` 的错误（参见 [issue "
+"#168](https://github.com/OpenBMB/MiniCPM-V/issues/168)）。"
 
-#: ../../source/finetune/fintune.md:164 4b2f7a8f7fc14598b4e5b25929cf25d9
+#: ../../source/finetune/fintune.md:168 a251e34ad568411883be3ee5d301c0ea
 msgid "**Solution**:"
 msgstr "**解决方案**："
 
-#: ../../source/finetune/fintune.md:165 8539506901c945efb400c6caee58e89c
+#: ../../source/finetune/fintune.md:169 ff76b63a2b814d99a93123626e84de7e
 msgid "Load the model using `PeftModel` as shown in the LoRA section."
 msgstr "如 LoRA 部分所示，使用 `PeftModel` 加载模型。"
 
-#: ../../source/finetune/fintune.md:166 8e9d4b7e937347ce81b8df976f27f25f
+#: ../../source/finetune/fintune.md:170 be7b2d8919b24b3e8d1462be728a2ad7
 msgid ""
 "Ensure your `model_minicpmv.py` file is up-to-date from the model's "
 "Hugging Face repository (e.g., [MiniCPM-"
 "Llama3-V-2_5](https://huggingface.co/openbmb/MiniCPM-"
 "Llama3-V-2_5/tree/main) or "
 "[MiniCPM-V-2](https://huggingface.co/openbmb/MiniCPM-V-2))."
-msgstr "确保您的 `model_minicpmv.py` 文件是从模型的 Hugging Face 仓库（例如 [MiniCPM-Llama3-V-2_5](https://huggingface.co/openbmb/MiniCPM-Llama3-V-2_5/tree/main) 或 [MiniCPM-V-2](https://huggingface.co/openbmb/MiniCPM-V-2)）获取的最新版本。"
+msgstr ""
+"确保您的 `model_minicpmv.py` 文件是从模型的 Hugging Face 仓库（例如 [MiniCPM-"
+"Llama3-V-2_5](https://huggingface.co/openbmb/MiniCPM-"
+"Llama3-V-2_5/tree/main) 或 "
+"[MiniCPM-V-2](https://huggingface.co/openbmb/MiniCPM-V-2)）获取的最新版本。"
 
-#: ../../source/finetune/fintune.md:172 b6e8bd885ccd4be9bafa93a8dcce6942
+#: ../../source/finetune/fintune.md:176 0e67a92b6eac4d8bbcae6d68a3d0cab1
 msgid "**How to use `flash_attention_2`?**"
 msgstr "**如何使用 `flash_attention_2`？**"
 
-#: ../../source/finetune/fintune.md:173 2052ba72df1f43e484db66c631e9431f
+#: ../../source/finetune/fintune.md:177 2a5dfe591de24bf5ac37ea2bca9f8cbd
 msgid ""
 "If your environment supports it, add "
 "`_attn_implementation=\"flash_attention_2\"` when loading the model: "
 "`AutoModel.from_pretrained('model_name', "
 "_attn_implementation=\"flash_attention_2\")`."
-msgstr "如果您的环境支持，加载模型时请添加 `_attn_implementation=\"flash_attention_2\"`：`AutoModel.from_pretrained('model_name', _attn_implementation=\"flash_attention_2\")`。"
+msgstr ""
+"如果您的环境支持，加载模型时请添加 "
+"`_attn_implementation=\"flash_attention_2\"`：`AutoModel.from_pretrained('model_name',"
+" _attn_implementation=\"flash_attention_2\")`。"
 
-#: ../../source/finetune/fintune.md:174 d4e91b83229643a585ceb08e8c6932de
+#: ../../source/finetune/fintune.md:178 55fa8392d4d44911932bd77ae0c1fe1d
 msgid "**Can I use original image sizes?**"
 msgstr "**我可以使用原始图像尺寸吗？**"
 
-#: ../../source/finetune/fintune.md:175 6f11bb1b7e8c49c4abaad406926d9d19
+#: ../../source/finetune/fintune.md:179 6e24cd5b2c18478dbf6bd8ede62af453
 msgid ""
 "Yes. The model supports up to 1344x1344 resolution, so you can use "
 "original sizes instead of resizing to 512."
 msgstr "可以。模型支持高达 1344x1344 的分辨率，因此您可以使用原始尺寸，而无需调整到 512。"
 
-#: ../../source/finetune/fintune.md:176 c9577c92b1ed455b933e1bdaf80bf835
+#: ../../source/finetune/fintune.md:180 72aaeb182fd14bed989dc00cf37e0016
 msgid "**How to determine `max_length` for training data?**"
 msgstr "**如何确定训练数据的 `max_length`？**"
 
-#: ../../source/finetune/fintune.md:177 2f1dcf895d694c84bf9d4baaaef2203a
+#: ../../source/finetune/fintune.md:181 cfc614e0ae044c45ac664d9803711a79
 msgid ""
 "Use [this "
 "function](https://github.com/OpenBMB/MiniCPM-V/blob/main/finetune/dataset.py#L220)"
 " to sample your data's length, then set `--model_max_length` in your "
 "command."
-msgstr "使用[此函数](https://github.com/OpenBMB/MiniCPM-V/blob/main/finetune/dataset.py#L220)对您的数据长度进行采样，然后在命令中设置 `--model_max_length`。"
+msgstr ""
+"使用[此函数](https://github.com/OpenBMB/MiniCPM-V/blob/main/finetune/dataset.py#L220)对您的数据长度进行采样，然后在命令中设置"
+" `--model_max_length`。"
 
-#: ../../source/finetune/fintune.md:178 7436bc6358154db9ae2cb038a607fa75
+#: ../../source/finetune/fintune.md:182 0faeb1fbef2d4cb59eb5095acff00378
 msgid "**Where to find LoRA hyperparameter documentation?**"
 msgstr "**在哪里可以找到 LoRA 超参数文档？**"
 
-#: ../../source/finetune/fintune.md:179 687894ae52524c8099849f30d964d9a2
+#: ../../source/finetune/fintune.md:183 fd7a443a20ca4660b05d7118828ccf16
 msgid ""
 "Refer to the [LoRA "
 "documentation](https://huggingface.co/docs/peft/en/package_reference/lora#peft.LoraConfig)"
 " for guidance. For general training arguments, see the [Transformers "
 "documentation](https://huggingface.co/docs/transformers/main_classes/trainer#transformers.TrainingArguments)."
-msgstr "请参阅 [LoRA 文档](https://huggingface.co/docs/peft/en/package_reference/lora#peft.LoraConfig)以获取指导。对于通用训练参数，请参阅 [Transformers 文档](https://huggingface.co/docs/transformers/main_classes/trainer#transformers.TrainingArguments)。"
+msgstr ""
+"请参阅 [LoRA "
+"文档](https://huggingface.co/docs/peft/en/package_reference/lora#peft.LoraConfig)以获取指导。对于通用训练参数，请参阅"
+" [Transformers "
+"文档](https://huggingface.co/docs/transformers/main_classes/trainer#transformers.TrainingArguments)。"
 
 #~ msgid ""
 #~ "To prepare your fine-tuning data, "
@@ -660,3 +695,4 @@ msgstr "请参阅 [LoRA 文档](https://huggingface.co/docs/peft/en/package_refe
 #~ "文档](https://huggingface.co/docs/transformers/main_classes/trainer#transformers.TrainingArguments)和"
 #~ " [Lora "
 #~ "文档](https://huggingface.co/docs/peft/en/package_reference/lora#peft.LoraConfig)。对这些参数进行实验和微调对于实现针对您的特定任务和数据集优化的最佳模型性能至关重要。"
+

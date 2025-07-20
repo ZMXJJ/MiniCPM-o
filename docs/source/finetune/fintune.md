@@ -6,6 +6,9 @@ We provide official scripts for easily fine-tuning the pretrained models **MiniC
 This section takes **MiniCPM-o 2.6** as an example.
 :::
 
+## Download Code
+
+Before the fine-tuning, please go to our Cookbook repository to download the relevant code.
 
 ## Data preparation
 
@@ -54,6 +57,7 @@ In `conversations`, use `<image>` or `<image_XX>` placeholders to position image
 
 </details>
 
+
 <details>
   <summary>
     <b>Multiple images example (vl_finetune_data.json) with 1 samples.</b>
@@ -92,7 +96,7 @@ This method updates all model parameters. Specify your model and data paths in t
 MODEL="MiniCPM-o-2_6" # or "openbmb/MiniCPM-V-2_6", "openbmb/MiniCPM-Llama3-V-2_5", "openbmb/MiniCPM-V-2"
 DATA="path/to/training_data.json"
 EVAL_DATA="path/to/test_data.json"
-LLM_TYPE="qwen" # minicpm for MiniCPM-V-2, llama3 for MiniCPM-Llama3-V-2_5, qwen for MiniCPM-o-2_6/MiniCPM-V-2_6
+LLM_TYPE="qwen" # llama for MiniCPM-V-4, minicpm for MiniCPM-V-2, llama3 for MiniCPM-Llama3-V-2_5, qwen for MiniCPM-o-2_6/MiniCPM-V-2_6
 ```
 
 To launch your training, run:
