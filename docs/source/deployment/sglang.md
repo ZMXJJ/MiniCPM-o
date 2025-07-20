@@ -13,7 +13,7 @@ pip install -e "python[all]"
 ### Installing flashinfer Dependencies
 
 Method 1: pip installation (network speed may be insufficient)
-```cpp
+```bash
 pip install flashinfer -i https://flashinfer.ai/whl/cu121/torch2.4/
 ```
 
@@ -21,19 +21,19 @@ Method 2: whl file installation
 - Visit: [https://flashinfer.ai/whl/cu121/torch2.4/flashinfer/](https://flashinfer.ai/whl/cu121/torch2.4/flashinfer/)
 - Locate and download the whl file compatible with your server, e.g. `flashinfer-0.1.6+cu121torch2.4-cp310-cp310-linux_x86_64.whl`
 - Install using pip:
-    ```cpp
+    ```bash
     pip install flashinfer-0.1.6+cu121torch2.4-cp310-cp310-linux_x86_64.whl
     ```
 For any installation issues, please consult the [official installation documentation](https://docs.sglang.ai/start/install.html)
 
-## 2.Launching Inference Service with sglang
+## 2.Launching Inference Service with SGLang
 
 By default, it downloads model files from Hugging Face Hub
-```cpp
+```bash
 python -m sglang.launch_server --model-path openbmb/MiniCPM-V-4 --port 30000
 ```
 Alternatively, you can specify a local path after the `--model-path` parameter
-```cpp
+```bash
 python -m sglang.launch_server --model-path your_model_path --port 30000 --trust-remote-code
 ```
 

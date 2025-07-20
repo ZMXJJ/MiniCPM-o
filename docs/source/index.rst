@@ -27,10 +27,10 @@ Cook up amazing multimodal AI applications effortlessly with MiniCPM-o / MiniCPM
 
 
 🌟 What Makes Our Recipes Special?
-*********************************
+**********************************
 
 User Groups Covered
-~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~
 
 We support a wide range of users, from individuals to enterprises and researchers.
 
@@ -229,7 +229,6 @@ For more information, please visit our:
    :caption: Quantization
    :hidden:
 
-   quantization/awq
    quantization/bnb
    quantization/gguf
    

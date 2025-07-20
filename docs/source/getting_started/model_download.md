@@ -4,7 +4,7 @@ This guide provides instructions for downloading the MiniCPM-V-4 model from Hugg
 
 ## Available Model
 
-**MiniCPM-V-4**: Vision Understanding model for image and video processing (~8GB)
+**MiniCPM-V 4.0**: Vision Understanding model for image and video processing (~8GB)
 
 ## Hugging Face Hub Download
 
@@ -56,7 +56,7 @@ ModelScope provides an alternative platform with optimized access for users in C
 pip install modelscope
 ```
 
-### Method 1: Using modelscope SDK
+### Method 1: Using Modelscope SDK
 
 ```bash
 # Install dependencies
@@ -90,10 +90,10 @@ model = AutoModel.from_pretrained('openbmb/MiniCPM-V-4', trust_remote_code=True)
 tokenizer = AutoTokenizer.from_pretrained('openbmb/MiniCPM-V-4', trust_remote_code=True)
 ```
 
-### Method 4: Using modelscope CLI
+### Method 4: Using Modelscope CLI
 
 ```bash
-# Install modelscope CLI
+# Install Modelscope CLI
 pip install modelscope
 
 # Download using CLI

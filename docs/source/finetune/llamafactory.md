@@ -115,7 +115,7 @@ Create a configuration file named `minicpmv_4_lora_sft.yaml` and place it in `LL
 
 ```yaml
 ### model
-model_name_or_path: openbmb/MiniCPM-V4 # Can be MiniCPMV or MiniCPMO local model
+model_name_or_path: openbmb/MiniCPM-V-4 # Can be MiniCPMV or MiniCPMO local model
 trust_remote_code: true
 
 ### method
@@ -161,7 +161,7 @@ Create a full training configuration file `minicpmv_4_full_sft.yaml` and place i
 
 ```yaml
 ### model
-model_name_or_path: openbmb/MiniCPM-V4 # MiniCPM-o-2_6 or MiniCPM-V-2_6
+model_name_or_path: openbmb/MiniCPM-V-4 # MiniCPM-o-2_6 or MiniCPM-V-2_6
 trust_remote_code: true
 freeze_vision_tower: true # Freeze vision module
 print_param_status: true
@@ -225,7 +225,7 @@ llamafactory-cli train configs/minicpmv_4_lora_sft.yaml
 
 ```yaml
 ### model
-model_name_or_path: openbmb/MiniCPM-V4 # Original model path, can be local
+model_name_or_path: openbmb/MiniCPM-V-4 # Original model path, can be local
 adapter_name_or_path: saves/minicpm_v4/lora/sft # Path to saved LoRA model
 template: minicpm_v
 finetuning_type: lora

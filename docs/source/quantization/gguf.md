@@ -1,7 +1,7 @@
 # GGUF
 
 :::{Note}
-**Support:** MiniCPM-V4.0 / MiniCPM-V2.6 / MiniCPM-V2.5
+**Support:** MiniCPM-V 4.0 / MiniCPM-V 2.6 / MiniCPM-V 2.5
 :::
 
 ### 1.Download the PyTorch Model
