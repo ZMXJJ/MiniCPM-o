@@ -240,6 +240,8 @@ For more information, please visit our:
 
    finetune/fintune
    finetune/llamafactory
+   finetune/swift
+   finetune/align-anything
    
 .. toctree::
    :maxdepth: 1

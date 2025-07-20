@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, OpenBMB
+# This file is distributed under the same license as the MiniCPM-o Cookbook
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MiniCPM-o Cookbook \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-20 20:07+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/finetune/align_anything.md:1 c05523f867a14ce6929477d2ac541499
+msgid "Align-Anything"
+msgstr "Align-Anything"
+
+#: ../../source/finetune/align_anything.md:4 dc97c8190a554cda8a87494fe28e7b52
+msgid "**Support:** MiniCPM-o 2.6"
+msgstr "**支持:** MiniCPM-o 2.6"
+
+#: ../../source/finetune/align_anything.md:7 5978ec1698e34418af32cf4423ad354d
+msgid "Environment Setup"
+msgstr "环境配置"
+
+#: ../../source/finetune/align_anything.md:19 fd15bb69324a4af597bc7181678d22bb
+msgid "**On Nvidia GPU**"
+msgstr "**在 Nvidia GPU 上**"
+
+#: ../../source/finetune/align_anything.md:21 bfc125cd26ca40138f0d7ec7949e6642
+msgid ""
+"**`[Optional]`** We recommend installing "
+"[CUDA](https://anaconda.org/nvidia/cuda) in the conda environment and set"
+" the environment variable."
+msgstr ""
+"**`[可选]`** 我们建议在 conda 环境中安装 "
+"[CUDA](https://anaconda.org/nvidia/cuda) 并设置环境变量。"
+
+#: ../../source/finetune/align_anything.md:31 affc2dc918f64623bfea905cfe57630f
+msgid ""
+"If your CUDA installed in a different location, such as "
+"`/usr/local/cuda/bin/nvcc`, you can set the environment variables as "
+"follows:"
+msgstr "如果您的 CUDA 安装在不同的位置，例如 `/usr/local/cuda/bin/nvcc`，您可以如下设置环境变量："
+
+#: ../../source/finetune/align_anything.md:37 7724d83d085648bdbc622763aee536d4
+msgid "Finally, install `align-anything` by:"
+msgstr "最后，通过以下方式安装 `align-anything`："
+
+#: ../../source/finetune/align_anything.md:45 bb39c2ccc87245809ef0f43401d3db53
+msgid "Training"
+msgstr "训练"
+
+#: ../../source/finetune/align_anything.md:47 7947db9080cf43a28ee445c94e527ea8
+msgid ""
+"You can find SFT & DPO training script in the `./scripts/minicpmo` "
+"directory. These scripts would automatically download the model and "
+"dataset, and run the training or evaluation."
+msgstr "您可以在 `./scripts/minicpmo` 目录中找到 SFT 和 DPO 训练脚本。这些脚本会自动下载模型和数据集，并运行训练或评估。"
+
+#: ../../source/finetune/align_anything.md:49 2a0adc06b9d643a9941b148a8881b986
+msgid ""
+"For example, `scripts/minicpmo/minicpmo_dpo_vision.sh` is the script for "
+"`Text + Image -> Text` modality, you can run it by:"
+msgstr "例如，`scripts/minicpmo/minicpmo_dpo_vision.sh` 是用于 `文本 + 图像 -> 文本` 模态的脚本，您可以通过以下方式运行它："
+
+#: ../../source/finetune/align_anything.md:56 4b668349c50a40549dbe1159399be340
+msgid ""
+"**Note:** The scripts will automatically download the model and dataset "
+"from huggingface. If you are prohibited from the internet, please try to "
+"use the `HF Mirror`:"
+msgstr "**注意：** 脚本将自动从 huggingface 下载模型和数据集。如果您无法访问互联网，请尝试使用 `HF Mirror`："

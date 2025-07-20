@@ -52,10 +52,10 @@ msgstr "Hugging Face Hub 下载"
 #: ../../source/getting_started/model_download.md:11
 #: 5c47c870795047599d000d6ec7468623
 msgid ""
-"Hugging Face Hub is the primary platform for accessing MiniCPM-V-4, "
+"Hugging Face Hub is the primary platform for accessing MiniCPM-V 4.0, "
 "offering excellent global accessibility and integration with the "
 "transformers library."
-msgstr "Hugging Face Hub 是获取 MiniCPM-V-4 的主要平台，具有出色的全球可访问性，并可与 transformers 库集成。"
+msgstr "Hugging Face Hub 是获取 MiniCPM-V 4.0 的主要平台，具有出色的全球可访问性，并可与 transformers 库集成。"
 
 #: ../../source/getting_started/model_download.md:13
 #: ../../source/getting_started/model_download.md:53

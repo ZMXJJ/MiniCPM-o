@@ -1,5 +1,9 @@
 # Llama Factory
 
+:::{Note}
+**Support:** MiniCPM-V 4.0 / MiniCPM-V 2.6 / MiniCPM-V 2.5
+:::
+
 ## Install LlamaFactory
 
 1. Clone the LlamaFactory GitHub repository:
