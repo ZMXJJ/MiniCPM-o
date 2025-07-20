@@ -6,6 +6,7 @@ We provide official scripts for easily fine-tuning the pretrained models **MiniC
 This section takes **MiniCPM-o 2.6** as an example.
 :::
 
+
 ## Download Code
 
 Before the fine-tuning, please go to our Cookbook repository to download the relevant code.
