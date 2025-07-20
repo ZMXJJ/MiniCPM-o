@@ -1,6 +1,6 @@
 # Model Download
 
-This guide provides instructions for downloading the MiniCPM-V-4 model from Hugging Face Hub and ModelScope.
+This guide provides instructions for downloading the MiniCPM-V 4.0 model from Hugging Face Hub and ModelScope.
 
 ## Available Model
 
@@ -8,7 +8,7 @@ This guide provides instructions for downloading the MiniCPM-V-4 model from Hugg
 
 ## Hugging Face Hub Download
 
-Hugging Face Hub is the primary platform for accessing MiniCPM-V-4, offering excellent global accessibility and integration with the transformers library.
+Hugging Face Hub is the primary platform for accessing MiniCPM-V 4.0, offering excellent global accessibility and integration with the transformers library.
 
 ### Prerequisites
 

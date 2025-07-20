@@ -28,9 +28,9 @@ msgstr "模型下载"
 #: ../../source/getting_started/model_download.md:3
 #: 80bf8c4b759640a1bce6541a18196823
 msgid ""
-"This guide provides instructions for downloading the MiniCPM-V-4 model "
+"This guide provides instructions for downloading the MiniCPM-V 4.0 model "
 "from Hugging Face Hub and ModelScope."
-msgstr "本指南提供了从 Hugging Face Hub 和 ModelScope 下载 MiniCPM-V-4 模型的说明。"
+msgstr "本指南提供了从 Hugging Face Hub 和 ModelScope 下载 MiniCPM-V 4.0 模型的说明。"
 
 #: ../../source/getting_started/model_download.md:5
 #: 37bbc1a714e14cc7a356a81c7ffaaedf
@@ -39,11 +39,10 @@ msgstr "可用模型"
 
 #: ../../source/getting_started/model_download.md:7
 #: 81d0b1b05f2f4a4587fe084710945887
-#, fuzzy
 msgid ""
 "**MiniCPM-V 4.0**: Vision Understanding model for image and video "
 "processing (~8GB)"
-msgstr "**MiniCPM-V-4**：用于图像和视频处理的视觉理解模型（约 8GB）"
+msgstr "**MiniCPM-V 4.0**：用于图像和视频处理的视觉理解模型（约 8GB）"
 
 #: ../../source/getting_started/model_download.md:9
 #: 60c6ed0ef01c44178661a401a779198f
