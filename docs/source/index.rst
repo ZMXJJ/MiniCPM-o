@@ -119,6 +119,12 @@ We provide training methods serving different needs as following:
      - Comprehensive model customization
    * - `LoRA <./finetune/fintune.html#lora-finetuning>`_
      - Efficient parameter tuning
+   * - `LLaMA-Factory <./finetune/llamafactory.html>`_
+     - Flexible and modular fine-tuning framework
+   * - `SWIFT <./finetune/swift.html>`_
+     - Lightweight and fast parameter-efficient tuning
+   * - `Align-anything <./finetune/align-anything.html>`_
+     - Visual instruction alignment for multimodal models
 
 
 .. _serving-recipes:

@@ -38,7 +38,7 @@ msgid ""
 "Alignment](https://alignmentsurvey.com/)."
 msgstr ""
 "[Align-Anything](https://github.com/PKU-Alignment/align-anything/) "
-"是一个多模态对齐框架，旨在对齐全模态（any-to-any "
+"是一个多模态对齐框架，旨在对齐全模态（any-to-any"
 "）模型，包括 LLM、VLM 等，使其与人类的意图和价值观保持一致。有关大型模型对齐的定义和里程碑的更多详细信息，可以在 "
 "[AI Alignment](https://alignmentsurvey.com/) 中找到。"
 
