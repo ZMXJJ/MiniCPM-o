@@ -26,26 +26,26 @@ Welcome to MiniCPM-o Cookbook
 Cook up amazing multimodal AI applications effortlessly with MiniCPM-o / MiniCPM-V, bringing vision, speech, and live-streaming capabilities right to your fingertips!
 
 
-🌟 What Makes Our Recipes Special?
+✨ What Makes Our Recipes Special?
 **********************************
 
-User Groups Covered
+Broad User Spectrum
 ~~~~~~~~~~~~~~~~~~~
 
 We support a wide range of users, from individuals to enterprises and researchers.
 
-* **Individuals (Low-barrier, easy inference):** Ollama, Llama.cpp
-* **Enterprises (High-throughput inference):** vLLM, SGLang
-* **Researchers (Secondary development):** Huggingface Transformers, LLaMA-Factory, SWIFT, Align-anything
+* Individuals: Enjoy effortless inference using **Ollama** and **Llama.cpp** with minimal setup.
+* Enterprises: Achieve high-throughput, scalable performance with **vLLM** and **SGLang**.
+* Researchers: Leverage advanced frameworks including **Transformers**, **LLaMA-Factory**, **SWIFT**, and **Align-anything** to enable flexible model development and cutting-edge experimentation.
 
-Application Scenarios Covered
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Versatile Deployment Scenarios
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Our solutions fit various deployment needs and hardware environments.
+Our ecosystem delivers optimal solution for a variety of hardware environments and deployment demands.
 
-* **Private deployment:** Web Demo
-* **Quantized deployment:** GGUF, BNB, AWQ
-* **Edge devices:** iOS, iPad
+* Private Web demo: Launch interactive multimodal AI web demo with **FastAPI**.
+* Quantized deployment: Maximize efficiency and minimize resource consumption using **GGUF** and **BNB**.
+* Edge devices: Bring powerful AI experiences directly to **iPhone** and **iPad**, supporting mobile and privacy-sensitive applications.
 
 🔥 Inference recipes
 ********************
@@ -113,14 +113,12 @@ We provide training methods serving different needs as following:
    :widths: 25 75
    :header-rows: 1
 
-   * - Method
+   * - Framework
      - Description
-   * - `Full <./finetune/fintune.html#full-parameter-finetuning>`_
-     - Comprehensive model customization
-   * - `LoRA <./finetune/fintune.html#lora-finetuning>`_
-     - Efficient parameter tuning
+   * - `Transformers <./finetune/fintune.html#full-parameter-finetuning>`_
+     - Most flexible for customization
    * - `LLaMA-Factory <./finetune/llamafactory.html>`_
-     - Flexible and modular fine-tuning framework
+     - Modular fine-tuning toolkit
    * - `SWIFT <./finetune/swift.html>`_
      - Lightweight and fast parameter-efficient tuning
    * - `Align-anything <./finetune/align-anything.html>`_
@@ -145,11 +143,15 @@ We provide training methods serving different needs as following:
    * - `SGLang <./deployment/sglang.html>`_
      - High-throughput GPU inference
    * - `Llama.cpp <./run_locally/llama.cpp.html>`_
-     - Fast CPU inference
+     - Fast inference on PC, iPhone and iPad  
    * - `Ollama <./run_locally/ollama.html>`_
      - User-friendly setup
-   * - `Web Demo <./demo/webdemo.html>`_
-     - Interactive user interface
+   * - `Fast API <./demo/webdemo.html>`_
+     - Interactive Omni Streaming demo with FastAPI
+   * - `OpenWebUI <./demo/openwebui.html>`_
+     - Interactive Web demo with Open WebUI
+   * - `iOS Demo <./demo/iosdemo.html>`_
+     - Interactive iOS demo with llama.cpp
 
 
 .. _quantization-recipes:
@@ -256,3 +258,4 @@ For more information, please visit our:
 
    demo/webdemo
    demo/openwebui
+   demo/iosdemo
