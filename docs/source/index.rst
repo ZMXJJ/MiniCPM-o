@@ -77,12 +77,6 @@ Our ecosystem delivers optimal solution for a variety of hardware environments a
    * - 📝 `Text Recognition <./inference/ocr.md>`_
      - Reliable OCR for photos and screenshots
 
-   * - 🔍 `Multimodal RAG <./inference/rag.md>`_
-     - Retrieve and organize multimodal data
-
-   * - 🤖 `Agents <./inference/agent.md>`_
-     - AI assistants with tool integration
-
    * - **Audio Capabilities**
      -
 

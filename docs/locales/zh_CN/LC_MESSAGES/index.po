@@ -75,7 +75,7 @@ msgstr "✨ 我们的Cookbook有何特别之处？"
 
 #: ../../source/index.rst:33 278b90a306044cdba18a382f1a1b4948
 msgid "Broad User Spectrum"
-msgstr "广泛的用户群体"
+msgstr "适配广泛的用户群体"
 
 #: ../../source/index.rst:35 ca88e85f283640829a5e472ccc93478b
 msgid ""
