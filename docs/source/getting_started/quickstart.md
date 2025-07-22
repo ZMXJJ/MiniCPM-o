@@ -20,50 +20,50 @@ tokenizer = AutoTokenizer.from_pretrained('openbmb/MiniCPM-V-4', trust_remote_co
 
 ## 🍽️ Menu
 
-### 🔥 Hot Dishes (Inference)
-> *Ready-to-serve examples for immediate satisfaction*
+### 🔥 Inference recipes
+> *Ready-to-run examples*
 
-| Recipe | Description | 
-|---------|-------------|
-| **Vision Capabilities** | |
-| 🖼️ [Single Image](./inference/single_image.md) | Image understanding with high-resolution support |
-| 🧩 [Multi Images](./inference/multi_images.md) | Multi-image reasoning and comparison |
-| 🎬 [Video Understanding](./inference/video_understanding.md) | Real-time video analysis and dense captions |
-| 📝 [OCR](./inference/ocr.md) | Robust text extraction and recognition |
-| 🔍 [Scene Text Recognition](./inference/scene_text_recognize.md) | Scene text detection and license plate recognition |
-| 📄 [PDF Parse](./inference/pdf_parse.md) | PDF document parsing and text extraction |
-| **Omni Capabilities** | |
-| 🎤 [Speech-to-Text](./inference/speech2text.md) | Multilingual speech recognition |
-| 🗣️ [Text-to-Speech](./inference/text2speech.md) | Natural speech synthesis with emotion control |
-| 🎭 [Voice Clone](./inference/voice_clone.md) | End-to-end voice cloning and role-playing |
+| Recipe | Description |
+| ------ | ----------- |
+| **Vision Capabilities** |  |
+| 🎬 [Video QA](https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/video_understanding.md) | Video-based question answering |
+| 🧩 [Multi-image QA](https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/multi_images.md) | Question answering with multiple images |
+| 🖼️ [Single-image QA](https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/single_image.md) | Question answering on a single image |
+| 📄 [Document Parser](https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/pdf_parse.md) | Parse and extract content from PDFs and webpages |
+| 📝 [Text Recognition](https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/ocr.md) | Reliable OCR for photos and screenshots |
+| **Audio Capabilities** |  |
+| 🎤 [Speech-to-Text](https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/speech2text.md) | Multilingual speech recognition |
+| 🎭 [Voice Cloning](https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/voice_clone.md) | Realistic voice cloning and role-play |
+| 🗣️ [Text-to-Speech](https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/text2speech.md) | Instruction-following speech synthesis |
 
-### 🏋️ Training Camp (Fine-tuning)
+### 🏋️ Fine-tuning recipes
 > *Customize your model with your own ingredients*
 
-- **[Fine-tuning Guide](./finetune/readme.md)** - Complete training recipes
-- **[LoRA Training](./finetune/finetune_lora.sh)** - Efficient parameter tuning
-- **[Full Training](./finetune/finetune_ds.sh)** - Deep customization
-- **[Custom Datasets](./finetune/dataset.py)** - Prepare your own data
+| Framework | Description |
+| --------- | ----------- |
+| [Transformers](./finetune/fintune.html#full-parameter-finetuning) | Most flexible for customization |
+| [LLaMA-Factory](./finetune/llamafactory.html) | Modular fine-tuning toolkit |
+| [SWIFT](./finetune/swift.html) | Lightweight and fast parameter-efficient tuning |
+| [Align-anything](./finetune/align-anything.html) | Visual instruction alignment for multimodal models |
 
-### 🥡 Takeaway (Deployment)
-> *Package your model for production*
+### 🥡 Serving recipes
+> *Deploy your model efficiently*
 
-| Platform | Recipe | Best For |
-|----------|--------|----------|
-| [Llama.cpp](./run_locally/llamacpp) | CPU inference | Local deployment |
-| [Ollama](./run_locally/ollama) | Easy management | Quick setup |
-| [vLLM](./deployment/vllm) | High throughput | Production servers |
-| [SGLang](./deployment/sglang) | Structured generation | Complex workflows |
-| [Web Demo](./demo/webdemo) | FastAPI interactive interface | User-friendly apps |
+| Method | Description |
+| ------ | ----------- |
+| [vLLM](./deployment/vllm.html) | High-throughput GPU inference |
+| [SGLang](./deployment/sglang.html) | High-throughput GPU inference |
+| [Llama.cpp](./run_locally/llama.cpp.html) | Fast inference on PC, iPhone and iPad  |
+| [Ollama](./run_locally/ollama.html) | User-friendly setup |
+| [Fast API](./demo/webdemo.html) | Interactive Omni Streaming demo with FastAPI |
+| [OpenWebUI](./demo/openwebui.html) | Interactive Web demo with Open WebUI |
+| [iOS Demo](./demo/iosdemo.html) | Interactive iOS demo with llama.cpp |
 
-### 🥄 Light Bites (Quantization)
-> *Compress your model without losing flavor*
+### 🥄 Quantization recipes
+> *Compress your model to improve efficiency*
 
-- **[GGUF](./quantization/gguf/)** - Ultra-lightweight format
-- **[BNB](./quantization/bnb/)** - Bits and bytes optimization
-- **[AWQ](./quantization/awq)** - Activation-aware quantization  
+| Format | Key Feature |
+| ------ | ----------- |
+| [GGUF](./quantization/gguf.html) | Simplest and most portable format |
+| [BNB](./quantization/bnb.html) | Efficient 4/8-bit weight quantization |
 
-### 📱 Special Menu (Demos)
-> *Showcase dishes to impress your guests*
-
-- **[Web Demo](./demo/web_demo/)** - Interactive web interface and production API
