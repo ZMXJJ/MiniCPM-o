@@ -41,29 +41,29 @@ tokenizer = AutoTokenizer.from_pretrained('openbmb/MiniCPM-V-4', trust_remote_co
 
 | Framework | Description |
 | --------- | ----------- |
-| [Transformers](./finetune/fintune.html#full-parameter-finetuning) | Most flexible for customization |
-| [LLaMA-Factory](./finetune/llamafactory.html) | Modular fine-tuning toolkit |
-| [SWIFT](./finetune/swift.html) | Lightweight and fast parameter-efficient tuning |
-| [Align-anything](./finetune/align-anything.html) | Visual instruction alignment for multimodal models |
+| [Transformers](/finetune/fintune.html#full-parameter-finetuning) | Most flexible for customization |
+| [LLaMA-Factory](/finetune/llamafactory.html) | Modular fine-tuning toolkit |
+| [SWIFT](/finetune/swift.html) | Lightweight and fast parameter-efficient tuning |
+| [Align-anything](/finetune/align-anything.html) | Visual instruction alignment for multimodal models |
 
 ### 🥡 Serving recipes
 > *Deploy your model efficiently*
 
 | Method | Description |
 | ------ | ----------- |
-| [vLLM](./deployment/vllm.html) | High-throughput GPU inference |
-| [SGLang](./deployment/sglang.html) | High-throughput GPU inference |
-| [Llama.cpp](./run_locally/llama.cpp.html) | Fast inference on PC, iPhone and iPad  |
-| [Ollama](./run_locally/ollama.html) | User-friendly setup |
-| [Fast API](./demo/webdemo.html) | Interactive Omni Streaming demo with FastAPI |
-| [OpenWebUI](./demo/openwebui.html) | Interactive Web demo with Open WebUI |
-| [iOS Demo](./demo/iosdemo.html) | Interactive iOS demo with llama.cpp |
+| [vLLM](/deployment/vllm.html) | High-throughput GPU inference |
+| [SGLang](/deployment/sglang.html) | High-throughput GPU inference |
+| [Llama.cpp](/run_locally/llama.cpp.html) | Fast inference on PC, iPhone and iPad  |
+| [Ollama](/run_locally/ollama.html) | User-friendly setup |
+| [Fast API](/demo/webdemo.html) | Interactive Omni Streaming demo with FastAPI |
+| [OpenWebUI](/demo/openwebui.html) | Interactive Web demo with Open WebUI |
+| [iOS Demo](/demo/iosdemo.html) | Interactive iOS demo with llama.cpp |
 
 ### 🥄 Quantization recipes
 > *Compress your model to improve efficiency*
 
 | Format | Key Feature |
 | ------ | ----------- |
-| [GGUF](./quantization/gguf.html) | Simplest and most portable format |
-| [BNB](./quantization/bnb.html) | Efficient 4/8-bit weight quantization |
+| [GGUF](/quantization/gguf.html) | Simplest and most portable format |
+| [BNB](/quantization/bnb.html) | Efficient 4/8-bit weight quantization |
 
