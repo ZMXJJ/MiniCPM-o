@@ -25,7 +25,7 @@ Quickstart
 
 
 🍽️ Menu
-=======
+-------
 
 🔥 Inference recipes
 ********************
@@ -89,17 +89,17 @@ We provide training methods serving different needs as following:
 
    * - Framework
      - Description
-   * - `Transformers <./finetune/fintune.html#full-parameter-finetuning>`_
+   * - `Transformers <../finetune/fintune.html#full-parameter-finetuning>`_
      - Most flexible for customization
-   * - `LLaMA-Factory <./finetune/llamafactory.html>`_
+   * - `LLaMA-Factory <../finetune/llamafactory.html>`_
      - Modular fine-tuning toolkit
-   * - `SWIFT <./finetune/swift.html>`_
+   * - `SWIFT <../finetune/swift.html>`_
      - Lightweight and fast parameter-efficient tuning
-   * - `Align-anything <./finetune/align-anything.html>`_
+   * - `Align-anything <../finetune/align-anything.html>`_
      - Visual instruction alignment for multimodal models
 
 
-.. _serving-recipes:
+.. _serving-recipe:
 
 🥡 Serving recipes
 ******************
@@ -111,23 +111,23 @@ We provide training methods serving different needs as following:
 
    * - Method
      - Description
-   * - `vLLM <./deployment/vllm.html>`_
+   * - `vLLM <../deployment/vllm.html>`_
      - High-throughput GPU inference
-   * - `SGLang <./deployment/sglang.html>`_
+   * - `SGLang <../deployment/sglang.html>`_
      - High-throughput GPU inference
-   * - `Llama.cpp <./run_locally/llama.cpp.html>`_
+   * - `Llama.cpp <../run_locally/llama.cpp.html>`_
      - Fast inference on PC, iPhone and iPad  
-   * - `Ollama <./run_locally/ollama.html>`_
+   * - `Ollama <../run_locally/ollama.html>`_
      - User-friendly setup
-   * - `Fast API <./demo/webdemo.html>`_
+   * - `Fast API <../demo/webdemo.html>`_
      - Interactive Omni Streaming demo with FastAPI
-   * - `OpenWebUI <./demo/openwebui.html>`_
+   * - `OpenWebUI <../demo/openwebui.html>`_
      - Interactive Web demo with Open WebUI
-   * - `iOS Demo <./demo/iosdemo.html>`_
+   * - `iOS Demo <../demo/iosdemo.html>`_
      - Interactive iOS demo with llama.cpp
 
 
-.. _quantization-recipes:
+.. _quantization-recipe:
 
 🥄 Quantization recipes
 ***********************
@@ -139,7 +139,7 @@ We provide training methods serving different needs as following:
 
    * - Format
      - Key Feature
-   * - `GGUF <./quantization/gguf.html>`_
+   * - `GGUF <../quantization/gguf.html>`_
      - Simplest and most portable format
-   * - `BNB <./quantization/bnb.html>`_
+   * - `BNB <../quantization/bnb.html>`_
      - Efficient 4/8-bit weight quantization
