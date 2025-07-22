@@ -71,13 +71,7 @@ Quickstart
 
 🏋️ Fine-tuning recipes
 **********************
-
 *Customize your model with your own ingredients*
-
-**Data preparation**
-
-Follow the `guidance <./finetune/fintune.html#data-preparation>`_ to set up your training datasets.
-
 
 **Training**
 

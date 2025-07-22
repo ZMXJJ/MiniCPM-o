@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MiniCPM-o Cookbook \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-22 15:06+0800\n"
+"POT-Creation-Date: 2025-07-22 15:16+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_CN\n"
@@ -56,8 +56,8 @@ msgid "Recipe"
 msgstr "用法"
 
 #: ../../source/getting_started/quickstart.rst:40
-#: ../../source/getting_started/quickstart.rst:91
-#: ../../source/getting_started/quickstart.rst:113
+#: ../../source/getting_started/quickstart.rst:85
+#: ../../source/getting_started/quickstart.rst:107
 #: d74e38d9feb347118fd2c604553a2c86
 msgid "Description"
 msgstr "描述"
@@ -189,191 +189,188 @@ msgstr "指令跟随型语音合成"
 msgid "🏋️ Fine-tuning recipes"
 msgstr "🏋️ 微调指南"
 
-#: ../../source/getting_started/quickstart.rst:75
+#: ../../source/getting_started/quickstart.rst:74
 #: d151a5eb0e9e43e8840a35a1ca457b5c
 msgid "*Customize your model with your own ingredients*"
 msgstr "＊用你的数据自定义模型＊"
 
-#: ../../source/getting_started/quickstart.rst:77
-#: e34a6625c1e441bca47c32ae45fa0243
-msgid "**Data preparation**"
-msgstr "数据准备"
-
-#: ../../source/getting_started/quickstart.rst:79
-#: 40484cb5210f4a85914550b838fa22e1
-msgid ""
-"Follow the `guidance <./finetune/fintune.html#data-preparation>`_ to set "
-"up your training datasets."
-msgstr "请参考 `指南 <./finetune/fintune.html#data-preparation>`_ 配置你的训练数据集。"
-
-#: ../../source/getting_started/quickstart.rst:82
+#: ../../source/getting_started/quickstart.rst:76
 #: ae7b80edf74c48bfb078021ed16feb1d
 msgid "**Training**"
 msgstr "训练"
 
-#: ../../source/getting_started/quickstart.rst:84
+#: ../../source/getting_started/quickstart.rst:78
 #: d010f72329f5459db241763b2cdadf27
 msgid "We provide training methods serving different needs as following:"
 msgstr "我们提供多种训练方式以满足不同需求："
 
-#: ../../source/getting_started/quickstart.rst:90
+#: ../../source/getting_started/quickstart.rst:84
 #: 21bf7137e89c4f969837e4b9d2dad0c2
 msgid "Framework"
 msgstr "框架"
 
-#: ../../source/getting_started/quickstart.rst:92
+#: ../../source/getting_started/quickstart.rst:86
 #: 5d0d1a1e516a4705afbb9f4c5d595b7a
 msgid "`Transformers <../finetune/fintune.html#full-parameter-finetuning>`_"
 msgstr "`Transformers <../finetune/fintune.html#full-parameter-finetuning>`_"
 
-#: ../../source/getting_started/quickstart.rst:93
+#: ../../source/getting_started/quickstart.rst:87
 #: 5b5f3d1f438049d696ac321eb7fc73b8
 msgid "Most flexible for customization"
 msgstr "最灵活的自定义方式"
 
-#: ../../source/getting_started/quickstart.rst:94
+#: ../../source/getting_started/quickstart.rst:88
 #: 1deac7216d7f46e39f30fd7d4cf7b5b8
 msgid "`LLaMA-Factory <../finetune/llamafactory.html>`_"
 msgstr "`LLaMA-Factory <../finetune/llamafactory.html>`_"
 
-#: ../../source/getting_started/quickstart.rst:95
+#: ../../source/getting_started/quickstart.rst:89
 #: 276b284428484f1eb04c4b867396a0fe
 msgid "Modular fine-tuning toolkit"
 msgstr "模块化微调工具包"
 
-#: ../../source/getting_started/quickstart.rst:96
+#: ../../source/getting_started/quickstart.rst:90
 #: 46880e6defee4dff8d5539e0ab33a87d
 msgid "`SWIFT <../finetune/swift.html>`_"
 msgstr "`SWIFT <../finetune/swift.html>`_"
 
-#: ../../source/getting_started/quickstart.rst:97
+#: ../../source/getting_started/quickstart.rst:91
 #: b04e84acc2ea43599180a1f67f37e888
 msgid "Lightweight and fast parameter-efficient tuning"
 msgstr "轻量且高效的参数高效微调"
 
-#: ../../source/getting_started/quickstart.rst:98
+#: ../../source/getting_started/quickstart.rst:92
 #: 6cf05ddc34194536b761b088246f0dd8
 msgid "`Align-anything <../finetune/align-anything.html>`_"
 msgstr "`Align-anything <../finetune/align-anything.html>`_"
 
-#: ../../source/getting_started/quickstart.rst:99
+#: ../../source/getting_started/quickstart.rst:93
 #: a013b27724c1430ab2c89d6a2ac3d407
 msgid "Visual instruction alignment for multimodal models"
 msgstr "多模态模型的视觉指令对齐"
 
-#: ../../source/getting_started/quickstart.rst:105
+#: ../../source/getting_started/quickstart.rst:99
 #: 906038af5bb74fc8b414d2cfe5d5d091
 msgid "🥡 Serving recipes"
 msgstr "🥡 服务指南"
 
-#: ../../source/getting_started/quickstart.rst:112
+#: ../../source/getting_started/quickstart.rst:106
 #: 2b516c4e3d01402780677c496ee49efe
 msgid "Method"
 msgstr "方法"
 
-#: ../../source/getting_started/quickstart.rst:114
+#: ../../source/getting_started/quickstart.rst:108
 #: 832eabe15e224c3783bc2319ddd72f83
 msgid "`vLLM <../deployment/vllm.html>`_"
 msgstr "`vLLM <../deployment/vllm.html>`_"
 
-#: ../../source/getting_started/quickstart.rst:115
-#: ../../source/getting_started/quickstart.rst:117
+#: ../../source/getting_started/quickstart.rst:109
+#: ../../source/getting_started/quickstart.rst:111
 #: b243c70a70e74ec8aa6bdffda8693a6a
 msgid "High-throughput GPU inference"
 msgstr "高吞吐量 GPU 推理"
 
-#: ../../source/getting_started/quickstart.rst:116
+#: ../../source/getting_started/quickstart.rst:110
 #: 4f65f0df67b040fe8e3ed69620e35c1e
 msgid "`SGLang <../deployment/sglang.html>`_"
 msgstr "`SGLang <../deployment/sglang.html>`_"
 
-#: ../../source/getting_started/quickstart.rst:118
+#: ../../source/getting_started/quickstart.rst:112
 #: 23243806bddc40e487e52e7d36217107
 msgid "`Llama.cpp <../run_locally/llama.cpp.html>`_"
 msgstr "`Llama.cpp <../run_locally/llama.cpp.html>`_"
 
-#: ../../source/getting_started/quickstart.rst:119
+#: ../../source/getting_started/quickstart.rst:113
 #: afca914ea07f4fd7a68fddd196c73d2b
 msgid "Fast inference on PC, iPhone and iPad"
 msgstr "在 PC、iPhone 和 iPad 上快速推理"
 
-#: ../../source/getting_started/quickstart.rst:120
+#: ../../source/getting_started/quickstart.rst:114
 #: 6aed0b6bb0a84681b0e5d2b68afc5319
 msgid "`Ollama <../run_locally/ollama.html>`_"
 msgstr "`Ollama <../run_locally/ollama.html>`_"
 
-#: ../../source/getting_started/quickstart.rst:121
+#: ../../source/getting_started/quickstart.rst:115
 #: 22535cb4064d43e19a894ae34ebef29f
 msgid "User-friendly setup"
 msgstr "用户友好配置"
 
-#: ../../source/getting_started/quickstart.rst:122
+#: ../../source/getting_started/quickstart.rst:116
 #: 9a95e2a7733f4ebe9b1d0d0528ff7527
 msgid "`Fast API <../demo/webdemo.html>`_"
 msgstr "`Fast API <../demo/webdemo.html>`_"
 
-#: ../../source/getting_started/quickstart.rst:123
+#: ../../source/getting_started/quickstart.rst:117
 #: c5b90142a93344f282a87927ae7ec86a
 msgid "Interactive Omni Streaming demo with FastAPI"
 msgstr "基于 FastAPI 的交互式 Omni Streaming 演示"
 
-#: ../../source/getting_started/quickstart.rst:124
+#: ../../source/getting_started/quickstart.rst:118
 #: 7b98a1fdaa144f379c59d33f459ecee3
 msgid "`OpenWebUI <../demo/openwebui.html>`_"
 msgstr "`OpenWebUI <../demo/openwebui.html>`_"
 
-#: ../../source/getting_started/quickstart.rst:125
+#: ../../source/getting_started/quickstart.rst:119
 #: 83aef207ed494141b7ce73506889c1c5
 msgid "Interactive Web demo with Open WebUI"
 msgstr "基于 Open WebUI 的交互式网页演示"
 
-#: ../../source/getting_started/quickstart.rst:126
+#: ../../source/getting_started/quickstart.rst:120
 #: a42f67e81964415e821d848ffe1911a3
 msgid "`iOS Demo <../demo/iosdemo.html>`_"
 msgstr "`iOS Demo <../demo/iosdemo.html>`_"
 
-#: ../../source/getting_started/quickstart.rst:127
+#: ../../source/getting_started/quickstart.rst:121
 #: 4d1e80ef389b427da879b8aa37432665
 msgid "Interactive iOS demo with llama.cpp"
 msgstr "基于 llama.cpp 的交互式 iOS 演示"
 
-#: ../../source/getting_started/quickstart.rst:133
+#: ../../source/getting_started/quickstart.rst:127
 #: d72f1765a9654b1e9b2d71128044cf94
 msgid "🥄 Quantization recipes"
 msgstr "🥄 量化指南"
 
-#: ../../source/getting_started/quickstart.rst:134
+#: ../../source/getting_started/quickstart.rst:128
 #: d1eb7411c5f64665a398034c81411be5
 msgid "*Compress your model to improve efficiency*"
 msgstr "＊压缩模型提升效率＊"
 
-#: ../../source/getting_started/quickstart.rst:140
+#: ../../source/getting_started/quickstart.rst:134
 #: 29421eebd8c24bb1b848f1f510f3540e
 msgid "Format"
 msgstr "格式"
 
-#: ../../source/getting_started/quickstart.rst:141
+#: ../../source/getting_started/quickstart.rst:135
 #: 81159092c2014c1e96e8a1290526331e
 msgid "Key Feature"
 msgstr "主要特性"
 
-#: ../../source/getting_started/quickstart.rst:142
+#: ../../source/getting_started/quickstart.rst:136
 #: 03c65c65371a43c890cc80a8dc9b8693
 msgid "`GGUF <../quantization/gguf.html>`_"
 msgstr "`GGUF <../quantization/gguf.html>`_"
 
-#: ../../source/getting_started/quickstart.rst:143
+#: ../../source/getting_started/quickstart.rst:137
 #: 1816500d97624b588db76c3508f230e7
 msgid "Simplest and most portable format"
 msgstr "最简单且最便携的格式"
 
-#: ../../source/getting_started/quickstart.rst:144
+#: ../../source/getting_started/quickstart.rst:138
 #: d72f1765a9654b1e9b2d71128044cf94
 msgid "`BNB <../quantization/bnb.html>`_"
 msgstr "`BNB <../quantization/bnb.html>`_"
 
-#: ../../source/getting_started/quickstart.rst:145
+#: ../../source/getting_started/quickstart.rst:139
 #: df4f5d844da34d579f1a3c21cde70a6e
 msgid "Efficient 4/8-bit weight quantization"
 msgstr "高效的 4/8 位权重量化"
+
+#~ msgid "**Data preparation**"
+#~ msgstr "数据准备"
+
+#~ msgid ""
+#~ "Follow the `guidance <./finetune/fintune.html"
+#~ "#data-preparation>`_ to set up your "
+#~ "training datasets."
+#~ msgstr "请参考 `指南 <./finetune/fintune.html#data-preparation>`_ 配置你的训练数据集。"
 
