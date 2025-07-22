@@ -43,7 +43,7 @@ msgstr "🍽️ 菜单"
 #: ../../source/getting_started/quickstart.rst:31
 #: abf4bc553e1441fc94fde284b06bfaa9
 msgid "🔥 Inference recipes"
-msgstr ""
+msgstr "🔥 推理指南"
 
 #: ../../source/getting_started/quickstart.rst:33
 #: 9524d74a0f0747468212090de740a033
@@ -187,7 +187,7 @@ msgstr "指令跟随型语音合成"
 #: ../../source/getting_started/quickstart.rst:73
 #: 276b284428484f1eb04c4b867396a0fe
 msgid "🏋️ Fine-tuning recipes"
-msgstr ""
+msgstr "🏋️ 微调指南"
 
 #: ../../source/getting_started/quickstart.rst:75
 #: d151a5eb0e9e43e8840a35a1ca457b5c
@@ -264,7 +264,7 @@ msgstr "多模态模型的视觉指令对齐"
 #: ../../source/getting_started/quickstart.rst:105
 #: 906038af5bb74fc8b414d2cfe5d5d091
 msgid "🥡 Serving recipes"
-msgstr ""
+msgstr "🥡 服务指南"
 
 #: ../../source/getting_started/quickstart.rst:112
 #: 2b516c4e3d01402780677c496ee49efe
@@ -340,7 +340,7 @@ msgstr "基于 llama.cpp 的交互式 iOS 演示"
 #: ../../source/getting_started/quickstart.rst:133
 #: d72f1765a9654b1e9b2d71128044cf94
 msgid "🥄 Quantization recipes"
-msgstr ""
+msgstr "🥄 量化指南"
 
 #: ../../source/getting_started/quickstart.rst:134
 #: d1eb7411c5f64665a398034c81411be5
