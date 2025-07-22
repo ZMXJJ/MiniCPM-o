@@ -30,7 +30,6 @@ Quickstart
 🔥 Inference recipes
 ********************
 
-*Ready-to-run examples*
 
 .. list-table::
    :widths: 25 75
@@ -71,9 +70,7 @@ Quickstart
 
 🏋️ Fine-tuning recipes
 **********************
-*Customize your model with your own ingredients*
 
-We provide training methods serving different needs as following:
 
 .. list-table::
    :widths: 25 75
@@ -123,7 +120,7 @@ We provide training methods serving different needs as following:
 
 🥄 Quantization recipes
 ***********************
-*Compress your model to improve efficiency*
+
 
 .. list-table::
    :widths: 25 75
