@@ -73,8 +73,6 @@ Quickstart
 **********************
 *Customize your model with your own ingredients*
 
-**Training**
-
 We provide training methods serving different needs as following:
 
 .. list-table::
