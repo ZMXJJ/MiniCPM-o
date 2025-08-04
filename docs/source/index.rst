@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to MiniCPM-o Cookbook
-==============================
+Welcome to MiniCPM-V & o Cookbook
+==================================
 
 .. figure:: assets/minicpm.svg
   :width: 70%
@@ -163,7 +163,9 @@ We provide training methods serving different needs as following:
    * - `GGUF <./quantization/gguf.html>`_
      - Simplest and most portable format
    * - `BNB <./quantization/bnb.html>`_
-     - Efficient 4/8-bit weight quantization
+     - Simple and easy-to-use quantization method
+   * - `AWQ <./quantization/awq.html>`_
+     - High-performance quantization for efficient inference
 
 
 .. _community:
@@ -231,6 +233,7 @@ For more information, please visit our:
    :caption: Quantization
    :hidden:
 
+   quantization/awq
    quantization/bnb
    quantization/gguf
    
