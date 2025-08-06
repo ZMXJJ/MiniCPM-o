@@ -1,10 +1,11 @@
 """
-the script will use bitandbytes to quantize the MiniCPM-Llama3-V-2_5 model.
-the be quantized model can be finetuned by MiniCPM-Llama3-V-2_5 or not.
+the script will use bitandbytes to quantize the /MiniCPM-V-4 model.
+the be quantized model can be finetuned by /MiniCPM-V-4 or not.
 you only need to set the model_path 、save_path and run bash code 
 
-cd MiniCPM-V
-python quantize/bnb_quantize.py
+download the model from https://huggingface.co/openbmb/MiniCPM-V-4
+cd MiniCPM-o
+python quantize/bnb/bnb_quantize.py
 
 you will get the quantized model in save_path、quantized_model test time and gpu usage
 """
@@ -21,8 +22,8 @@ import os
 assert torch.cuda.is_available(),"CUDA is not available, but this code requires a GPU."
 
 device = 'cuda'  # Select GPU to use
-model_path = '/root/ld/ld_model_pretrained/MiniCPM-Llama3-V-2_5' # Model download path
-save_path = '/root/ld/ld_model_pretrain/MiniCPM-Llama3-V-2_5_int4' # Quantized model save path
+model_path = '/mode/MiniCPM-V-4' # Model download path
+save_path = './model/MiniCPM-V-4-int4' # Quantized model save path
 image_path = './assets/airplane.jpeg'
 
 
@@ -67,12 +68,9 @@ print(f"GPU memory usage after quantization: {round(gpu_usage/1024,2)}GB")
 """
 Expected output:
 
-    Output after quantization: This picture contains specific parts of an airplane, including wings, engines, and tail sections. These components are key parts of large commercial aircraft.
-    The wings support lift during flight, while the engines provide thrust to move the plane forward. The tail section is typically used for stabilizing flight and plays a role in airline branding.
-    The design and color of the airplane indicate that it belongs to Air China, likely a passenger aircraft due to its large size and twin-engine configuration.
-    There are no markings or insignia on the airplane indicating the specific model or registration number; such information may require additional context or a clearer perspective to discern.
-    Inference time after quantization: 8.583992719650269 seconds
-    GPU memory usage after quantization: 6.41 GB
+    Output after quantization: The image features an Airbus A380-800 aircraft belonging to Hainan Airlines. The airplane is captured in mid-flight against a clear blue sky, showcasing its impressive size and design. The livery of the plane includes distinctive markings such as the red logo on the tail fin and Chinese characters along the fuselage. This particular model is known for being one of the largest passenger airliners globally due to its four powerful engines and double-deck configuration.
+    Inference time after quantization: 6.637855052947998
+    GPU memory usage after quantization: 4.35GB
 """
 
 # Save the model and tokenizer
