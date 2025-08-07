@@ -121,7 +121,7 @@ We provide training methods serving different needs as following:
 
 .. _serving-recipes:
 
-🥡 Serving recipes
+📦 Serving recipes
 ******************
 
 *Deploy your model efficiently*
@@ -253,6 +253,7 @@ For more information, please visit our:
    :caption: Demo
    :hidden:
 
+   demo/gradiodemo
    demo/webdemo
    demo/openwebui
    demo/iosdemo
