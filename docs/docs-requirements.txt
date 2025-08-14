@@ -5,3 +5,4 @@ sphinx-copybutton
 sphinx-design>=0.6.0
 sphinx-intl
 sphinxext-opengraph
+sphinx-sitemap

@@ -26,7 +26,7 @@ extensions = [
     "sphinx.ext.autosummary",
     "myst_parser",
     "sphinx_design",
-    "sphinx.ext.sitemap",
+    "sphinx_sitemap",
     "sphinxext.opengraph",
     # "sphinx_copybutton",
 ]
@@ -121,9 +121,11 @@ autodoc.ClassDocumenter = MockedClassDocumenter
 
 navigation_with_keys = False
 
-# Sitemap
+# Sitemap - 使用sphinx_sitemap库
 html_baseurl = 'https://minicpm-o.readthedocs.io/'
+sitemap_url_scheme = "{lang}/{version}/{link}"
 sitemap_locales = ["en", "zh_CN"]
+sitemap_filename = "sitemap.xml"
 
 # Open Graph
 ogp_site_url = "https://minicpm-o.readthedocs.io/"
