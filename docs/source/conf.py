@@ -121,7 +121,7 @@ autodoc.ClassDocumenter = MockedClassDocumenter
 
 navigation_with_keys = False
 
-# Sitemap - 使用sphinx_sitemap库
+# Sitemap
 html_baseurl = 'https://minicpm-o.readthedocs.io/'
 sitemap_url_scheme = "{lang}/{version}/{link}"
 sitemap_locales = ["en", "zh_CN"]
@@ -130,7 +130,7 @@ sitemap_filename = "sitemap.xml"
 # Open Graph
 ogp_site_url = "https://minicpm-o.readthedocs.io/"
 ogp_description_length = 200
-ogp_image = "https://minicpm-o.readthedocs.io/_static/assets/minicpm.svg"
+ogp_image = "https://minicpm-o.readthedocs.io/en/latest/_images/logo.png"
 ogp_image_width = 1200
 ogp_image_height = 630
 ogp_type = "website"
