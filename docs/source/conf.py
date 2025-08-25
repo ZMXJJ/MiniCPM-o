@@ -14,7 +14,7 @@ import logging
 project = 'MiniCPM-V & o Cookbook'
 copyright = '2025, OpenBMB'
 author = 'OpenBMB'
-release = 'V4.0'
+release = 'V4.5'
 
 # -- General configuration ---------------------------------------------------
 
@@ -28,7 +28,7 @@ extensions = [
     "sphinx_design",
     "sphinx_sitemap",
     "sphinxext.opengraph",
-    # "sphinx_copybutton",
+    "sphinx_copybutton",
 ]
 
 myst_enable_extensions = ["colon_fence", "attrs_block", "attrs_inline", "fieldlist"]
@@ -130,7 +130,7 @@ sitemap_filename = "sitemap.xml"
 # Open Graph
 ogp_site_url = "https://minicpm-o.readthedocs.io/"
 ogp_description_length = 200
-ogp_image = "https://minicpm-o.readthedocs.io/en/latest/_images/logo.png"
+ogp_image = "https://raw.githubusercontent.com/OpenBMB/MiniCPM/refs/heads/main/assets/minicpm_logo.png"
 ogp_image_width = 1200
 ogp_image_height = 630
 ogp_type = "website"
@@ -142,7 +142,7 @@ ogp_locale_alternate = [
     ("zh_CN", "https://minicpm-o.readthedocs.io/zh_CN/latest/"),
 ]
 
-# HTML head meta tags - 多语言支持
+# HTML head meta tags
 html_context = {
     'en': {
         'meta_description': 'MiniCPM-V & o Cookbook - Your step-by-step guide to running MiniCPM models anywhere',
@@ -160,17 +160,14 @@ html_context = {
     }
 }
 
-# 根据当前语言获取对应的meta信息
 def get_language_meta():
     current_lang = language
     return html_context.get(current_lang, html_context['en'])
 
-# 将语言特定的meta信息添加到模板上下文
 html_context.update(get_language_meta())
 
 html_use_index = True
 html_split_index = False
 html_compressed = True
 
-# Copy robots.txt to output directory
 html_extra_path = ['_static/robots.txt']
