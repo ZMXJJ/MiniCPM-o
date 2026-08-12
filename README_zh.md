@@ -13,7 +13,10 @@
    <a href="docs/wechat.md" target="_blank"> 微信社区</a> &nbsp;|
  </span>
   <span style="display: inline-flex; align-items: center; margin-left: 2px;">
-   MiniCPM-V <a href="docs/best_practice_summary_zh.md" target="_blank">&nbsp; 📖 最佳实践</a>
+   MiniCPM-V <a href="docs/best_practice_summary_zh.md" target="_blank">&nbsp; 📖 最佳实践</a> &nbsp;|
+ </span>
+  <span style="display: inline-flex; align-items: center; margin-left: 2px;">
+   <a href="https://modelbest.feishu.cn/wiki/UtWxwcERfiRIpIkBOjuc3h9tn1D?fromScene=spaceOverview" target="_blank">&nbsp; 📚 MiniCPM 知识库</a>
  </span>
 
   
